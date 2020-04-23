@@ -6,7 +6,7 @@ from logging import getLogger
 
 logger = getLogger(__name__)
 
-CMD_LIST = ['self', 'play', 'history']              # 增加了history
+CMD_LIST = ['play', 'history']              # 增加了history
 RANDOM_LIST = ['none', 'small', 'medium', 'large']
 
 def create_parser():
@@ -31,19 +31,13 @@ def create_parser():
 def setup(config: Config, args):
     # config.opts.new = args.new
     if args.total_step is not None:
-        config.trainer.start_total_steps = args.total_step
+        config.trainer.start_total_steps = args.total_step      # configs/mini.py line 60: self.start_total_steps = 0
     config.opts.device_list = args.gpu
     config.resource.create_directories()
     if args.cmd == 'self':
-        setup_logger(config.resource.main_log_path)
-    # elif args.cmd == 'opt':
-    #     setup_logger(config.resource.opt_log_path)
-    elif args.cmd == 'play' or args.cmd == 'ob':
-        setup_logger(config.resource.play_log_path)
-    # elif args.cmd == 'eval':
-    #     setup_logger(config.resource.eval_log_path)
-    # elif args.cmd == 'sl':
-    #     setup_logger(config.resource.sl_log_path)
+        setup_logger(config.resource.main_log_path)  # in log/main.log
+    elif args.cmd == 'play':
+        setup_logger(config.resource.play_log_path)     # in log/play.log
 
 
 def start():
@@ -52,16 +46,17 @@ def start():
     config_type = args.type         # default 'mini'
     # print(config_type)
     # exit()
-    config = Config(config_type=config_type)
-    setup(config, args)
+    config = Config(config_type=config_type)        # config = mini-config
+    setup(config, args)     # set logger total_step
 
     logger.info('Config type: %s' % (config_type))
     # config.opts.piece_style = args.piece_style
     # config.opts.bg_style = args.bg_style
     config.opts.piece_style = 'WOOD'
     config.opts.bg_style = 'WOOD'
-    # config.internet.distributed = args.distributed
+    config.internet.distributed = False
     print(config.opts.piece_style, config.opts.bg_style, 'from manager.py line 64')
+
     # use multiple GPU
     gpus = config.opts.device_list.split(',')
     if len(gpus) > 1:
@@ -69,55 +64,27 @@ def start():
         config.opts.gpu_num = len(gpus)
         logger.info(f"User GPU {config.opts.device_list}")
 
-    if args.cmd == 'self':
-        if args.ucci:
-            import cchess_alphazero.worker.play_with_ucci_engine as self_play
-        else:
-            if mp.get_start_method() == 'spawn':
-                import cchess_alphazero.worker.self_play_windows as self_play
-            else:
-                from cchess_alphazero.worker import self_play
-        return self_play.start(config)
-    # elif args.cmd == 'opt':
-    #     from cchess_alphazero.worker import optimize
-    #     return optimize.start(config)
-
-
-    elif args.cmd == 'play':
-        # if args.cli:
-        #     import cchess_alphazero.play_games.play_cli as play
-        # else:
-        #     from cchess_alphazero.play_games import play
+    if args.cmd == 'play':
         from mychess.play_games import play
         config.opts.light = False
+
         pwhc = PlayWithHumanConfig()
-        pwhc.update_play_config(config.play)
+        pwhc.update_play_config(config.play)        # update the config from configs/mini.py line 33: PlayConfig
         logger.info(f"AI move first : {args.ai_move_first}")
         play.start(config, not args.ai_move_first)
 
+    # elif args.cmd == 'self':
+        #     if args.ucci:
+        #         import mychess.worker.play_with_ucci_engine as self_play
+        #     else:
+        #         if mp.get_start_method() == 'spawn':
+        #             import mychess.worker.self_play_windows as self_play
+        #         else:
+        #             from mychess.worker import self_play
+        #     return self_play.start(config)
+        # elif args.cmd == 'opt':
+        #     from cchess_alphazero.worker import optimize
+        #     return optimize.start(config)
 
-    # elif args.cmd == 'eval':
-    #     if args.elo == False:
-    #         from cchess_alphazero.worker import evaluator
-    #     else:
-    #         if mp.get_start_method() == 'spawn':
-    #             import cchess_alphazero.worker.compute_elo_windows as evaluator
-    #         else:
-    #             import cchess_alphazero.worker.compute_elo as evaluator
-    #     config.eval.update_play_config(config.play)
-    #     evaluator.start(config)
-    # elif args.cmd == 'sl':
-    #     if args.onegreen:
-    #         import cchess_alphazero.worker.sl_onegreen as sl
-    #         sl.start(config, args.skip)
-    #     else:
-    #         from cchess_alphazero.worker import sl
-    #         sl.start(config)
-
-    # elif args.cmd == 'ob':
-    #     from cchess_alphazero.play_games import ob_self_play
-    #     pwhc = PlayWithHumanConfig()
-    #     pwhc.update_play_config(config.play)
-    #     ob_self_play.start(config, args.ucci, args.ai_move_first)
 
 

@@ -1,9 +1,9 @@
 import copy
 
 class Point(object):
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
 def num_between(max_num, min_num, current):
     return current >= min_num and current <= max_num
@@ -21,7 +21,7 @@ class Chessman(object):
         self.__name = name
         self.__is_red = is_red
         self.__chessboard = chessboard
-        self.__position = Point(None, None)
+        self.__position = Point(None, None)     # 初始为None
         self.__moving_list = []
         self.__top = 9
         self.__bottom = 0

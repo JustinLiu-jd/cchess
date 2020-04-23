@@ -8,12 +8,14 @@ def _project_dir():
 
 def _data_dir():
     return os.path.join(_project_dir(), "data")
+# print(_data_dir())
+# exit()
 
 class Config:
     def __init__(self, config_type="mini"):
         self.opts = Options()
         self.resource = ResourceConfig()
-        # self.internet = InternetConfig()
+        self.internet = InternetConfig()
 
         if config_type == "mini":
             import configs.mini as c
@@ -26,7 +28,7 @@ class Config:
         self.model = c.ModelConfig()
         self.play = c.PlayConfig()
         self.play_data = c.PlayDataConfig()
-        self.trainer = c.TrainerConfig()
+        self.trainer = c.TrainerConfig()        # configs/mini.py TrainerConfig
         self.eval = c.EvaluateConfig()
 
 class PlayWithHumanConfig:
@@ -63,8 +65,8 @@ class ResourceConfig:
     def __init__(self):
         self.project_dir = os.environ.get("PROJECT_DIR", _project_dir())
         self.data_dir = os.environ.get("DATA_DIR", _data_dir())
-
         self.model_dir = os.environ.get("MODEL_DIR", os.path.join(self.data_dir, "model"))
+
         self.model_best_config_path = os.path.join(self.model_dir, "model_best_config.json")
         self.model_best_weight_path = os.path.join(self.model_dir, "model_best_weight.h5")
         self.sl_best_config_path = os.path.join(self.model_dir, "sl_best_config.json")
@@ -103,3 +105,21 @@ class ResourceConfig:
         for d in dirs:
             if not os.path.exists(d):
                 os.makedirs(d)
+
+class InternetConfig:
+    def __init__(self):
+        self.distributed = False
+        self.username = getpass.getuser()
+        self.base_url = 'https://cczero.org'
+        self.upload_url = f'{self.base_url}/api/upload_game_file/192x10'
+        self.upload_eval_url = f'{self.base_url}/api/upload_eval_game_file'
+        self.download_url = f'http://download.52coding.com.cn/192x10/model_best_weight.h5'
+        # self.download_url = 'http://alphazero-1251776088.cossh.myqcloud.com/model/128x7/model_best_weight.h5'
+        self.get_latest_digest = f'{self.base_url}/api/get_latest_digest/192x10'
+        self.add_model_url = f'{self.base_url}/api/add_model'
+        self.get_evaluate_model_url = f'{self.base_url}/api/query_for_evaluate'
+        self.download_base_url = f'http://download.52coding.com.cn/'
+        # self.download_base_url = 'http://alphazero-1251776088.cossh.myqcloud.com/model/'
+        self.get_elo_url = f'{self.base_url}/api/get_elo/'
+        self.update_elo_url = f'{self.base_url}/api/add_eval_result/'
+

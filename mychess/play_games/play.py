@@ -1,10 +1,10 @@
 import sys
 import pygame
-import random
+# import random
 import os.path
-import time
-import copy
-import numpy as np
+# import time
+# import copy
+# import numpy as np
 
 from pygame.locals import *
 from logging import getLogger
@@ -14,26 +14,26 @@ from time import sleep
 from datetime import datetime
 
 import mychess.environment.static_env as senv
-from mychess.environment.chessboard import Chessboard
+# from mychess.environment.chessboard import Chessboard
 from mychess.environment.chessman import *
 from mychess.agent.model import CChessModel
 from mychess.agent.player import CChessPlayer, VisitState
-from mychess.agent.api import CChessModelAPI
+# from mychess.agent.api import CChessModelAPI
 from mychess.config import Config
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner, ActionLabelsRed, flip_move
 from mychess.lib.model_helper import load_best_model_weight
-from mychess.lib.tf_util import set_session_config
+# from mychess.lib.tf_util import set_session_config
 
 logger = getLogger(__name__)
-main_dir = os.path.split(os.path.abspath(__file__))[0]
+main_dir = os.path.split(os.path.abspath(__file__))[0]      # play_games/
 PIECE_STYLE = 'WOOD'
 
 def start(config: Config, human_move_first=True):
     global PIECE_STYLE
     PIECE_STYLE = config.opts.piece_style
     play = PlayWithHuman(config)
-    play.start(human_move_first)
+    play.start(human_move_first)            # to line 101
 
 class PlayWithHuman:
     def __init__(self, config: Config):
