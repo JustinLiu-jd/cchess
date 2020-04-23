@@ -1,9 +1,9 @@
 import codecs
 
-from cchess_alphazero.environment.lookup_tables import Winner
-from cchess_alphazero.environment.chessman import *
+from mychess.environment.lookup_tables import Winner
+from mychess.environment.chessman import *
 
-from cchess_alphazero.lib.logger import getLogger
+from mychess.lib.logger import getLogger
 
 logger = getLogger(__name__)
 

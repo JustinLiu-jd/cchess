@@ -4,3 +4,86 @@
 2020-04-23 15:05:24,159@mychess.manager INFO # Config type: mini
 2020-04-23 15:06:39,426@mychess.manager INFO # Config type: mini
 2020-04-23 15:16:02,692@mychess.manager INFO # Config type: mini
+2020-04-23 15:16:53,474@mychess.manager INFO # Config type: mini
+2020-04-23 16:01:47,011@mychess.manager INFO # Config type: mini
+2020-04-23 16:02:33,881@mychess.manager INFO # Config type: mini
+2020-04-23 16:03:41,745@mychess.manager INFO # Config type: mini
+2020-04-23 16:10:29,622@mychess.manager INFO # Config type: mini
+2020-04-23 16:13:32,639@mychess.manager INFO # Config type: mini
+2020-04-23 16:13:58,020@mychess.manager INFO # Config type: mini
+2020-04-23 16:14:47,661@mychess.manager INFO # Config type: mini
+2020-04-23 16:14:51,625@mychess.manager INFO # AI move first : False
+2020-04-23 16:14:51,626@mychess.agent.model DEBUG # model files does not exist at /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json and /Users/illusion/PycharmProjects/cchess/data/model/model_best_weight.h5
+2020-04-23 16:14:51,627@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:58: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-23 16:14:51,627@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-23 16:14:51,630@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-23 16:14:51,640@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:14:52,881@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:20:25,751@mychess.manager INFO # Config type: mini
+2020-04-23 16:20:29,435@mychess.manager INFO # AI move first : False
+2020-04-23 16:20:29,435@mychess.agent.model DEBUG # model files does not exist at /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json and /Users/illusion/PycharmProjects/cchess/data/model/model_best_weight.h5
+2020-04-23 16:20:29,436@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:58: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-23 16:20:29,437@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-23 16:20:29,439@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-23 16:20:29,457@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:20:30,350@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:21:24,610@mychess.manager INFO # Config type: mini
+2020-04-23 16:21:28,249@mychess.manager INFO # AI move first : False
+2020-04-23 16:21:28,250@mychess.agent.model DEBUG # model files does not exist at /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json and /Users/illusion/PycharmProjects/cchess/data/model/model_best_weight.h5
+2020-04-23 16:21:28,250@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:58: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-23 16:21:28,251@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-23 16:21:28,253@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-23 16:21:28,262@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:21:29,171@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:22:34,291@mychess.manager INFO # Config type: mini
+2020-04-23 16:22:37,896@mychess.manager INFO # AI move first : False
+2020-04-23 16:22:37,896@mychess.agent.model DEBUG # model files does not exist at /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json and /Users/illusion/PycharmProjects/cchess/data/model/model_best_weight.h5
+2020-04-23 16:22:37,897@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:58: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-23 16:22:37,898@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-23 16:22:37,900@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-23 16:22:37,907@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:22:38,830@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:23:12,053@mychess.manager INFO # Config type: mini
+2020-04-23 16:23:15,746@mychess.manager INFO # AI move first : False
+2020-04-23 16:23:15,747@mychess.agent.model DEBUG # model files does not exist at /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json and /Users/illusion/PycharmProjects/cchess/data/model/model_best_weight.h5
+2020-04-23 16:23:15,747@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:58: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-23 16:23:15,748@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-23 16:23:15,751@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-23 16:23:15,759@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:23:16,639@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-23 16:23:22,720@mychess.play_games.play INFO # state = rk1msmekr/9/1c2e2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR

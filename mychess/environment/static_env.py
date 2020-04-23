@@ -1,7 +1,7 @@
 import numpy as np
 
-from cchess_alphazero.environment.light_env.common import *
-from cchess_alphazero.environment.lookup_tables import Winner, Fen_2_Idx, flip_move
+from mychess.environment.light_env.common import *
+from mychess.environment.lookup_tables import Winner, Fen_2_Idx, flip_move
 from logging import getLogger
 
 logger = getLogger(__name__)

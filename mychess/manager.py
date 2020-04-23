@@ -17,7 +17,7 @@ def create_parser():
     parser.add_argument("--ucci", help="play with ucci engine instead of self play", action="store_true")
     # parser.add_argument("--new", help="run from new best model", action="store_true")
     parser.add_argument("--total-step", help="set TrainerConfig.start_total_steps", type=int)
-    # parser.add_argument("--ai-move-first", help="set human or AI move first", action="store_true")
+    parser.add_argument("--ai-move-first", help="set human or AI move first", action="store_true")
     # parser.add_argument("--cli", help="play with AI with CLI, default with GUI", action="store_true")
     parser.add_argument("--gpu", help="device list", default="0")
     # parser.add_argument("--onegreen", help="train sl work with onegreen data", action="store_true")
@@ -61,7 +61,7 @@ def start():
     config.opts.piece_style = 'WOOD'
     config.opts.bg_style = 'WOOD'
     # config.internet.distributed = args.distributed
-    print(config.opts.piece_style, config.opts.bg_style)
+    print(config.opts.piece_style, config.opts.bg_style, 'from manager.py line 64')
     # use multiple GPU
     gpus = config.opts.device_list.split(',')
     if len(gpus) > 1:

@@ -13,9 +13,9 @@ from keras.layers.merge import Add
 from keras.layers.normalization import BatchNormalization
 from keras.regularizers import l2
 
-from cchess_alphazero.agent.api import CChessModelAPI
-from cchess_alphazero.config import Config
-from cchess_alphazero.environment.lookup_tables import ActionLabelsRed, ActionLabelsBlack
+from mychess.agent.api import CChessModelAPI
+from mychess.config import Config
+from mychess.environment.lookup_tables import ActionLabelsRed, ActionLabelsBlack
 
 logger = getLogger(__name__)
 
