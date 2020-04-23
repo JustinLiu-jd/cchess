@@ -1,0 +1,5 @@
+*.ttc
+DS_Store
+logs/*
+data/*
+*.icloud
