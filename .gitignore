@@ -4,3 +4,4 @@ logs/*
 data/*
 *.icloud
 *.pyc
+mychess/manager.py

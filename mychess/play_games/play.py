@@ -93,6 +93,7 @@ class PlayWithHuman:
         screen.blit(board_background, (0, 0))
         screen.blit(widget_background, (self.width, 0))
         pygame.display.flip()
+
         # chessmans sprite group
         self.chessmans = pygame.sprite.Group()
         creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)     # 棋盘放置棋子
@@ -106,7 +107,7 @@ class PlayWithHuman:
                                search_tree=defaultdict(VisitState),
                                pipes=self.pipe,
                                enable_resign=True,
-                               debugging=True)
+                               debugging=True)      # ai的config是config.play
         self.human_move_first = human_first
 
         pygame.init()
@@ -167,11 +168,8 @@ class PlayWithHuman:
                                         current_chessman = None
                                         self.history.append(self.env.get_state())
                             elif current_chessman != None and chessman_sprite is None:
-                                move = str(current_chessman.chessman.col_num) + str(current_chessman.chessman.row_num) +\
-                                       str(col_num) + str(row_num)
-                                print(move)
-                                success = current_chessman.move(col_num, row_num, self.chessman_w, self.chessman_h)
-                                print("move success", success)
+                                move = str(current_chessman.chessman.col_num) + str(current_chessman.chessman.row_num) + str(col_num) + str(row_num)
+                                success = current_chessman.move(col_num, row_num, self.chessman_w, self.chessman_h)     # chessman sprite的move
                                 self.history.append(move)
                                 if success:
                                     current_chessman.is_selected = False
@@ -181,7 +179,7 @@ class PlayWithHuman:
             self.draw_widget(screen, widget_background)
             framerate.tick(20)
             # clear/erase the last drawn sprites
-            self.chessmans.clear(screen, board_background)
+            self.chessmans.clear(screen, board_background)          # draw a background over the Sprites
 
             # update all the sprites
             self.chessmans.update()
@@ -198,24 +196,25 @@ class PlayWithHuman:
 
     def ai_move(self):
         ai_move_first = not self.human_move_first
-        self.history = [self.env.get_state()]
+        self.history = [self.env.get_state()]           # 当前棋盘的fen表示
         no_act = None
-        while not self.env.done:
-            if ai_move_first == self.env.red_to_move:
+        while not self.env.done:                        # 棋局没结束
+            if ai_move_first == self.env.red_to_move:       # 判断是不是ai走棋
                 labels = ActionLabelsRed
                 labels_n = len(ActionLabelsRed)
                 self.ai.search_results = {}
                 state = self.env.get_state()
-                logger.info(f"state = {state}")
+                logger.info(f"state = {state}")         # logger 当前搜索的局面
                 _, _, _, check = senv.done(state, need_check=True)      # check == false: not game end
                 if not check and state in self.history[:-1]:
-                    no_act = []
-                    free_move = defaultdict(int)
+                    no_act = []             # 禁止走步表 列表
+                    free_move = defaultdict(int)        # 一个字典
                     for i in range(len(self.history) - 1):
                         if self.history[i] == state:
                             # 如果走了下一步是将军或捉：禁止走那步
                             if senv.will_check_or_catch(state, self.history[i+1]):
                                 no_act.append(self.history[i + 1])
+
                             # 否则当作闲着处理
                             else:
                                 free_move[state] += 1

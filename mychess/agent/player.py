@@ -24,7 +24,6 @@ class VisitState:
         self.waiting = False                # is waiting for NN's predict
         self.w = 0
 
-
 class ActionState:
     def __init__(self):
         self.n = 0      # N(s, a) : visit count
@@ -152,7 +151,7 @@ class CChessPlayer:
         done = 0
         if state in self.tree:
             done = self.tree[state].sum_n
-        if no_act or increase_temp or done == self.play_config.simulation_num_per_move:
+        if no_act or increase_temp or done == self.play_config.simulation_num_per_move:     # 有 no act
             # logger.info(f"no_act = {no_act}, increase_temp = {increase_temp}")
             done = 0
         self.done_tasks = done
