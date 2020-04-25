@@ -12,8 +12,8 @@ class Chessboard(object):       # 棋盘类
     def __init__(self, name='000'):
         self.__name = name
         self.__is_red_turn = True
-        self.__chessmans = [([None] * 10) for i in range(9)]
-        self.__chessmans_hash = {}
+        self.__chessmans = [([None] * 10) for i in range(9)]        # 棋盘坐标二维数组
+        self.__chessmans_hash = {}                                  # name -> object
         self.__screen = ''
         self.turns = 1
         self.record = ''
@@ -124,7 +124,7 @@ class Chessboard(object):       # 棋盘类
         if chessman.name not in self.__chessmans_hash:
             self.__chessmans_hash[chessman.name] = chessman
 
-    def remove_chessman_target(self, col_num, row_num):
+    def remove_chessman_target(self, col_num, row_num):             # it's the target and we need to remove it on both 2D-array and hash table, and set @is_alive to false
         chessman_old = self.get_chessman(col_num, row_num)
         if chessman_old != None:
             self.__chessmans_hash.pop(chessman_old.name)
@@ -144,11 +144,11 @@ class Chessboard(object):       # 棋盘类
         for chessman in self.__chessmans_hash.values():
             chessman.clear_moving_list()
 
-    def move_chessman(self, chessman, col_num, row_num, 
-                      is_record = False, old_x = 0, old_y = 0):
-        if chessman.is_red == self.__is_red_turn:
-            chessman_old = self.remove_chessman_target(col_num, row_num)
-            self.add_chessman(chessman, col_num, row_num)
+    def move_chessman(self, chessman, col_num, row_num, is_record = False, old_x = 0, old_y = 0):       # move and 设置走棋方为对方
+        if chessman.is_red == self.__is_red_turn:       # 动的是这一轮改动的棋子
+            # 一下两行完成move动作的信息更新
+            chessman_old = self.remove_chessman_target(col_num, row_num)        # already updated in hash table and @is_alive
+            self.add_chessman(chessman, col_num, row_num)                       # 更新二维数组的信息
             # if self.is_check():
             #     if chessman_old != None:
             #         self.add_chessman(chessman_old, col_num, row_num)
@@ -157,7 +157,7 @@ class Chessboard(object):       # 棋盘类
             #     return False
             if is_record:
                 self.make_record(chessman, old_x, old_y, col_num, row_num)
-            self.__is_red_turn = not self.__is_red_turn
+            self.__is_red_turn = not self.__is_red_turn                         # 设置走棋方为对方
             self.turns += self.__is_red_turn
             return True
         else:

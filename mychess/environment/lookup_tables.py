@@ -58,7 +58,6 @@ def flip_move(x):
 def flip_action_labels(labels):
     return [flip_move(x) for x in labels]
 
-
 def create_action_labels():
     labels_array = []   # [col_src,row_src,col_dst,row_dst]
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] # row

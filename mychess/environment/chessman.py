@@ -90,9 +90,9 @@ class Chessman(object):
             print("the worng postion")
 
     def move(self, col_num, row_num):
-        if self.in_moving_list(col_num, row_num):
-            self.__chessboard.remove_chessman_source(self.__position.x, self.__position.y)
-            old_x = self.__position.x
+        if self.in_moving_list(col_num, row_num):               # 判断是否是合法步骤
+            self.__chessboard.remove_chessman_source(self.__position.x, self.__position.y)              # 更新二维数组里的信息: 设置为None
+            old_x = self.__position.x                                   # 更新当前棋子在model里的坐标
             old_y = self.__position.y
             self.__position.x = col_num
             self.__position.y = row_num

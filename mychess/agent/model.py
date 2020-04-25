@@ -23,7 +23,7 @@ class CChessModel:
 
     def __init__(self, config: Config):
         self.config = config
-        self.model = None  # type: Model
+        self.model = None               # type: Model
         self.digest = None
         self.n_labels = len(ActionLabelsRed)
         self.graph = None

@@ -70,7 +70,7 @@ class PlayWithHuman:
         bestdepth = pygame.display.mode_ok([self.screen_width, self.height], self.winstyle, 32)
         screen = pygame.display.set_mode([self.screen_width, self.height], self.winstyle, bestdepth)
         pygame.display.set_caption("中国象棋")
-        # create the background, tile the bgd image
+        # create the background, tile the background image
         bgdtile = load_image(f'{self.config.opts.bg_style}.GIF')
         bgdtile = pygame.transform.scale(bgdtile, (self.width, self.height))
         board_background = pygame.Surface([self.width, self.height])
@@ -95,15 +95,18 @@ class PlayWithHuman:
         pygame.display.flip()
         # chessmans sprite group
         self.chessmans = pygame.sprite.Group()
-        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)
+        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)     # 棋盘放置棋子
         return screen, board_background, widget_background
 
     def start(self, human_first=True):
         self.env.reset()
         self.load_model()
-        self.pipe = self.model.get_pipes()
-        self.ai = CChessPlayer(self.config, search_tree=defaultdict(VisitState), pipes=self.pipe,
-                              enable_resign=True, debugging=True)
+        self.pipe = self.model.get_pipes()  # agent/model.get_pipes()
+        self.ai = CChessPlayer(self.config,
+                               search_tree=defaultdict(VisitState),
+                               pipes=self.pipe,
+                               enable_resign=True,
+                               debugging=True)
         self.human_move_first = human_first
 
         pygame.init()
@@ -113,7 +116,9 @@ class PlayWithHuman:
         labels = ActionLabelsRed
         labels_n = len(ActionLabelsRed)
 
+        # 用于记录当前选中的棋子
         current_chessman = None
+
         if human_first:
             self.env.board.calc_chessmans_moving_list()
 
@@ -122,9 +127,9 @@ class PlayWithHuman:
         ai_worker.start()
 
         while not self.env.board.is_end():
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    self.env.board.print_record()
+            for event in pygame.event.get():                # 处理事件
+                if event.type == pygame.QUIT:               # 退出
+                    self.env.board.print_record()           # 打印记录
                     self.ai.close(wait=False)
                     game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
                     path = os.path.join(self.config.resource.play_record_dir, self.config.resource.play_record_filename_tmpl % game_id)
@@ -132,44 +137,46 @@ class PlayWithHuman:
                     sys.exit()
                 elif event.type == VIDEORESIZE:
                     pass
-                elif event.type == MOUSEBUTTONDOWN:
-                    if human_first == self.env.red_to_move:
+                elif event.type == MOUSEBUTTONDOWN:         # 处理鼠标事件
+                    if human_first == self.env.red_to_move:     # 判断是不是该自己走棋
                         pressed_array = pygame.mouse.get_pressed()
-                        for index in range(len(pressed_array)):
-                            if index == 0 and pressed_array[index]:
-                                mouse_x, mouse_y = pygame.mouse.get_pos()
-                                col_num, row_num = translate_hit_area(mouse_x, mouse_y, self.chessman_w, self.chessman_h)
-                                chessman_sprite = select_sprite_from_group(
-                                    self.chessmans, col_num, row_num)
-                                if current_chessman is None and chessman_sprite != None:
-                                    if chessman_sprite.chessman.is_red == self.env.red_to_move:
-                                        current_chessman = chessman_sprite
-                                        chessman_sprite.is_selected = True
-                                elif current_chessman != None and chessman_sprite != None:
-                                    if chessman_sprite.chessman.is_red == self.env.red_to_move:
-                                        current_chessman.is_selected = False
-                                        current_chessman = chessman_sprite
-                                        chessman_sprite.is_selected = True
-                                    else:
-                                        move = str(current_chessman.chessman.col_num) + str(current_chessman.chessman.row_num) +\
-                                               str(col_num) + str(row_num)
-                                        success = current_chessman.move(col_num, row_num, self.chessman_w, self.chessman_h)
-                                        self.history.append(move)
-                                        if success:
-                                            self.chessmans.remove(chessman_sprite)
-                                            chessman_sprite.kill()
-                                            current_chessman.is_selected = False
-                                            current_chessman = None
-                                            self.history.append(self.env.get_state())
-                                elif current_chessman != None and chessman_sprite is None:
+                        # for index in range(len(pressed_array)):
+                        if pressed_array[0]:
+                            mouse_x, mouse_y = pygame.mouse.get_pos()
+                            col_num, row_num = translate_hit_area(mouse_x, mouse_y, self.chessman_w, self.chessman_h)
+                            chessman_sprite = select_sprite_from_group(self.chessmans, col_num, row_num)
+
+                            if current_chessman is None and chessman_sprite != None:            # 从未选中棋子->选中棋子
+                                if chessman_sprite.chessman.is_red == self.env.red_to_move:     # 点击的是己方棋子
+                                    current_chessman = chessman_sprite
+                                    chessman_sprite.is_selected = True                          # 设置当前棋子为选中
+                            elif current_chessman != None and chessman_sprite != None:          # 选中第二枚棋子
+                                if chessman_sprite.chessman.is_red == self.env.red_to_move:     # 第二枚是己方的棋子， 更新已选中的棋子
+                                    current_chessman.is_selected = False
+                                    current_chessman = chessman_sprite
+                                    chessman_sprite.is_selected = True
+                                else:                                                           # 其它情况： 第二个点是空白处 or 对方棋子
                                     move = str(current_chessman.chessman.col_num) + str(current_chessman.chessman.row_num) +\
-                                           str(col_num) + str(row_num)
-                                    success = current_chessman.move(col_num, row_num, self.chessman_w, self.chessman_h)
-                                    self.history.append(move)
+                                           str(col_num) + str(row_num)                          # a string
+                                    success = current_chessman.move(col_num, row_num)         # 调用 move, return true or false
+                                    self.history.append(move)               # 更新记录
                                     if success:
+                                        self.chessmans.remove(chessman_sprite)
+                                        chessman_sprite.kill()
                                         current_chessman.is_selected = False
                                         current_chessman = None
                                         self.history.append(self.env.get_state())
+                            elif current_chessman != None and chessman_sprite is None:
+                                move = str(current_chessman.chessman.col_num) + str(current_chessman.chessman.row_num) +\
+                                       str(col_num) + str(row_num)
+                                print(move)
+                                success = current_chessman.move(col_num, row_num, self.chessman_w, self.chessman_h)
+                                print("move success", success)
+                                self.history.append(move)
+                                if success:
+                                    current_chessman.is_selected = False
+                                    current_chessman = None
+                                    self.history.append(self.env.get_state())
 
             self.draw_widget(screen, widget_background)
             framerate.tick(20)
