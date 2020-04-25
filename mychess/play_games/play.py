@@ -1,10 +1,6 @@
 import sys
 import pygame
-# import random
 import os.path
-# import time
-# import copy
-# import numpy as np
 
 from pygame.locals import *
 from logging import getLogger
@@ -93,13 +89,12 @@ class PlayWithHuman:
         screen.blit(board_background, (0, 0))
         screen.blit(widget_background, (self.width, 0))
         pygame.display.flip()
-
-        # chessmans sprite group
-        self.chessmans = pygame.sprite.Group()
-        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)     # 棋盘放置棋子
         return screen, board_background, widget_background
 
     def start(self, human_first=True):
+        pygame.init()
+        screen, board_background, widget_background = self.init_screen()
+
         self.env.reset()
         self.load_model()
         self.pipe = self.model.get_pipes()  # agent/model.get_pipes()
@@ -109,9 +104,10 @@ class PlayWithHuman:
                                enable_resign=True,
                                debugging=True)      # ai的config是config.play
         self.human_move_first = human_first
+        # chessmans sprite group
+        self.chessmans = pygame.sprite.Group()
+        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)  # 棋盘放置棋子
 
-        pygame.init()
-        screen, board_background, widget_background = self.init_screen()
         framerate = pygame.time.Clock()
 
         labels = ActionLabelsRed
