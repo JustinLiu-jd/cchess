@@ -1,28 +1,29 @@
-import sys
-import pygame
 import os.path
-
-from pygame.locals import *
-from logging import getLogger
+import sys
 from collections import defaultdict
+from datetime import datetime
+from logging import getLogger
 from threading import Thread
 from time import sleep
-from datetime import datetime
+
+import pygame
+from pygame.locals import *
 
 import mychess.environment.static_env as senv
-# from mychess.environment.chessboard import Chessboard
-from mychess.environment.chessman import *
 from mychess.agent.model import CChessModel
 from mychess.agent.player import CChessPlayer, VisitState
 # from mychess.agent.api import CChessModelAPI
 from mychess.config import Config
+# from mychess.environment.chessboard import Chessboard
+from mychess.environment.chessman import *
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner, ActionLabelsRed, flip_move
 from mychess.lib.model_helper import load_best_model_weight
+
 # from mychess.lib.tf_util import set_session_config
 
 logger = getLogger(__name__)
-main_dir = os.path.split(os.path.abspath(__file__))[0]      # play_games/
+main_dir = os.path.split(os.path.abspath(__file__))[0]  # play_games/
 PIECE_STYLE = 'WOOD'
 
 def start(config: Config, human_move_first=True):
@@ -46,7 +47,7 @@ class PlayWithHuman:
         self.width = 521
         self.chessman_w = 57
         self.chessman_h = 57
-        self.disp_record_num = 15
+        self.disp_record_num = 15  # the num of records to display
         self.rec_labels = [None] * self.disp_record_num
         self.nn_value = 0
         self.mcts_moves = {}
@@ -66,6 +67,7 @@ class PlayWithHuman:
         bestdepth = pygame.display.mode_ok([self.screen_width, self.height], self.winstyle, 32)
         screen = pygame.display.set_mode([self.screen_width, self.height], self.winstyle, bestdepth)
         pygame.display.set_caption("中国象棋")
+
         # create the background, tile the background image
         bgdtile = load_image(f'{self.config.opts.bg_style}.GIF')
         bgdtile = pygame.transform.scale(bgdtile, (self.width, self.height))
@@ -92,7 +94,7 @@ class PlayWithHuman:
         return screen, board_background, widget_background
 
     def start(self, human_first=True):
-        pygame.init()
+
         screen, board_background, widget_background = self.init_screen()
 
         self.env.reset()

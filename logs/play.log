@@ -557,3 +557,116 @@ keep_dims is deprecated, use keepdims instead
 2020-04-26 02:32:48,349@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
 
 2020-04-26 02:32:48,962@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-04-26 02:39:10,564@__main__ INFO # AI move first : false
+2020-04-26 02:39:11,500@mychess.environment.env INFO # Initialize heavy environment!
+2020-04-26 02:39:11,501@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-04-26 02:39:11,502@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-26 02:39:11,516@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-26 02:39:11,527@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-26 02:39:11,604@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-26 02:39:12,846@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-26 02:39:13,223@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-04-26 02:39:13,223@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-04-26 02:39:13,223@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-04-26 02:39:13,237@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-04-26 02:39:13,237@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-04-26 02:39:13,850@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-04-26 02:50:33,638@mychess.manager INFO # AI move first : false
+2020-04-26 02:50:34,594@mychess.environment.env INFO # Initialize heavy environment!
+2020-04-26 02:50:34,595@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-04-26 02:50:34,597@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-26 02:50:34,625@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-26 02:50:34,637@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-26 02:50:34,698@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-26 02:50:36,000@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-26 02:50:36,369@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-04-26 02:50:36,369@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-04-26 02:50:36,370@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-04-26 02:50:36,384@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-04-26 02:50:36,385@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-04-26 02:50:36,993@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-04-26 02:50:46,280@mychess.play_games.play INFO # state = rkemsmekr/9/1c5c1/p1p1p1p2/8p/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-04-26 02:51:07,611@mychess.play_games.play INFO # check = False, NN value = -0.003
+2020-04-26 02:51:07,611@mychess.play_games.play INFO # MCTS results:
+2020-04-26 02:51:07,611@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 75, Q_value: 0.041, Prior: 0.035
+2020-04-26 02:51:07,611@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 74, Q_value: 0.033, Prior: 0.035
+2020-04-26 02:51:07,611@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 64, Q_value: 0.030, Prior: 0.032
+2020-04-26 02:51:07,612@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 53, Q_value: 0.015, Prior: 0.025
+2020-04-26 02:51:07,612@mychess.play_games.play INFO # move: 炮2平6-7232, visit count: 52, Q_value: 0.010, Prior: 0.028
+2020-04-26 17:07:14,279@mychess.manager INFO # AI move first : false
+2020-04-26 17:07:14,373@mychess.environment.env INFO # Initialize heavy environment!
+2020-04-26 17:07:14,374@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-04-26 17:07:14,376@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-04-26 17:07:14,389@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-04-26 17:07:14,400@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-26 17:07:14,468@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-04-26 17:07:15,690@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-04-26 17:07:16,106@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-04-26 17:07:16,106@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-04-26 17:07:16,106@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-04-26 17:07:16,122@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-04-26 17:07:16,123@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-04-26 17:07:16,740@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-04-26 17:07:21,821@mychess.play_games.play INFO # state = rkem1mekr/4s4/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-04-26 17:07:42,771@mychess.play_games.play INFO # check = False, NN value = 0.080
+2020-04-26 17:07:42,772@mychess.play_games.play INFO # MCTS results:
+2020-04-26 17:07:42,772@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 111, Q_value: 0.190, Prior: 0.040
+2020-04-26 17:07:42,772@mychess.play_games.play INFO # move: 炮8平6-1232, visit count: 104, Q_value: 0.179, Prior: 0.032
+2020-04-26 17:07:42,772@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 84, Q_value: 0.189, Prior: 0.037
+2020-04-26 17:07:42,772@mychess.play_games.play INFO # move: 炮2平4-7252, visit count: 56, Q_value: 0.169, Prior: 0.024
+2020-04-26 17:07:42,772@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 43, Q_value: 0.150, Prior: 0.023
+2020-04-26 17:07:52,774@mychess.play_games.play INFO # state = rkem1mekr/4s4/1c5c1/p1p3p1p/4p4/9/P1P1P1P1P/1C4KC1/9/RKEMSME1R
+2020-04-26 17:08:09,875@mychess.play_games.play INFO # check = False, NN value = 0.314
+2020-04-26 17:08:09,875@mychess.play_games.play INFO # MCTS results:
+2020-04-26 17:08:09,875@mychess.play_games.play INFO # move: 炮8平5-1242, visit count: 712, Q_value: 0.661, Prior: 0.846
+2020-04-26 17:08:09,875@mychess.play_games.play INFO # move: 炮2进2-7274, visit count: 16, Q_value: 0.295, Prior: 0.006
+2020-04-26 17:08:09,875@mychess.play_games.play INFO # move: 车1进1-8081, visit count: 15, Q_value: 0.266, Prior: 0.005
+2020-04-26 17:08:09,876@mychess.play_games.play INFO # move: 炮2退1-7271, visit count: 14, Q_value: 0.266, Prior: 0.005
+2020-04-26 17:08:09,876@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 12, Q_value: 0.254, Prior: 0.005
+2020-04-26 17:08:16,978@mychess.play_games.play INFO # state = rkem1mekr/4s4/1c5c1/p1p3p1p/9/4p4/P1P1P1P1P/4C1KC1/9/RKEMSME1R
+2020-04-26 17:08:33,242@mychess.play_games.play INFO # check = False, NN value = 0.730
+2020-04-26 17:08:33,242@mychess.play_games.play INFO # MCTS results:
+2020-04-26 17:08:33,243@mychess.play_games.play INFO # move: 卒5进1-4344, visit count: 461, Q_value: 0.879, Prior: 0.007
+2020-04-26 17:08:33,243@mychess.play_games.play INFO # move: 炮5进2-4244, visit count: 239, Q_value: 0.756, Prior: 0.992
+2020-04-26 17:08:33,243@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 19, Q_value: 0.670, Prior: 0.000
+2020-04-26 17:08:33,243@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 18, Q_value: 0.645, Prior: 0.000
+2020-04-26 17:08:33,243@mychess.play_games.play INFO # move: 炮2进7-7279, visit count: 17, Q_value: 0.628, Prior: 0.000
+2020-04-26 17:08:39,839@mychess.play_games.play INFO # state = rkemsmekr/9/1c5c1/p1p3p1p/9/4P4/P1P3P1P/4C1KC1/9/RKEMSME1R
+2020-04-26 17:08:40,173@mychess.play_games.play INFO # Winner is Winner.black !!!
+2020-04-26 17:08:43,175@mychess.agent.api ERROR # EOF error: 
