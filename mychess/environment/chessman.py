@@ -159,11 +159,11 @@ class Chessman(object):
     def border_check(self, col_num, row_num):
         return num_between(self.__top, self.__bottom, row_num) and num_between(self.__right, self.__left, col_num)
 
-    def calc_moving_path(self, direction_chessman, direction_vertical_coordinate, 
-                        current_vertical_coordinate, direction_parallel_coordinate, direction, 
-                        border_vertical_coordinate, h_or_v, ignore_color=False):
-        if direction_chessman != None:
-            if direction_chessman.is_red == self.is_red or ignore_color:
+    def calc_moving_path(self, direction_chessman, direction_vertical_coordinate,
+                         current_vertical_coordinate, direction_parallel_coordinate, direction,
+                         border_vertical_coordinate, h_or_v, ignore_color=False):
+        if direction_chessman != None:  # 目标处有棋子
+            if direction_chessman.is_red == self.is_red or ignore_color:  # 如果是自己方的棋子
                 for i in range(direction_vertical_coordinate + direction, current_vertical_coordinate, direction):
                     self.__moving_list.append(
                         Point(i, direction_parallel_coordinate) if h_or_v else Point(direction_parallel_coordinate, i))

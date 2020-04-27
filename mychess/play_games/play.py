@@ -6,9 +6,6 @@ from logging import getLogger
 from threading import Thread
 from time import sleep
 
-import pygame
-from pygame.locals import *
-
 import mychess.environment.static_env as senv
 from mychess.agent.model import CChessModel
 from mychess.agent.player import CChessPlayer, VisitState
@@ -19,18 +16,19 @@ from mychess.environment.chessman import *
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner, ActionLabelsRed, flip_move
 from mychess.lib.model_helper import load_best_model_weight
+from mychess.play_games.tool import *
 
 # from mychess.lib.tf_util import set_session_config
 
 logger = getLogger(__name__)
 main_dir = os.path.split(os.path.abspath(__file__))[0]  # play_games/
-PIECE_STYLE = 'WOOD'
+
 
 def start(config: Config, human_move_first=True):
-    global PIECE_STYLE
-    PIECE_STYLE = config.opts.piece_style
+    # global PIECE_STYLE
+    # PIECE_STYLE = config.opts.piece_style
     play = PlayWithHuman(config)
-    play.start(human_move_first)            # to line 101
+    play.start(human_move_first)  # to line 101
 
 class PlayWithHuman:
     def __init__(self, config: Config):
@@ -45,16 +43,16 @@ class PlayWithHuman:
         self.screen_width = 720
         self.height = 577
         self.width = 521
-        self.chessman_w = 57
-        self.chessman_h = 57
+        self.chessman_w = 58
+        self.chessman_h = 58
         self.disp_record_num = 15  # the num of records to display
         self.rec_labels = [None] * self.disp_record_num
         self.nn_value = 0
         self.mcts_moves = {}
         self.history = []
-        if self.config.opts.bg_style == 'WOOD':
-            self.chessman_w += 1
-            self.chessman_h += 1
+        # if self.config.opts.bg_style == 'WOOD':
+        #     self.chessman_w += 1
+        #     self.chessman_h += 1
 
     def load_model(self):
         self.model = CChessModel(self.config)       # in cchess_ahphazero/agent/model.py
@@ -96,27 +94,30 @@ class PlayWithHuman:
     def start(self, human_first=True):
 
         screen, board_background, widget_background = self.init_screen()
-
         self.env.reset()
+        # chessmans sprite group
+        self.chessmans = pygame.sprite.Group()
+        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)  # 棋盘放置棋子
+        pygame.display.update()
+
+        # update all the sprites
+        self.chessmans.update()
+        self.chessmans.draw(screen)
+        pygame.display.update()
+
         self.load_model()
         self.pipe = self.model.get_pipes()  # agent/model.get_pipes()
         self.ai = CChessPlayer(self.config,
                                search_tree=defaultdict(VisitState),
                                pipes=self.pipe,
                                enable_resign=True,
-                               debugging=True)      # ai的config是config.play
+                               debugging=True)  # ai的config是config.play
         self.human_move_first = human_first
-        # chessmans sprite group
-        self.chessmans = pygame.sprite.Group()
-        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)  # 棋盘放置棋子
 
         framerate = pygame.time.Clock()
 
         labels = ActionLabelsRed
         labels_n = len(ActionLabelsRed)
-
-        # 用于记录当前选中的棋子
-        current_chessman = None
 
         if human_first:
             self.env.board.calc_chessmans_moving_list()
@@ -125,13 +126,17 @@ class PlayWithHuman:
         ai_worker.daemon = True
         ai_worker.start()
 
+        # 用于记录当前选中的棋子
+        current_chessman = None
+
         while not self.env.board.is_end():
-            for event in pygame.event.get():                # 处理事件
-                if event.type == pygame.QUIT:               # 退出
-                    self.env.board.print_record()           # 打印记录
+            for event in pygame.event.get():  # 处理事件
+                if event.type == pygame.QUIT:  # 退出
+                    self.env.board.print_record()  # 打印记录
                     self.ai.close(wait=False)
                     game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
-                    path = os.path.join(self.config.resource.play_record_dir, self.config.resource.play_record_filename_tmpl % game_id)
+                    path = os.path.join(self.config.resource.play_record_dir,
+                                        self.config.resource.play_record_filename_tmpl % game_id)
                     self.env.board.save_record(path)
                     sys.exit()
                 elif event.type == VIDEORESIZE:
@@ -317,103 +322,3 @@ class PlayWithHuman:
             t_rect.centerx = (self.screen_width - self.width) / 2
         widget_background.blit(label, t_rect)
         screen.blit(widget_background, (self.width, 0))
-        
-
-class Chessman_Sprite(pygame.sprite.Sprite):
-    is_selected = False
-    images = []
-    is_transparent = False
-
-    def __init__(self, images, chessman, w=80, h=80):
-        pygame.sprite.Sprite.__init__(self)
-        self.chessman = chessman
-        self.images = [pygame.transform.scale(image, (w, h)) for image in images]
-        self.image = self.images[0]
-        self.rect = Rect(chessman.col_num * w, (9 - chessman.row_num) * h, w, h)
-
-    def move(self, col_num, row_num, w=80, h=80):
-        # print self.chessman.name, col_num, row_num
-        old_col_num = self.chessman.col_num
-        old_row_num = self.chessman.row_num
-        is_correct_position = self.chessman.move(col_num, row_num)
-        if is_correct_position:
-            self.rect = Rect(old_col_num * w, (9 - old_row_num) * h, w, h)
-            self.rect.move_ip((col_num - old_col_num)
-                              * w, (old_row_num - row_num) * h)
-            # self.rect = self.rect.clamp(SCREENRECT)
-            self.chessman.chessboard.clear_chessmans_moving_list()
-            self.chessman.chessboard.calc_chessmans_moving_list()
-            return True
-        return False
-
-    def update(self):
-        if self.is_selected:
-            self.image = self.images[1]
-        else:
-            self.image = self.images[0]
-
-
-def load_image(file, sub_dir=None):
-    '''loads an image, prepares it for play'''
-    if sub_dir:
-        file = os.path.join(main_dir, 'images', sub_dir, file)
-    else:
-        file = os.path.join(main_dir, 'images', file)
-    try:
-        surface = pygame.image.load(file)
-    except pygame.error:
-        raise SystemExit('Could not load image "%s" %s' %
-                         (file, pygame.get_error()))
-    return surface.convert()
-
-def load_images(*files):
-    global PIECE_STYLE
-    imgs = []
-    for file in files:
-        imgs.append(load_image(file, PIECE_STYLE))
-    return imgs
-
-def creat_sprite_group(sprite_group, chessmans_hash, w, h):
-    for chess in chessmans_hash.values():
-        if chess.is_red:
-            if isinstance(chess, Rook):
-                images = load_images("RR.GIF", "RRS.GIF")
-            elif isinstance(chess, Cannon):
-                images = load_images("RC.GIF", "RCS.GIF")
-            elif isinstance(chess, Knight):
-                images = load_images("RN.GIF", "RNS.GIF")
-            elif isinstance(chess, King):
-                images = load_images("RK.GIF", "RKS.GIF")
-            elif isinstance(chess, Elephant):
-                images = load_images("RB.GIF", "RBS.GIF")
-            elif isinstance(chess, Mandarin):
-                images = load_images("RA.GIF", "RAS.GIF")
-            else:
-                images = load_images("RP.GIF", "RPS.GIF")
-        else:
-            if isinstance(chess, Rook):
-                images = load_images("BR.GIF", "BRS.GIF")
-            elif isinstance(chess, Cannon):
-                images = load_images("BC.GIF", "BCS.GIF")
-            elif isinstance(chess, Knight):
-                images = load_images("BN.GIF", "BNS.GIF")
-            elif isinstance(chess, King):
-                images = load_images("BK.GIF", "BKS.GIF")
-            elif isinstance(chess, Elephant):
-                images = load_images("BB.GIF", "BBS.GIF")
-            elif isinstance(chess, Mandarin):
-                images = load_images("BA.GIF", "BAS.GIF")
-            else:
-                images = load_images("BP.GIF", "BPS.GIF")
-        chessman_sprite = Chessman_Sprite(images, chess, w, h)
-        sprite_group.add(chessman_sprite)
-
-def select_sprite_from_group(sprite_group, col_num, row_num):
-    for sprite in sprite_group:
-        if sprite.chessman.col_num == col_num and sprite.chessman.row_num == row_num:
-            return sprite
-    return None
-
-def translate_hit_area(screen_x, screen_y, w=80, h = 80):
-    return screen_x // w, 9 - screen_y // h
-

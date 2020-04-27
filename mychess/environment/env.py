@@ -1,14 +1,15 @@
-import enum
 import numpy as np
 import copy
-
-from mychess.environment.chessboard import Chessboard
-from mychess.environment.lookup_tables import Chessman_2_idx, Fen_2_Idx, Winner
-from mychess.environment.light_env.chessboard import L_Chessboard
-
 from logging import getLogger
 
+import numpy as np
+
+from mychess.environment.chessboard import Chessboard
+from mychess.environment.light_env.chessboard import L_Chessboard
+from mychess.environment.lookup_tables import Fen_2_Idx, Winner
+
 logger = getLogger(__name__)
+
 
 class CChessEnv:
 
@@ -22,7 +23,7 @@ class CChessEnv:
         if self.config is None or not self.config.opts.light:       # will use heavy env
             logger.info("Initialize heavy environment!")
             self.board = Chessboard()
-            self.board.init_board()
+            self.board.init_board()  # 摆放棋子, 放入二维数组和hash table中
         else:
             logger.info("Initialize light environment!")
             self.board = L_Chessboard(init)

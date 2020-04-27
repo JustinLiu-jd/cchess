@@ -1,7 +1,7 @@
 import pygame
 from pygame.locals import *
 
-local_font_file = 'mychess/play_games/Pingfang.ttc'
+local_font_file = 'mychess/play_games/PingFang.ttc'
 
 white = (255, 255, 255)
 black = (0, 0, 0)
@@ -12,21 +12,23 @@ bright_red = (255, 0, 0)
 bright_green = (0, 255, 0)
 blue = (0, 0, 255)
 yellow = (255, 255, 0)
+light_blue = (140, 220, 254)
+button_color = (0, 160, 255)
 
 
 class myButton:
     def __init__(self, rect: Rect, text='', font_color=black, bkgColor=white, font_size=16):
         self.__Rect = rect
         self.__text = text
-        w, h = rect.width, rect.height
-        self.__Surface = pygame.Surface([w, h])
+        self.__bkgColor = bkgColor
+        self.__w, self.__h = rect.width, rect.height
+        self.__Surface = pygame.Surface([self.__w, self.__h])
         self.__Surface.fill(bkgColor)
-        font_file = local_font_file
-        font = pygame.font.Font(font_file, font_size)
-        t = font.render(text, True, font_color)
+        self.__font = pygame.font.Font(local_font_file, font_size)
+        t = self.__font.render(text, True, font_color)
         t_rect = t.get_rect()
-        t_rect.centerx = w // 2
-        t_rect.centery = h // 2
+        t_rect.centerx = self.__w // 2
+        t_rect.centery = self.__h // 2
         # print(t_rect)
         self.__Surface.blit(t, t_rect)
 
@@ -42,3 +44,12 @@ class myButton:
 
     def get_text(self):
         return self.__text
+
+    def set_text(self, text='', font_color=black):
+        self.__text = text
+        t = self.__font.render(text, True, font_color)
+        t_rect = t.get_rect()
+        t_rect.centerx = self.__w // 2
+        t_rect.centery = self.__h // 2
+        self.__Surface.fill(self.__bkgColor)
+        self.__Surface.blit(t, t_rect)
