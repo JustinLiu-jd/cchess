@@ -14,14 +14,14 @@ class Chessman_Sprite(pygame.sprite.Sprite):
     images = []
     is_transparent = False
 
-    def __init__(self, images, chessman, w=80, h=80):
+    def __init__(self, images, chessman, w=57, h=57):
         pygame.sprite.Sprite.__init__(self)
         self.chessman = chessman
         self.images = [pygame.transform.scale(image, (w, h)) for image in images]
         self.image = self.images[0]
         self.rect = Rect(chessman.col_num * w, (9 - chessman.row_num) * h, w, h)
 
-    def move(self, col_num, row_num, w=80, h=80):
+    def move(self, col_num, row_num, w=57, h=57):
         # print self.chessman.name, col_num, row_num
         old_col_num = self.chessman.col_num
         old_row_num = self.chessman.row_num

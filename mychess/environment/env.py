@@ -2,8 +2,6 @@ import numpy as np
 import copy
 from logging import getLogger
 
-import numpy as np
-
 from mychess.environment.chessboard import Chessboard
 from mychess.environment.light_env.chessboard import L_Chessboard
 from mychess.environment.lookup_tables import Fen_2_Idx, Winner
