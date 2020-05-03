@@ -28,8 +28,7 @@ class Chessman_Sprite(pygame.sprite.Sprite):
         is_correct_position = self.chessman.move(col_num, row_num)
         if is_correct_position:
             self.rect = Rect(old_col_num * w, (9 - old_row_num) * h, w, h)
-            self.rect.move_ip((col_num - old_col_num)
-                              * w, (old_row_num - row_num) * h)
+            self.rect.move_ip((col_num - old_col_num) * w, (old_row_num - row_num) * h)
             # self.rect = self.rect.clamp(SCREENRECT)
             self.chessman.chessboard.clear_chessmans_moving_list()
             self.chessman.chessboard.calc_chessmans_moving_list()

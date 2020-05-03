@@ -2,9 +2,11 @@ import os.path
 import sys
 from datetime import datetime
 from logging import getLogger
+from time import sleep
 
 from mychess.config import Config
 from mychess.environment.env import CChessEnv
+from mychess.play_games.colorAndUIModule import *
 from mychess.play_games.tool import *
 
 logger = getLogger(__name__)
@@ -29,12 +31,13 @@ class pvp:
         self.width = 521
         self.chessman_w = 57
         self.chessman_h = 57
-        self.disp_record_num = 15  # the num of records to display
+        self.disp_record_num = 30  # the num of records to display      # 15
         self.rec_labels = [None] * self.disp_record_num
+        self.has_resign = 0
 
     def start(self, human_first=True):
         pass
-        screen, board_background, widget_background = self.init_screen()
+        screen, board_background, widget_background, buttonList = self.init_screen()
         self.env.reset()
 
         self.chessmans = pygame.sprite.Group()  # 声明精灵组
@@ -50,7 +53,7 @@ class pvp:
         # 用于记录当前选中的棋子
         current_chessman = None     # 指向的也是chessman sprite
 
-        while not self.env.board.is_end():
+        while not self.env.board.is_end() and not self.has_resign:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.env.board.print_record()  # 打印记录
@@ -60,16 +63,26 @@ class pvp:
                     self.env.board.save_record(path)
                     sys.exit()
                 elif event.type == MOUSEBUTTONDOWN:  # 处理鼠标事件
-                    # if human_first == self.env.red_to_move:
                     pressed_array = pygame.mouse.get_pressed()
                     if pressed_array[0]:
                         mouse_x, mouse_y = pygame.mouse.get_pos()
-                        col_num, row_num = translate_hit_area(mouse_x, mouse_y, self.chessman_w, self.chessman_h)
+                        # 处理认输和悔棋
+                        buttonRect = buttonList[0].get_rect()
+                        if buttonRect[0] <= mouse_x - self.width <= buttonRect[0] + buttonRect[2]:
+                            logger.info('click withdraw')
 
+                        buttonRect = buttonList[1].get_rect()
+                        if buttonRect[0] <= mouse_x - self.width <= buttonRect[0] + buttonRect[2]:
+                            logger.info('click resign')
+                            self.has_resign = 1 if self.env.red_to_move else 2
+                            break
+
+                        col_num, row_num = translate_hit_area(mouse_x, mouse_y, self.chessman_w, self.chessman_h)
                         chessman_sprite = select_sprite_from_group(self.chessmans, col_num, row_num)
 
                         if current_chessman is None and chessman_sprite != None:  # 从未选中棋子->选中棋子
-                            print(f'chessman_sprite.chessman.is_red:{chessman_sprite.chessman.is_red}, self.env.red_to_move:{self.env.red_to_move}')
+                            print(
+                                f'chessman_sprite.chessman.is_red:{chessman_sprite.chessman.is_red}, self.env.red_to_move:{self.env.red_to_move}')
                             if chessman_sprite.chessman.is_red == self.env.red_to_move:  # 点击的是己方棋子
                                 current_chessman = chessman_sprite
                                 chessman_sprite.is_selected = True  # 设置当前棋子为选中
@@ -101,7 +114,7 @@ class pvp:
                                 current_chessman = None
                                 self.history.append(self.env.get_state())
 
-            # self.draw_widget(screen, widget_background)
+            self.draw_widget(screen, widget_background, buttonList)
             framerate.tick(60)
             # clear/erase the last drawn sprites
             self.chessmans.clear(screen, board_background)  # draw a background over the Sprites
@@ -111,14 +124,18 @@ class pvp:
             self.chessmans.draw(screen)
             pygame.display.update()
 
-        # self.ai.close(wait=False)
+        if self.has_resign:
+            if self.has_resign == 1:
+                self.env.board.winner = 'Winner.red'
+            else:
+                self.env.board.winner = 'Winner.black'
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
         game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
         path = os.path.join(self.config.resource.play_record_dir,
                             self.config.resource.play_record_filename_tmpl % game_id)
         self.env.board.save_record(path)
-        # sleep(3)
+        sleep(3)
 
     def init_screen(self):
         bestdepth = pygame.display.mode_ok([self.screen_width, self.height], self.winstyle, 32)
@@ -142,10 +159,65 @@ class pvp:
         t = font.render("着法记录", True, font_color, font_background)
         t_rect = t.get_rect()
         t_rect.x = 10
-        t_rect.y = 10
+        t_rect.y = 40  # 10
         widget_background.blit(t, t_rect)
+
+        button_withdraw = myButton(Rect(0, 0, 70, 20), '悔棋', bkgColor=button_color)
+        button_resign = myButton(Rect(0, 0, 70, 20), '认输', bkgColor=red)
+        tem = self.screen_width - self.width
+        button_withdraw.set_rect(tem // 7 * 2, 20)
+        button_resign.set_rect(tem // 7 * 5, 20)
+        widget_background.blit(button_withdraw.get_Surface(), button_withdraw.get_rect())
+        widget_background.blit(button_resign.get_Surface(), button_resign.get_rect())
+        buttonList = [button_withdraw, button_resign]
 
         screen.blit(board_background, (0, 0))
         screen.blit(widget_background, (self.width, 0))
         pygame.display.flip()
-        return screen, board_background, widget_background
+        return screen, board_background, widget_background, buttonList
+
+    def draw_widget(self, screen, widget_background, buttonList: list):
+        white_rect = Rect(0, 0, self.screen_width - self.width, self.height)  # 标出一个Rect
+        widget_background.fill((255, 255, 255), white_rect)  # 填充白色
+
+        if buttonList == None:
+            print('error, buttonList is not defined!')
+            logger.error('buttonList is not defined! line in play_games/pvp.py: draw widget')
+            sys.exit()
+        widget_background.blit(buttonList[0].get_Surface(), buttonList[0].get_rect())
+        widget_background.blit(buttonList[1].get_Surface(), buttonList[1].get_rect())
+
+        screen.blit(widget_background, (self.width, 0))
+        self.draw_records(screen, widget_background)
+
+    def draw_records(self, screen, widget_background):
+        text = '着法记录'
+        self.draw_label(screen, widget_background, text, 40, 16, 10)  # 10, 16, 10
+        records = self.env.board.record.split('\n')
+        font_file = self.config.resource.font_path
+        font = pygame.font.Font(font_file, 12)
+
+        i = 0
+        for record in records[-self.disp_record_num:]:
+            self.rec_labels[i] = font.render(record, True, (0, 0, 0), (255, 255, 255))
+            t_rect = self.rec_labels[i].get_rect()
+            # t_rect.centerx = (self.screen_width - self.width) / 2
+            t_rect.y = 65 + i * 15  # 35 + i * 35
+            t_rect.x = 10
+            t_rect.width = self.screen_width - self.width
+            widget_background.blit(self.rec_labels[i], t_rect)
+            i += 1
+        screen.blit(widget_background, (self.width, 0))
+
+    def draw_label(self, screen, widget_background, text, y, font_size, x=None):
+        font_file = self.config.resource.font_path
+        font = pygame.font.Font(font_file, font_size)
+        label = font.render(text, True, (0, 0, 0), (255, 255, 255))
+        t_rect = label.get_rect()
+        t_rect.y = y
+        if x != None:
+            t_rect.x = x
+        else:
+            t_rect.centerx = (self.screen_width - self.width) / 2
+        widget_background.blit(label, t_rect)
+        screen.blit(widget_background, (self.width, 0))

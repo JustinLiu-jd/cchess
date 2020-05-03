@@ -1,8 +1,7 @@
 import codecs
 
-from mychess.environment.lookup_tables import Winner
 from mychess.environment.chessman import *
-
+from mychess.environment.lookup_tables import Winner
 from mychess.lib.logger import getLogger
 
 logger = getLogger(__name__)
@@ -134,13 +133,13 @@ class Chessboard(object):       # 棋盘类
     def remove_chessman_source(self, col_num, row_num):
         self.chessmans[col_num][row_num] = None
 
-    def calc_chessmans_moving_list(self):
+    def calc_chessmans_moving_list(self):  # 在tool.py被调用
         for chessman in self.__chessmans_hash.values():
             if chessman.is_red == self.__is_red_turn:
                 chessman.clear_moving_list()
                 chessman.calc_moving_list()
 
-    def clear_chessmans_moving_list(self):
+    def clear_chessmans_moving_list(self):  # 在tool.py被调用
         for chessman in self.__chessmans_hash.values():
             chessman.clear_moving_list()
 

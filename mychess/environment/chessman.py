@@ -106,11 +106,12 @@ class Chessman(object):
                 return False
             return True
         else:
-            self.clear_moving_list()
+            self.clear_moving_list()  # double check， 重新计算moving list
             self.calc_moving_list()
             if self.in_moving_list(col_num, row_num):
                 return self.move(col_num, row_num)
             print("the worng target_position:", self.name_cn, col_num, row_num)
+            print('该棋子可到达的位置：')
             for point in self.moving_list:
                 print(point.x, point.y)
             return False

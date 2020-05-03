@@ -848,3 +848,37 @@ keep_dims is deprecated, use keepdims instead
 2020-05-03 01:40:54,861@mychess.play_games.pvp INFO # Winner is Winner.red !!!
 2020-05-03 01:41:29,120@mychess.environment.env INFO # Initialize heavy environment!
 2020-05-03 01:41:40,198@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-03 17:29:45,986@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 17:29:58,731@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-03 17:30:30,006@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 17:33:28,671@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 17:34:38,751@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-03 17:34:46,397@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 17:37:34,608@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-03 17:41:22,351@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 18:06:15,659@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 19:43:46,835@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 19:44:14,289@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 19:44:30,121@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-03 19:44:34,976@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 19:45:32,508@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 19:59:44,201@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:04:26,125@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:07:23,936@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:07:40,521@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:14:23,558@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:23:56,988@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:24:00,048@mychess.play_games.pvp INFO # click resign
+2020-05-03 20:24:00,068@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-03 20:24:07,971@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:24:10,344@mychess.play_games.pvp INFO # click resign
+2020-05-03 20:24:10,365@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-03 20:24:14,980@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:24:44,136@mychess.play_games.pvp INFO # click resign
+2020-05-03 20:24:44,156@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-03 20:24:49,458@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:25:02,130@mychess.play_games.pvp INFO # click resign
+2020-05-03 20:25:02,156@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-03 20:33:40,796@mychess.environment.env INFO # Initialize heavy environment!
+2020-05-03 20:34:29,747@mychess.play_games.pvp INFO # click resign
+2020-05-03 20:34:29,766@mychess.play_games.pvp INFO # Winner is Winner.red !!!
