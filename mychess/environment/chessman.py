@@ -96,10 +96,11 @@ class Chessman(object):
             old_y = self.__position.y
             self.__position.x = col_num
             self.__position.y = row_num
-            if not self.__chessboard.move_chessman(self, col_num, row_num, True, old_x, old_y):
+            if not self.__chessboard.move_chessman(self, col_num, row_num, True, old_x,
+                                                   old_y):  # chessboard.py: line 146
                 self.__position.x = old_x
                 self.__position.y = old_y
-                self.__chessboard.add_chessman(self, self.__position.x, self.__position.y)
+                self.__chessboard.add_chessman(self, self.__position.x, self.__position.y)  # 在二维数组和哈希表中添加
                 self.clear_moving_list()
                 self.calc_moving_list()
                 # self.__chessboard.print_to_cl()

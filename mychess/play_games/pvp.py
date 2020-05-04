@@ -6,6 +6,7 @@ from time import sleep
 
 from mychess.config import Config
 from mychess.environment.env import CChessEnv
+from mychess.environment.lookup_tables import Winner
 from mychess.play_games.colorAndUIModule import *
 from mychess.play_games.tool import *
 
@@ -23,9 +24,9 @@ class pvp:
     def __init__(self, config: Config):
         self.config = config
         self.winstyle = 0
-        self.chessmans = None
+        self.chessmans = None  # will be a sprite group
         self.env = CChessEnv()
-        self.history = []
+        # self.history = []
         self.screen_width = 720
         self.height = 577
         self.width = 521
@@ -36,12 +37,14 @@ class pvp:
         self.has_resign = 0
 
     def start(self, human_first=True):
-        pass
         screen, board_background, widget_background, buttonList = self.init_screen()
         self.env.reset()
 
         self.chessmans = pygame.sprite.Group()  # 声明精灵组
-        creat_sprite_group(self.chessmans, self.env.board.chessmans_hash, self.chessman_w, self.chessman_h)  # 棋盘放置棋子
+        creat_sprite_group(self.chessmans,
+                           self.env.board.chessmans_hash,
+                           self.chessman_w,
+                           self.chessman_h)  # 棋盘放置棋子
         pygame.display.update()
 
         # update all the sprites
@@ -51,7 +54,7 @@ class pvp:
         framerate = pygame.time.Clock()
 
         # 用于记录当前选中的棋子
-        current_chessman = None     # 指向的也是chessman sprite
+        current_chessman = None  # 指向的也是chessman sprite
 
         while not self.env.board.is_end() and not self.has_resign:
             for event in pygame.event.get():
@@ -68,8 +71,42 @@ class pvp:
                         mouse_x, mouse_y = pygame.mouse.get_pos()
                         # 处理认输和悔棋
                         buttonRect = buttonList[0].get_rect()
+
                         if buttonRect[0] <= mouse_x - self.width <= buttonRect[0] + buttonRect[2]:
                             logger.info('click withdraw')
+                            record = self.env.board.record
+                            sep = '\t'
+                            if self.env.board.is_red_turn:
+                                sep = '\n'
+                            # reset
+                            self.env.reset()
+                            self.chessmans.empty()
+                            creat_sprite_group(self.chessmans,
+                                               self.env.board.chessmans_hash,
+                                               self.chessman_w,
+                                               self.chessman_h)  # 棋盘放置棋子
+
+                            moveList = self.env.board.getMoveList(record, sep)
+                            if len(moveList) == 0:
+                                break
+                            cnt = 0
+                            for move in moveList:
+                                if move[-1] == '.':
+                                    continue
+                                cnt += 1
+                                print(move)
+                                old_x, old_y, x, y = self.env.board.record_to_move(move, cnt % 2)
+                                current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
+                                chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
+                                success = current_chessman.move(x, y)
+                                print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
+                                if success:
+                                    if chessman_sprite != None:
+                                        self.chessmans.remove(chessman_sprite)
+                                        chessman_sprite.kill()
+                                else:
+                                    logger.error('record to move did not success')
+                            break
 
                         buttonRect = buttonList[1].get_rect()
                         if buttonRect[0] <= mouse_x - self.width <= buttonRect[0] + buttonRect[2]:
@@ -81,38 +118,38 @@ class pvp:
                         chessman_sprite = select_sprite_from_group(self.chessmans, col_num, row_num)
 
                         if current_chessman is None and chessman_sprite != None:  # 从未选中棋子->选中棋子
-                            print(
-                                f'chessman_sprite.chessman.is_red:{chessman_sprite.chessman.is_red}, self.env.red_to_move:{self.env.red_to_move}')
+                            # print(f'chessman_sprite.chessman.is_red:{chessman_sprite.chessman.is_red}, self.env.red_to_move:{self.env.red_to_move}')
                             if chessman_sprite.chessman.is_red == self.env.red_to_move:  # 点击的是己方棋子
                                 current_chessman = chessman_sprite
                                 chessman_sprite.is_selected = True  # 设置当前棋子为选中
                         elif current_chessman != None and chessman_sprite != None:  # 选中第二枚棋子
-                            print(f'选中第二枚棋子: chessman_sprite.chessman.is_red:{chessman_sprite.chessman.is_red}, self.env.red_to_move:{self.env.red_to_move}')
+                            # print(f'选中第二枚棋子: chessman_sprite.chessman.is_red:{chessman_sprite.chessman.is_red}, self.env.red_to_move:{self.env.red_to_move}')
                             if chessman_sprite.chessman.is_red == self.env.red_to_move:  # 第二枚是己方的棋子， 更新已选中的棋子
                                 current_chessman.is_selected = False
                                 current_chessman = chessman_sprite
                                 chessman_sprite.is_selected = True
                             else:  # 其它情况： 第二个点是空白处 or 对方棋子
-                                move = str(current_chessman.chessman.col_num) + str(
-                                    current_chessman.chessman.row_num) + \
-                                       str(col_num) + str(row_num)  # a string
-                                success = current_chessman.move(col_num, row_num)  # 调用 move, return true or false; function in play_games/tool.py
-                                self.history.append(move)  # 更新记录
+                                # move = str(current_chessman.chessman.col_num) + str(
+                                #     current_chessman.chessman.row_num) + \
+                                #        str(col_num) + str(row_num)  # a string
+                                # self.history.append(move)  # 更新记录
+                                success = current_chessman.move(col_num,
+                                                                row_num)  # 调用 move, return true or false; function in play_games/tool.py
                                 if success:
                                     self.chessmans.remove(chessman_sprite)
                                     chessman_sprite.kill()
                                     current_chessman.is_selected = False
                                     current_chessman = None
-                                    self.history.append(self.env.get_state())
+                                    # self.history.append(self.env.get_state())
                         elif current_chessman != None and chessman_sprite is None:
-                            move = str(current_chessman.chessman.col_num) + str(
-                                current_chessman.chessman.row_num) + str(col_num) + str(row_num)
+                            # move = str(current_chessman.chessman.col_num) + str(
+                            #     current_chessman.chessman.row_num) + str(col_num) + str(row_num)
+                            # self.history.append(move)
                             success = current_chessman.move(col_num, row_num)  # chessman sprite的move
-                            self.history.append(move)
                             if success:
                                 current_chessman.is_selected = False
                                 current_chessman = None
-                                self.history.append(self.env.get_state())
+                                # self.history.append(self.env.get_state())
 
             self.draw_widget(screen, widget_background, buttonList)
             framerate.tick(60)
@@ -126,9 +163,9 @@ class pvp:
 
         if self.has_resign:
             if self.has_resign == 1:
-                self.env.board.winner = 'Winner.red'
+                self.env.board.winner = Winner.red
             else:
-                self.env.board.winner = 'Winner.black'
+                self.env.board.winner = Winner.black
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
         game_id = datetime.now().strftime("%Y%m%d-%H%M%S")

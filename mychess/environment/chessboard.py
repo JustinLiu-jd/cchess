@@ -118,7 +118,7 @@ class Chessboard(object):       # 棋盘类
 
         self.calc_chessmans_moving_list()
 
-    def add_chessman(self, chessman, col_num, row_num):
+    def add_chessman(self, chessman, col_num, row_num):  # 在二维数组和哈希表中添加
         self.chessmans[col_num][row_num] = chessman
         if chessman.name not in self.__chessmans_hash:
             self.__chessmans_hash[chessman.name] = chessman
@@ -143,6 +143,7 @@ class Chessboard(object):       # 棋盘类
         for chessman in self.__chessmans_hash.values():
             chessman.clear_moving_list()
 
+    # col_num, row_num 是目标处的坐标
     def move_chessman(self, chessman, col_num, row_num, is_record = False, old_x = 0, old_y = 0):       # move and 设置走棋方为对方
         if chessman.is_red == self.__is_red_turn:       # 动的是这一轮改动的棋子
             # 一下两行完成move动作的信息更新
@@ -170,7 +171,154 @@ class Chessboard(object):       # 棋盘类
 
     def move_action_str(self, action):
         x0, y0, x1, y1 = self.str_to_move(action)
-        return self.move(x0, y0, x1, y1)
+        return self.move(x0, y0, x1, y1)  # 先调用self.move 再chessman.move 再chessboard.move_chessman
+
+    def getMoveList(self, record: str, sep):
+        tem = record[::-1].split(sep, 1)
+        if len(tem) < 2:
+            return []
+        record = tem[1][::-1]
+        # print(self.record)
+        return record.split()
+
+    def record_to_move(self, move, red_to_move):
+        if move[0] == u'前' or move[0] == u'后':
+            chessman_type = move[1]
+            find_chess = 0
+            for x in range(9):
+                for y in range(10):
+                    if self.chessmans[x][y]:
+                        if self.chessmans[x][y].is_red == red_to_move and \
+                                self.chessmans[x][y].name_cn[1] == chessman_type:
+                            if not find_chess:
+                                chessman_1 = self.chessmans[x][y]
+                                find_chess = 1
+                            elif find_chess == 1:
+                                chessman_2 = self.chessmans[x][y]
+                                find_chess = 2
+            if find_chess != 2:
+                logger.error('error in record to move')
+                return False
+            if chessman_1 == chessman_2:
+                logger.error('chessman_1 == chessman2')
+                return False
+
+            if red_to_move:
+                if (chessman_1.row_num > chessman_2.row_num and move[0] == u'前') or \
+                        (chessman_1.row_num < chessman_2.row_num and move[0] == u'后'):
+                    chess = chessman_1
+                else:
+                    chess = chessman_2
+            else:
+                if (chessman_1.row_num > chessman_2.row_num and move[0] == u'前') or \
+                        (chessman_1.row_num < chessman_2.row_num and move[0] == u'后'):
+                    chess = chessman_2
+                else:
+                    chess = chessman_1
+
+        else:  # 不是一列上有两枚相同类型棋子的情况
+            chessman_type = move[0]
+            if red_to_move:
+                old_x = 9 - num_dic[move[1]]
+            else:
+                old_x = num_dic[move[1]] - 1
+            for y in range(10):
+                if self.chessmans[old_x][y]:
+                    if self.chessmans[old_x][y].is_red == red_to_move and \
+                            self.chessmans[old_x][y].name_cn[1] == chessman_type:
+                        chess = self.chessmans[old_x][y]
+        print('first selected chessman: ', chess.col_num, chess.row_num)
+
+        if red_to_move:  # 红棋
+            old_x = chess.col_num
+            old_y = chess.row_num
+            if move[2] == u'平':
+                y = old_y
+                x = 9 - num_dic[move[3]]
+            elif move[2] == u'进':
+                if type(chess) == Rook or type(chess) == Pawn or \
+                        type(chess) == Cannon or type(chess) == King:
+                    x = old_x
+                    y = old_y + num_dic[move[3]]
+                else:
+                    x = 9 - num_dic[move[3]]
+                    if type(chess) == Elephant:
+                        y = old_y + 2
+                    elif type(chess) == Mandarin:
+                        y = old_y + 1
+                    elif type(chess) == Knight:
+                        if abs(x - old_x) == 1:
+                            y = old_y + 2
+                        else:
+                            y = old_y + 1
+                    else:
+                        logger.error('unknow chessman type')
+                        return False
+            elif move[2] == u'退':
+                if type(chess) == Rook or type(chess) == Pawn or \
+                        type(chess) == Cannon or type(chess) == King:
+                    x = old_x
+                    y = old_y - num_dic[move[3]]
+                else:
+                    x = 9 - num_dic[move[3]]
+                    if type(chess) == Elephant:
+                        y = old_y - 2
+                    elif type(chess) == Mandarin:
+                        y = old_y - 1
+                    elif type(chess) == Knight:
+                        if abs(x - old_x) == 1:
+                            y = old_y - 2
+                        else:
+                            y = old_y - 1
+                    else:
+                        logger.error('unknow chessman type')
+                        return False
+
+        else:  # 黑棋
+            old_x = chess.col_num
+            old_y = chess.row_num
+            if move[2] == u'平':
+                y = old_y
+                x = num_dic[move[3]] - 1
+            elif move[2] == u'进':
+                if type(chess) == Rook or type(chess) == Pawn or \
+                        type(chess) == Cannon or type(chess) == King:
+                    x = old_x
+                    y = old_y - num_dic[move[3]]
+                else:
+                    x = num_dic[move[3]] - 1
+                    if type(chess) == Elephant:
+                        y = old_y - 2
+                    elif type(chess) == Mandarin:
+                        y = old_y - 1
+                    elif type(chess) == Knight:
+                        if abs(x - old_x) == 1:
+                            y = old_y - 2
+                        else:
+                            y = old_y - 1
+                    else:
+                        logger.error('unknow chessman type')
+                        return False
+            elif move[2] == u'退':
+                if type(chess) == Rook or type(chess) == Pawn or \
+                        type(chess) == Cannon or type(chess) == King:
+                    x = old_x
+                    y = old_y + num_dic[move[3]]
+                else:
+                    x = num_dic[move[3]] - 1
+                    if type(chess) == Elephant:
+                        y = old_y + 2
+                    elif type(chess) == Mandarin:
+                        y = old_y + 1
+                    elif type(chess) == Knight:
+                        if abs(x - old_x) == 1:
+                            y = old_y + 2
+                        else:
+                            y = old_y + 1
+                    else:
+                        logger.error('unknow chessman type')
+                        return False
+        return old_x, old_y, x, y
 
     def legal_moves(self):
         '''
@@ -347,7 +495,7 @@ class Chessboard(object):       # 棋盘类
         if self.__is_red_turn:
             if self.turns != 1:
                 self.record += '\n'
-            self.record += str(self.turns) + '.'
+            self.record += str(self.turns) + '. '
         else:
             self.record += '\t'
 
@@ -362,7 +510,7 @@ class Chessboard(object):       # 棋盘类
                 if not has_two:
                     self.record += RECORD_NOTES[old_x + 1][0]
                 self.record += u'平' + RECORD_NOTES[x + 1][0]
-            else:
+            else:  # 红棋记法
                 if not has_two:
                     self.record += RECORD_NOTES[9 - old_x][1]
                 self.record += u'平' + RECORD_NOTES[9 - x][1]
@@ -539,9 +687,6 @@ class Chessboard(object):       # 棋盘类
                     break
         return (self.winner != None, final_move)
 
-
-
-
 RECORD_NOTES = [
     ['0', '0'], ['1', u'一'], ['2', u'二'],
     ['3', u'三'], ['4', u'四'], ['5', u'五'],
@@ -549,3 +694,5 @@ RECORD_NOTES = [
     ['9', u'九']
 ]
 
+num_dic = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+           u'一': 1, u'二': 2, u'三': 3, u'四': 4, u'五': 5, u'六': 6, u'七': 7, u'八': 8, u'九': 9}
