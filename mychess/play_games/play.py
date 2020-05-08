@@ -15,6 +15,7 @@ from mychess.config import Config
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner, ActionLabelsRed, flip_move
 from mychess.lib.model_helper import load_best_model_weight
+from mychess.play_games.sqlTool import *
 from mychess.play_games.tool import *
 
 # from mychess.lib.tf_util import set_session_config
@@ -49,9 +50,7 @@ class PlayWithHuman:
         self.nn_value = 0
         self.mcts_moves = {}
         self.history = []
-        # if self.config.opts.bg_style == 'WOOD':
-        #     self.chessman_w += 1
-        #     self.chessman_h += 1
+        self.path = None
 
     def load_model(self):
         self.model = CChessModel(self.config)       # in cchess_ahphazero/agent/model.py
@@ -134,9 +133,9 @@ class PlayWithHuman:
                     self.env.board.print_record()  # 打印记录
                     self.ai.close(wait=False)
                     game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
-                    path = os.path.join(self.config.resource.play_record_dir,
-                                        self.config.resource.play_record_filename_tmpl % game_id)
-                    self.env.board.save_record(path)
+                    self.path = os.path.join(self.config.resource.play_record_dir,
+                                             self.config.resource.play_record_filename_tmpl % game_id)
+                    self.env.board.save_record(self.path)
                     sys.exit()
                 elif event.type == VIDEORESIZE:
                     pass
@@ -189,11 +188,20 @@ class PlayWithHuman:
             pygame.display.update()
 
         self.ai.close(wait=False)
+
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
         game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
-        path = os.path.join(self.config.resource.play_record_dir, self.config.resource.play_record_filename_tmpl % game_id)
-        self.env.board.save_record(path)
+        self.path = os.path.join(self.config.resource.play_record_dir,
+                                 self.config.resource.play_record_filename_tmpl % game_id)
+        self.env.board.save_record(self.path)
+        conn = set_conn()
+        success = insert_a_record(conn, self.env.board.winner, self.path)
+        if success:
+            print('insert to database success')
+        else:
+            print('insert to database fail')
+        conn.close()
         sleep(3)
 
     def ai_move(self):
@@ -265,7 +273,7 @@ class PlayWithHuman:
         pygame.draw.line(widget_background, (255, 0, 0), (10, 285), (self.screen_width - self.width - 10, 285))
         screen.blit(widget_background, (self.width, 0))
         self.draw_records(screen, widget_background)
-        self.draw_evaluation(screen, widget_background) 
+        self.draw_evaluation(screen, widget_background)
 
     def draw_records(self, screen, widget_background):
         text = '着法记录'

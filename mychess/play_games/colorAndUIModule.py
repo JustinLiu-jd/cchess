@@ -9,11 +9,13 @@ gray = (128, 128, 128)
 red = (200, 0, 0)
 green = (0, 200, 0)
 bright_red = (255, 0, 0)
-bright_green = (0, 255, 0)
 blue = (0, 0, 255)
 yellow = (255, 255, 0)
 light_blue = (140, 220, 254)
 button_color = (0, 160, 255)
+label_color = (180, 220, 250)
+record_color = (250, 247, 212)
+wordLabelColor = (150, 200, 230)
 
 
 class myButton:
@@ -56,7 +58,8 @@ class myButton:
 
 
 class myLabel:
-    def __init__(self, rect: Rect, text='', font_color=black, bkgColor=None, font_size=16):
+    def __init__(self, rect: Rect, text=None, font_color=black, bkgColor=None, font_size=16, textList: list = None,
+                 xList: list = None):
         self.__Rect = rect
         self.__text = text
         self.__w, self.__h = rect.width, rect.height
@@ -64,12 +67,22 @@ class myLabel:
         if bkgColor != None:
             self.__Surface.fill(bkgColor)
         self.__font = pygame.font.Font(local_font_file, font_size)
-        t = self.__font.render(text, True, font_color)
-        t_rect = t.get_rect()
-        t_rect.centerx = self.__w // 2
-        t_rect.centery = self.__h // 2
-        # print(t_rect)
-        self.__Surface.blit(t, t_rect)
+        if text != None:
+            t = self.__font.render(text, True, font_color)
+            t_rect = t.get_rect()
+            t_rect.centerx = self.__w // 2
+            t_rect.centery = self.__h // 2
+            # print(t_rect)
+            self.__Surface.blit(t, t_rect)
+        elif textList != None and len(textList) == len(xList):
+            for i in range(len(textList)):
+                text = textList[i]
+                pos = xList[i]
+                t = self.__font.render(text, True, font_color)
+                t_rect = t.get_rect()
+                t_rect.centerx = pos
+                t_rect.centery = self.__h // 2
+                self.__Surface.blit(t, t_rect)
 
     def get_Surface(self):
         return self.__Surface

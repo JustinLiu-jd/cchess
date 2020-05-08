@@ -8,6 +8,7 @@ from mychess.config import Config
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner
 from mychess.play_games.colorAndUIModule import *
+from mychess.play_games.sqlTool import *
 from mychess.play_games.tool import *
 
 logger = getLogger(__name__)
@@ -35,6 +36,7 @@ class pvp:
         self.disp_record_num = 30  # the num of records to display      # 15
         self.rec_labels = [None] * self.disp_record_num
         self.has_resign = 0
+        self.path = None
 
     def start(self, human_first=True):
         screen, board_background, widget_background, buttonList = self.init_screen()
@@ -61,9 +63,9 @@ class pvp:
                 if event.type == pygame.QUIT:
                     self.env.board.print_record()  # 打印记录
                     game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
-                    path = os.path.join(self.config.resource.play_record_dir,
-                                        self.config.resource.play_record_filename_tmpl % game_id)
-                    self.env.board.save_record(path)
+                    self.path = os.path.join(self.config.resource.play_record_dir,
+                                             self.config.resource.play_record_filename_tmpl % game_id)
+                    self.env.board.save_record(self.path)
                     sys.exit()
                 elif event.type == MOUSEBUTTONDOWN:  # 处理鼠标事件
                     pressed_array = pygame.mouse.get_pressed()
@@ -166,12 +168,20 @@ class pvp:
                 self.env.board.winner = Winner.red
             else:
                 self.env.board.winner = Winner.black
+
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
         game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
-        path = os.path.join(self.config.resource.play_record_dir,
-                            self.config.resource.play_record_filename_tmpl % game_id)
-        self.env.board.save_record(path)
+        self.path = os.path.join(self.config.resource.play_record_dir,
+                                 self.config.resource.play_record_filename_tmpl % game_id)
+        self.env.board.save_record(self.path)
+        conn = set_conn()
+        success = insert_a_record(conn, self.env.board.winner, self.path)
+        if success:
+            print('insert to database success')
+        else:
+            print('insert to database fail')
+        conn.close()
         sleep(3)
 
     def init_screen(self):

@@ -12,6 +12,5 @@ if _PATH_ not in sys.path:
 
 if __name__ == "__main__":
     from mychess import manager
-
     pygame.init()
     manager.start()

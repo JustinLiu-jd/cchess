@@ -20,12 +20,17 @@ def get_all_records(conn: pymysql.connect):
     cursor.execute(sql)
     return cursor.fetchall()
 
+def get_len(conn: pymysql.connect):
+    sql = "select * from record"
+    cursor = conn.cursor()
+    len = cursor.execute(sql)
+    return len
 
 def get_page(conn: pymysql.connect, page=0, page_num=15):
     sql = f"select * from record limit {page * page_num}, {page_num};"
+    print(sql)
     cursor = conn.cursor()
     cursor.execute(sql)
-    print(sql)
     return cursor.fetchall()
 
 
@@ -33,20 +38,20 @@ def insert_a_record(conn: pymysql.connect, winner, path):
     sql = f"insert into record (time, whoWin, filePath) " \
           f"values " \
           f"(now(), '{winner}', '{path}');"
+    print(sql)
     cursor = conn.cursor()
     success = cursor.execute(sql)
     if success:
         conn.commit()
-    print(sql)
     return success
 
 
 def delete_a_record(conn: pymysql.connect, uniID):
     sql = f"delete from record " \
           f"where uniID = {uniID};"
+    print(sql)
     cursor = conn.cursor()
     success = cursor.execute(sql)
     if success:
         conn.commit()
-    print(sql)
     return success
