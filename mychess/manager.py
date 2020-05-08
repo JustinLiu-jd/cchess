@@ -1,8 +1,6 @@
 import sys
 from logging import getLogger
 
-from pygame.locals import *
-
 from mychess.config import Config, PlayWithHumanConfig
 from mychess.lib.logger import setup_logger
 from mychess.play_games import play
@@ -18,6 +16,7 @@ class game():
         self.width = 521
         self.height = 577
         self.buttonToLR = 310
+        self.boardImg = pygame.image.load('mychess/play_games/images/WOOD.GIF').convert()
 
     def init_screen(self):
         bestdepth = pygame.display.mode_ok([self.width, self.height], self.winstyle, 32)
@@ -26,8 +25,7 @@ class game():
         pygame.display.set_caption("中国象棋")
         # background
         background = pygame.Surface([self.width, self.height])
-        boardImg = pygame.image.load('mychess/play_games/images/WOOD.GIF').convert()
-        background.blit(boardImg, (0, 0))
+        background.blit(self.boardImg, (0, 0))
         # font
         font_file = 'mychess/play_games/PingFang.ttc'  # PingFang.ttc
         font = pygame.font.Font(font_file, 16)
@@ -138,6 +136,9 @@ def start():
                                     level = 3
             if level == 1:
                 pass
+            elif level == 2:
+                pass
+
             elif level == 3:
                 config = Config(config_type='mini')  # config = mini-config
                 setup(config)  # set logger total_step
@@ -145,7 +146,15 @@ def start():
                 pwhc.update_play_config(config.play)  # update the config from configs/mini.py line 33: PlayConfig
                 logger.info(f"AI move first : false")
                 play.start(config)
-            elif level == 2:
-                pass
+
+
         elif mode == 3:
-            pass
+            background.blit(newGame.boardImg, (0, 0))
+            screen.blit(background, (0, 0))
+            pygame.display.update()
+            running = True
+            while running:
+                for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        sys.exit()
+                pass

@@ -30,8 +30,8 @@ class pvp:
         self.screen_width = 720
         self.height = 577
         self.width = 521
-        self.chessman_w = 57
-        self.chessman_h = 57
+        self.chessman_w = 58
+        self.chessman_h = 58
         self.disp_record_num = 30  # the num of records to display      # 15
         self.rec_labels = [None] * self.disp_record_num
         self.has_resign = 0

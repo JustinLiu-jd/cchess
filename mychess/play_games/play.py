@@ -12,7 +12,6 @@ from mychess.agent.player import CChessPlayer, VisitState
 # from mychess.agent.api import CChessModelAPI
 from mychess.config import Config
 # from mychess.environment.chessboard import Chessboard
-from mychess.environment.chessman import *
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner, ActionLabelsRed, flip_move
 from mychess.lib.model_helper import load_best_model_weight
@@ -208,7 +207,7 @@ class PlayWithHuman:
                 self.ai.search_results = {}
                 state = self.env.get_state()
                 logger.info(f"state = {state}")         # logger 当前搜索的局面
-                _, _, _, check = senv.done(state, need_check=True)      # check == false: not game end
+                _, _, _, check = senv.done(state, need_check=True)  # if check == false: game not end
                 if not check and state in self.history[:-1]:
                     no_act = []             # 禁止走步表 列表
                     free_move = defaultdict(int)        # 一个字典
