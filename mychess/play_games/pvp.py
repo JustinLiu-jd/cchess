@@ -7,8 +7,8 @@ from time import sleep
 from mychess.config import Config
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner
+from mychess.play_games.MySQLTool import *
 from mychess.play_games.colorAndUIModule import *
-from mychess.play_games.sqlTool import *
 from mychess.play_games.tool import *
 
 logger = getLogger(__name__)

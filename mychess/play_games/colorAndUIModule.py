@@ -56,16 +56,27 @@ class myButton:
         self.__Surface.fill(self.__bkgColor)
         self.__Surface.blit(t, t_rect)
 
+    # 判断是否在区域内
+    def isInRect(self, x, y):
+        myRect = self.get_rect()
+        # print(myRect.left, myRect.right, myRect.top, myRect.bottom)
+        if myRect.left <= x <= myRect.right and myRect.top <= y <= myRect.bottom:
+            return True
+        else:
+            return False
+
 
 class myLabel:
     def __init__(self, rect: Rect, text=None, font_color=black, bkgColor=None, font_size=16, textList: list = None,
                  xList: list = None):
         self.__Rect = rect
         self.__text = text
+        self.__bkgColor = None
         self.__w, self.__h = rect.width, rect.height
         self.__Surface = pygame.Surface([self.__w, self.__h])
         if bkgColor != None:
             self.__Surface.fill(bkgColor)
+            self.__bkgColor = bkgColor
         self.__font = pygame.font.Font(local_font_file, font_size)
         if text != None:
             t = self.__font.render(text, True, font_color)
@@ -103,5 +114,14 @@ class myLabel:
         t_rect = t.get_rect()
         t_rect.centerx = self.__w // 2
         t_rect.centery = self.__h // 2
-        self.__Surface.fill(self.__bkgColor)
+        if self.__bkgColor:
+            self.__Surface.fill(self.__bkgColor)
         self.__Surface.blit(t, t_rect)
+
+    def isInRect(self, x, y):
+        myRect = self.get_rect()
+        # print(myRect.left, myRect.right, myRect.top, myRect.bottom)
+        if myRect.left <= x <= myRect.right and myRect.top <= y <= myRect.bottom:
+            return True
+        else:
+            return False

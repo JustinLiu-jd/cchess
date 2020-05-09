@@ -15,7 +15,7 @@ from mychess.config import Config
 from mychess.environment.env import CChessEnv
 from mychess.environment.lookup_tables import Winner, ActionLabelsRed, flip_move
 from mychess.lib.model_helper import load_best_model_weight
-from mychess.play_games.sqlTool import *
+from mychess.play_games.MySQLTool import *
 from mychess.play_games.tool import *
 
 # from mychess.lib.tf_util import set_session_config

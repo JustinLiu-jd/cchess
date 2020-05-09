@@ -964,3 +964,9 @@ keep_dims is deprecated, use keepdims instead
 2020-05-09 01:47:29,770@mychess.play_games.pvp INFO # Winner is Winner.red !!!
 2020-05-09 02:04:57,959@mychess.play_games.pvp INFO # Winner is Winner.black !!!
 2020-05-09 02:07:13,933@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-09 18:12:08,766@mychess.play_games.pvp INFO # click withdraw
+2020-05-09 18:12:15,916@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-09 18:12:45,121@mychess.play_games.pvp INFO # click withdraw
+2020-05-09 18:12:52,170@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-09 21:31:03,714@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-09 23:48:11,217@mychess.play_games.pvp INFO # Winner is Winner.black !!!
