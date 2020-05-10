@@ -57,7 +57,9 @@ class myButton:
         self.__Surface.blit(t, t_rect)
 
     # 判断是否在区域内
-    def isInRect(self, x, y):
+    def isInRect(self, x, y, x_offset=0, y_offset=0):
+        x -= x_offset
+        y -= y_offset
         myRect = self.get_rect()
         # print(myRect.left, myRect.right, myRect.top, myRect.bottom)
         if myRect.left <= x <= myRect.right and myRect.top <= y <= myRect.bottom:

@@ -72,14 +72,13 @@ class pvp:
                     if pressed_array[0]:
                         mouse_x, mouse_y = pygame.mouse.get_pos()
                         # 处理认输和悔棋
-                        buttonRect = buttonList[0].get_rect()
-
-                        if buttonRect[0] <= mouse_x - self.width <= buttonRect[0] + buttonRect[2]:
+                        if buttonList[0].isInRect(mouse_x, mouse_y, self.width):
                             logger.info('click withdraw')
                             record = self.env.board.record
-                            sep = '\t'
                             if self.env.board.is_red_turn:
                                 sep = '\n'
+                            else:
+                                sep = '\t'
                             # reset
                             self.env.reset()
                             self.chessmans.empty()
@@ -96,12 +95,12 @@ class pvp:
                                 if move[-1] == '.':
                                     continue
                                 cnt += 1
-                                print(move)
+                                # print(move)
                                 old_x, old_y, x, y = self.env.board.record_to_move(move, cnt % 2)
                                 current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
                                 chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
                                 success = current_chessman.move(x, y)
-                                print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
+                                # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
                                 if success:
                                     if chessman_sprite != None:
                                         self.chessmans.remove(chessman_sprite)
@@ -110,8 +109,7 @@ class pvp:
                                     logger.error('record to move did not success')
                             break
 
-                        buttonRect = buttonList[1].get_rect()
-                        if buttonRect[0] <= mouse_x - self.width <= buttonRect[0] + buttonRect[2]:
+                        if buttonList[1].isInRect(mouse_x, mouse_y, self.width):
                             logger.info('click resign')
                             self.has_resign = 1 if self.env.red_to_move else 2
                             break
@@ -164,10 +162,10 @@ class pvp:
             pygame.display.update()
 
         if self.has_resign:
-            if self.has_resign == 1:
-                self.env.board.winner = Winner.red
-            else:
+            if self.has_resign == 1:  # 红认输，则黑赢
                 self.env.board.winner = Winner.black
+            else:
+                self.env.board.winner = Winner.red
 
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
@@ -209,6 +207,7 @@ class pvp:
         t_rect.y = 40  # 10
         widget_background.blit(t, t_rect)
 
+        # 认输和悔棋按钮
         button_withdraw = myButton(Rect(0, 0, 70, 20), '悔棋', bkgColor=button_color)
         button_resign = myButton(Rect(0, 0, 70, 20), '认输', bkgColor=red)
         tem = self.screen_width - self.width

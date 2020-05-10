@@ -1,13 +1,17 @@
-import os
 import getpass
+import os
+
 
 # 返回项目根目录的绝对路径
 def _project_dir():
     # print(os.path.abspath(__file__), _project_dir(), sep = '\n')
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 def _data_dir():
     return os.path.join(_project_dir(), "data")
+
+
 # print(_data_dir())
 # exit()
 
@@ -25,27 +29,43 @@ class Config:
             import cchess_alphazero.configs.distribute as c
         else:
             raise RuntimeError('unknown config_type: %s' % (config_type))
+
         self.model = c.ModelConfig()
         self.play = c.PlayConfig()
         self.play_data = c.PlayDataConfig()
-        self.trainer = c.TrainerConfig()        # configs/mini.py TrainerConfig
+        self.trainer = c.TrainerConfig()  # configs/mini.py TrainerConfig
         self.eval = c.EvaluateConfig()
+
+        self.opts.device_list = 0
+        self.resource.create_directories()
+        self.opts.piece_style = 'WOOD'
+        self.opts.bg_style = 'WOOD'
+        self.internet.distributed = False
+        self.opts.light = False
+
+        self.play.simulation_num_per_move = 200  # MCTS number per move.
+        self.play.c_puct = 1  # balance parameter of value network and policy network in MCTS.
+        self.play.search_threads = 2  # balance parameter of speed and accuracy in MCTS.
+        self.play.noise_eps = 0
+        self.play.tau_decay_rate = 0
+        self.play.dirichlet_alpha = 0.2  # random parameter in self-play.
+
 
 class PlayWithHumanConfig:
     def __init__(self):
-        self.simulation_num_per_move = 800      # MCTS number per move.
-        self.c_puct = 1                         # balance parameter of value network and policy network in MCTS.
-        self.search_threads = 10                # balance parameter of speed and accuracy in MCTS.
+        self.simulation_num_per_move = 800  # MCTS number per move.
+        self.c_puct = 1  # balance parameter of value network and policy network in MCTS.
+        self.search_threads = 10  # balance parameter of speed and accuracy in MCTS.
         self.noise_eps = 0
         self.tau_decay_rate = 0
-        self.dirichlet_alpha = 0.2              # random parameter in self-play.
+        self.dirichlet_alpha = 0.2  # random parameter in self-play.
 
     def update_play_config(self, pc):
         pc.simulation_num_per_move = self.simulation_num_per_move
         pc.c_puct = self.c_puct
+        pc.search_threads = self.search_threads
         pc.noise_eps = self.noise_eps
         pc.tau_decay_rate = self.tau_decay_rate
-        pc.search_threads = self.search_threads
         pc.dirichlet_alpha = self.dirichlet_alpha
 
 class Options:

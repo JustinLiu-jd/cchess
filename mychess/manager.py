@@ -2,7 +2,7 @@ import codecs
 import sys
 from logging import getLogger
 
-from mychess.config import Config, PlayWithHumanConfig
+from mychess.config import Config
 from mychess.lib.logger import setup_logger
 from mychess.play_games import play
 from mychess.play_games import pvp
@@ -60,12 +60,12 @@ class game():
 
 def setup(config):
     sys.setrecursionlimit(10000)
-    config.opts.device_list = 0
-    config.resource.create_directories()
-    config.opts.piece_style = 'WOOD'
-    config.opts.bg_style = 'WOOD'
-    config.internet.distributed = False
-    config.opts.light = False
+    # config.opts.device_list = 0
+    # config.resource.create_directories()
+    # config.opts.piece_style = 'WOOD'
+    # config.opts.bg_style = 'WOOD'
+    # config.internet.distributed = False
+    # config.opts.light = False
     setup_logger(config.resource.play_log_path)  # in log/play.log
 
 
@@ -109,7 +109,8 @@ def start():
         if mode == 1:
             pass
             config = Config(config_type='mini')
-            setup(config)
+            # setup(config)
+            setup_logger(config.resource.play_log_path)  # in log/play.log
             pvp.start(config)
 
         elif mode == 2:
@@ -153,9 +154,9 @@ def start():
 
             elif level == 3:
                 config = Config(config_type='mini')  # config = mini-config
-                setup(config)  # set logger total_step
-                pwhc = PlayWithHumanConfig()
-                pwhc.update_play_config(config.play)  # update the config from configs/mini.py line 33: PlayConfig
+                # setup(config)  # set logger total_step
+                # pwhc = PlayWithHumanConfig()
+                # pwhc.update_play_config(config.play)  # update the config from configs/mini.py line 33: PlayConfig
                 logger.info(f"AI move first : false")
                 play.start(config)
 

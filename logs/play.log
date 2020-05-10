@@ -970,3 +970,1024 @@ keep_dims is deprecated, use keepdims instead
 2020-05-09 18:12:52,170@mychess.play_games.pvp INFO # Winner is Winner.red !!!
 2020-05-09 21:31:03,714@mychess.play_games.pvp INFO # Winner is Winner.red !!!
 2020-05-09 23:48:11,217@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-10 00:29:49,796@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 00:29:49,802@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 00:29:49,830@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 00:29:49,852@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 00:29:49,942@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 00:29:51,247@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 00:29:51,715@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 00:29:51,716@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 00:29:51,716@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 00:29:51,743@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 00:29:51,744@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 00:29:52,419@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 00:30:08,841@mychess.play_games.play INFO # state = rk1msmekr/9/1c2e2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 00:30:11,427@mychess.play_games.play INFO # check = False, NN value = -0.050
+2020-05-10 00:30:11,428@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:30:11,429@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.024, Prior: 0.039
+2020-05-10 00:30:11,430@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 4, Q_value: -0.032, Prior: 0.034
+2020-05-10 00:30:11,432@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 4, Q_value: -0.039, Prior: 0.030
+2020-05-10 00:30:11,433@mychess.play_games.play INFO # move: 炮8平6-1232, visit count: 4, Q_value: -0.025, Prior: 0.037
+2020-05-10 00:30:11,433@mychess.play_games.play INFO # move: 炮2平4-7252, visit count: 4, Q_value: -0.027, Prior: 0.031
+2020-05-10 00:31:08,852@mychess.play_games.play INFO # state = rk1msmekr/9/2c1e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/1C7/9/RKEMSMEKR
+2020-05-10 00:31:11,003@mychess.play_games.play INFO # check = False, NN value = -0.062
+2020-05-10 00:31:11,004@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:31:11,004@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 10, Q_value: -0.038, Prior: 0.358
+2020-05-10 00:31:11,004@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 8, Q_value: -0.036, Prior: 0.153
+2020-05-10 00:31:11,004@mychess.play_games.play INFO # move: 炮2平9-7404, visit count: 4, Q_value: -0.045, Prior: 0.045
+2020-05-10 00:31:11,004@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 3, Q_value: -0.043, Prior: 0.024
+2020-05-10 00:31:11,005@mychess.play_games.play INFO # move: 炮8进4-1216, visit count: 3, Q_value: -0.084, Prior: 0.010
+2020-05-10 00:31:30,675@mychess.play_games.play INFO # state = rk1msmer1/9/2c1e2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C7/9/RKEMSMEKR
+2020-05-10 00:31:32,777@mychess.play_games.play INFO # check = False, NN value = -0.325
+2020-05-10 00:31:32,777@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:31:32,777@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 24, Q_value: -0.285, Prior: 0.913
+2020-05-10 00:31:32,778@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 6, Q_value: -0.235, Prior: 0.052
+2020-05-10 00:31:32,778@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 4, Q_value: -0.267, Prior: 0.002
+2020-05-10 00:31:32,779@mychess.play_games.play INFO # move: 炮8平6-1232, visit count: 4, Q_value: -0.248, Prior: 0.001
+2020-05-10 00:31:32,779@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 4, Q_value: -0.282, Prior: 0.001
+2020-05-10 00:31:45,165@mychess.play_games.play INFO # state = rk1msmer1/9/4e2c1/p1p1p1p1p/9/9/P1c1P1P1P/1C4K2/9/RKEMSME1R
+2020-05-10 00:31:47,302@mychess.play_games.play INFO # check = False, NN value = -0.118
+2020-05-10 00:31:47,303@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:31:47,303@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 28, Q_value: -0.169, Prior: 0.931
+2020-05-10 00:31:47,303@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 6, Q_value: -0.135, Prior: 0.001
+2020-05-10 00:31:47,303@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 6, Q_value: -0.166, Prior: 0.000
+2020-05-10 00:31:47,303@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 5, Q_value: -0.288, Prior: 0.055
+2020-05-10 00:31:47,308@mychess.play_games.play INFO # move: 炮8平5-1242, visit count: 3, Q_value: -0.349, Prior: 0.000
+2020-05-10 00:32:08,557@mychess.play_games.play INFO # state = rk1msmer1/9/4e4/p1p1p1p1p/9/8P/P1c1P1Pc1/1C4K2/9/RKEMSME1R
+2020-05-10 00:32:10,673@mychess.play_games.play INFO # check = False, NN value = -0.211
+2020-05-10 00:32:10,673@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:32:10,674@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 28, Q_value: -0.250, Prior: 0.961
+2020-05-10 00:32:10,674@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 5, Q_value: -0.263, Prior: 0.000
+2020-05-10 00:32:10,674@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 4, Q_value: -0.258, Prior: 0.000
+2020-05-10 00:32:10,674@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 4, Q_value: -0.272, Prior: 0.027
+2020-05-10 00:32:10,674@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 3, Q_value: -0.328, Prior: 0.000
+2020-05-10 00:32:25,828@mychess.play_games.play INFO # state = rk1msmer1/9/4e4/p1p1p1p1p/9/6P1P/P1c1P1c2/1C4K2/9/RKEMSME1R
+2020-05-10 00:32:27,998@mychess.play_games.play INFO # check = False, NN value = -0.134
+2020-05-10 00:32:28,000@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:32:28,000@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 27, Q_value: -0.225, Prior: 0.994
+2020-05-10 00:32:28,000@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 5, Q_value: -0.189, Prior: 0.002
+2020-05-10 00:32:28,001@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 4, Q_value: -0.216, Prior: 0.000
+2020-05-10 00:32:28,001@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 4, Q_value: -0.218, Prior: 0.000
+2020-05-10 00:32:28,002@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 3, Q_value: -0.330, Prior: 0.000
+2020-05-10 00:33:08,073@mychess.play_games.play INFO # state = r2msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P1c1P1c2/1C2E1K2/9/RK1MSME1R
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # check = False, NN value = -0.100
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # move: 马8进6-1031, visit count: 30, Q_value: -0.073, Prior: 0.997
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 5, Q_value: -0.106, Prior: 0.000
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 4, Q_value: -0.204, Prior: 0.000
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 4, Q_value: -0.139, Prior: 0.000
+2020-05-10 00:33:10,076@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 3, Q_value: -0.181, Prior: 0.000
+2020-05-10 00:33:38,540@mychess.play_games.play INFO # state = r2msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1Cc1E1K2/3K5/R2MSME1R
+2020-05-10 00:33:40,539@mychess.play_games.play INFO # check = False, NN value = -0.096
+2020-05-10 00:33:40,539@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:33:40,539@mychess.play_games.play INFO # move: 车9平7-0020, visit count: 30, Q_value: -0.000, Prior: 0.914
+2020-05-10 00:33:40,540@mychess.play_games.play INFO # move: 车1进3-8083, visit count: 9, Q_value: -0.005, Prior: 0.080
+2020-05-10 00:33:40,540@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 4, Q_value: -0.126, Prior: 0.000
+2020-05-10 00:33:40,540@mychess.play_games.play INFO # move: 马3退5-6241, visit count: 4, Q_value: -0.183, Prior: 0.000
+2020-05-10 00:33:40,540@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 3, Q_value: -0.117, Prior: 0.000
+2020-05-10 00:33:57,804@mychess.play_games.play INFO # state = r2msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1C1cE1K2/3K5/2RMSME1R
+2020-05-10 00:33:59,783@mychess.play_games.play INFO # check = False, NN value = -0.036
+2020-05-10 00:33:59,785@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:33:59,786@mychess.play_games.play INFO # move: 车1进3-8083, visit count: 27, Q_value: 0.200, Prior: 0.878
+2020-05-10 00:33:59,786@mychess.play_games.play INFO # move: 车7进6-2026, visit count: 10, Q_value: 0.093, Prior: 0.106
+2020-05-10 00:33:59,786@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 3, Q_value: 0.040, Prior: 0.006
+2020-05-10 00:33:59,786@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 3, Q_value: 0.011, Prior: 0.000
+2020-05-10 00:33:59,786@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 3, Q_value: 0.019, Prior: 0.000
+2020-05-10 00:34:42,468@mychess.play_games.play INFO # state = 1r1msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1C1cE1K2/9/1KRMSME1R
+2020-05-10 00:34:44,376@mychess.play_games.play INFO # check = False, NN value = -0.265
+2020-05-10 00:34:44,376@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:34:44,376@mychess.play_games.play INFO # move: 炮8平7-1222, visit count: 32, Q_value: -0.349, Prior: 0.883
+2020-05-10 00:34:44,377@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 5, Q_value: -0.290, Prior: 0.001
+2020-05-10 00:34:44,377@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.588, Prior: 0.076
+2020-05-10 00:34:44,377@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 4, Q_value: -0.446, Prior: 0.000
+2020-05-10 00:34:44,377@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 4, Q_value: -0.300, Prior: 0.000
+2020-05-10 00:35:08,884@mychess.play_games.play INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1r1cE1K1E/9/1KRMSM2R
+2020-05-10 00:35:10,827@mychess.play_games.play INFO # check = False, NN value = -0.756
+2020-05-10 00:35:10,827@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:35:10,828@mychess.play_games.play INFO # move: 马3退5-6241, visit count: 39, Q_value: -0.822, Prior: 0.978
+2020-05-10 00:35:10,828@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 5, Q_value: -0.759, Prior: 0.005
+2020-05-10 00:35:10,828@mychess.play_games.play INFO # move: 车7进2-2022, visit count: 4, Q_value: -0.766, Prior: 0.000
+2020-05-10 00:35:10,829@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 3, Q_value: -0.913, Prior: 0.000
+2020-05-10 00:35:10,830@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 3, Q_value: -0.882, Prior: 0.002
+2020-05-10 00:35:50,718@mychess.play_games.play INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P2cP1c2/1r2E3E/4K4/1KRMSM2R
+2020-05-10 00:35:52,664@mychess.play_games.play INFO # check = False, NN value = -0.743
+2020-05-10 00:35:52,665@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:35:52,665@mychess.play_games.play INFO # move: 象1退3-8260, visit count: 25, Q_value: -0.794, Prior: 0.494
+2020-05-10 00:35:52,665@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 16, Q_value: -0.871, Prior: 0.406
+2020-05-10 00:35:52,665@mychess.play_games.play INFO # move: 马5进7-4122, visit count: 5, Q_value: -0.837, Prior: 0.082
+2020-05-10 00:35:52,665@mychess.play_games.play INFO # move: 车7进2-2022, visit count: 4, Q_value: -0.888, Prior: 0.008
+2020-05-10 00:35:52,665@mychess.play_games.play INFO # move: 车1平3-8060, visit count: 4, Q_value: -0.800, Prior: 0.002
+2020-05-10 00:36:13,707@mychess.play_games.play INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P1c1P1c2/1rK1E3E/9/1KRMSM2R
+2020-05-10 00:36:15,662@mychess.play_games.play INFO # check = False, NN value = -0.921
+2020-05-10 00:36:15,662@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:36:15,662@mychess.play_games.play INFO # move: 马7退5-2241, visit count: 45, Q_value: -0.916, Prior: 0.993
+2020-05-10 00:36:15,662@mychess.play_games.play INFO # move: 车7进1-2021, visit count: 5, Q_value: -0.968, Prior: 0.000
+2020-05-10 00:36:15,662@mychess.play_games.play INFO # move: 车1进1-8081, visit count: 5, Q_value: -0.963, Prior: 0.000
+2020-05-10 00:36:15,663@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 5, Q_value: -0.957, Prior: 0.000
+2020-05-10 00:36:15,665@mychess.play_games.play INFO # move: 象1退3-8260, visit count: 5, Q_value: -0.934, Prior: 0.000
+2020-05-10 00:36:35,274@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p1p1p/9/6P1P/P1c1P1c2/1rK1E3E/9/1KRMSM1r1
+2020-05-10 00:36:37,141@mychess.play_games.play INFO # check = False, NN value = -0.993
+2020-05-10 00:36:37,141@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:36:37,142@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 43, Q_value: -1.094, Prior: 0.951
+2020-05-10 00:36:37,142@mychess.play_games.play INFO # move: 马7退5-2241, visit count: 7, Q_value: -0.980, Prior: 0.049
+2020-05-10 00:36:37,142@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 7, Q_value: -0.990, Prior: 0.000
+2020-05-10 00:36:37,143@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 6, Q_value: -0.989, Prior: 0.000
+2020-05-10 00:36:37,144@mychess.play_games.play INFO # move: 车7进1-2021, visit count: 5, Q_value: -0.989, Prior: 0.000
+2020-05-10 00:37:05,318@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/6p2/8P/P1c1P1c2/1rK1E3E/9/1KRMSM1r1
+2020-05-10 00:37:07,288@mychess.play_games.play INFO # check = False, NN value = -0.994
+2020-05-10 00:37:07,288@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:37:07,288@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 45, Q_value: -1.026, Prior: 0.973
+2020-05-10 00:37:07,289@mychess.play_games.play INFO # move: 卒5进1-4344, visit count: 6, Q_value: -0.990, Prior: 0.000
+2020-05-10 00:37:07,289@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 5, Q_value: -0.993, Prior: 0.000
+2020-05-10 00:37:07,292@mychess.play_games.play INFO # move: 马7退5-2241, visit count: 5, Q_value: -0.982, Prior: 0.027
+2020-05-10 00:37:07,292@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 5, Q_value: -0.988, Prior: 0.000
+2020-05-10 00:38:04,634@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/6p2/4P3P/P1c3c2/1rK1E2rE/9/1KRMSM3
+2020-05-10 00:38:06,433@mychess.play_games.play INFO # check = False, NN value = -0.995
+2020-05-10 00:38:06,434@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:38:06,434@mychess.play_games.play INFO # move: 马7进5-2243, visit count: 22, Q_value: -1.310, Prior: 0.812
+2020-05-10 00:38:06,434@mychess.play_games.play INFO # move: 马7退5-2241, visit count: 10, Q_value: -0.978, Prior: 0.109
+2020-05-10 00:38:06,434@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 9, Q_value: -0.980, Prior: 0.078
+2020-05-10 00:38:06,434@mychess.play_games.play INFO # move: 象1进3-8264, visit count: 7, Q_value: -0.985, Prior: 0.000
+2020-05-10 00:38:06,435@mychess.play_games.play INFO # move: 将5进1-4041, visit count: 6, Q_value: -1.156, Prior: 0.000
+2020-05-10 00:38:29,267@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4P1p1P/P1c3c2/1rK1E2r1/9/1KRMSM3
+2020-05-10 00:38:30,938@mychess.play_games.play INFO # check = False, NN value = -0.997
+2020-05-10 00:38:30,939@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:38:30,939@mychess.play_games.play INFO # move: 马7进5-2243, visit count: 29, Q_value: -1.267, Prior: 0.806
+2020-05-10 00:38:30,939@mychess.play_games.play INFO # move: 马7退5-2241, visit count: 8, Q_value: -1.235, Prior: 0.179
+2020-05-10 00:38:30,939@mychess.play_games.play INFO # move: 卒5进1-4445, visit count: 7, Q_value: -0.993, Prior: 0.000
+2020-05-10 00:38:30,939@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 7, Q_value: -0.992, Prior: 0.000
+2020-05-10 00:38:30,939@mychess.play_games.play INFO # move: 将5进1-4041, visit count: 6, Q_value: -1.159, Prior: 0.000
+2020-05-10 00:38:53,197@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4Pp2P/P1c1K1c2/1r2E2r1/9/1KRMSM3
+2020-05-10 00:38:55,069@mychess.play_games.play INFO # check = False, NN value = -0.998
+2020-05-10 00:38:55,070@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:38:55,070@mychess.play_games.play INFO # move: 象5退3-4260, visit count: 41, Q_value: -1.006, Prior: 1.000
+2020-05-10 00:38:55,070@mychess.play_games.play INFO # move: 象5进3-4264, visit count: 5, Q_value: -0.990, Prior: 0.000
+2020-05-10 00:38:55,070@mychess.play_games.play INFO # move: 将5进1-4041, visit count: 4, Q_value: -0.991, Prior: 0.000
+2020-05-10 00:38:55,070@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 4, Q_value: -0.994, Prior: 0.000
+2020-05-10 00:38:55,070@mychess.play_games.play INFO # move: 马5进7-4324, visit count: 4, Q_value: -0.993, Prior: 0.000
+2020-05-10 00:39:18,241@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4Pp2P/P1c1K1c2/2R1E2r1/9/1r1MSM3
+2020-05-10 00:39:20,045@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:39:20,045@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:39:20,046@mychess.play_games.play INFO # move: 马5退3-4362, visit count: 37, Q_value: -1.153, Prior: 0.920
+2020-05-10 00:39:20,046@mychess.play_games.play INFO # move: 将5进1-4041, visit count: 5, Q_value: -0.989, Prior: 0.000
+2020-05-10 00:39:20,046@mychess.play_games.play INFO # move: 马5进3-4364, visit count: 5, Q_value: -0.987, Prior: 0.000
+2020-05-10 00:39:20,046@mychess.play_games.play INFO # move: 车7平8-2212, visit count: 4, Q_value: -0.989, Prior: 0.000
+2020-05-10 00:39:20,046@mychess.play_games.play INFO # move: 车7退2-2220, visit count: 4, Q_value: -0.989, Prior: 0.000
+2020-05-10 00:39:28,386@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4Pp2P/P1c1K4/4E2r1/9/1r1MSM3
+2020-05-10 00:39:30,104@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:39:30,105@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:39:30,105@mychess.play_games.play INFO # move: 象5退7-4220, visit count: 35, Q_value: -1.222, Prior: 0.942
+2020-05-10 00:39:30,105@mychess.play_games.play INFO # move: 象5退3-4260, visit count: 7, Q_value: -1.134, Prior: 0.052
+2020-05-10 00:39:30,105@mychess.play_games.play INFO # move: 象5进7-4224, visit count: 7, Q_value: -0.993, Prior: 0.000
+2020-05-10 00:39:30,106@mychess.play_games.play INFO # move: 将5进1-4041, visit count: 6, Q_value: -1.160, Prior: 0.000
+2020-05-10 00:39:30,106@mychess.play_games.play INFO # move: 马5进7-4324, visit count: 6, Q_value: -0.991, Prior: 0.000
+2020-05-10 00:39:47,561@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4Pp2P/P1c1K4/7r1/9/2rMSM3
+2020-05-10 00:39:49,155@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:39:49,155@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:39:49,155@mychess.play_games.play INFO # move: 马5退4-4351, visit count: 15, Q_value: -1.529, Prior: 0.723
+2020-05-10 00:39:49,155@mychess.play_games.play INFO # move: 卒5进1-4445, visit count: 12, Q_value: -1.159, Prior: 0.197
+2020-05-10 00:39:49,155@mychess.play_games.play INFO # move: 马5退6-4331, visit count: 11, Q_value: -0.990, Prior: 0.050
+2020-05-10 00:39:49,156@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 10, Q_value: -0.985, Prior: 0.009
+2020-05-10 00:39:49,156@mychess.play_games.play INFO # move: 马5进7-4324, visit count: 9, Q_value: -0.989, Prior: 0.002
+2020-05-10 00:39:52,426@mychess.lib.model_helper DEBUG # start reload the best model if changed
+2020-05-10 00:39:52,589@mychess.lib.model_helper DEBUG # the best model is not changed
+2020-05-10 00:40:31,121@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4p3P/P1c6/6Kr1/9/2rMSM3
+2020-05-10 00:40:32,898@mychess.play_games.play INFO # check = False, NN value = -0.997
+2020-05-10 00:40:32,898@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:40:32,899@mychess.play_games.play INFO # move: 马3退5-6241, visit count: 42, Q_value: -1.015, Prior: 0.733
+2020-05-10 00:40:32,899@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 15, Q_value: -1.060, Prior: 0.249
+2020-05-10 00:40:32,899@mychess.play_games.play INFO # move: 马3进5-6243, visit count: 8, Q_value: -0.988, Prior: 0.004
+2020-05-10 00:40:32,899@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 8, Q_value: -0.989, Prior: 0.002
+2020-05-10 00:40:32,899@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 6, Q_value: -0.992, Prior: 0.007
+2020-05-10 00:40:48,538@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4p3P/P3c4/7r1/4K4/2rMSM3
+2020-05-10 00:40:50,098@mychess.play_games.play INFO # check = True, NN value = -0.990
+2020-05-10 00:40:50,099@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:40:50,099@mychess.play_games.play INFO # move: 马5退7-4120, visit count: 38, Q_value: -1.173, Prior: 0.822
+2020-05-10 00:40:50,099@mychess.play_games.play INFO # move: 马5进6-4133, visit count: 15, Q_value: -0.991, Prior: 0.059
+2020-05-10 00:40:50,099@mychess.play_games.play INFO # move: 马5进4-4153, visit count: 12, Q_value: -0.988, Prior: 0.004
+2020-05-10 00:40:50,099@mychess.play_games.play INFO # move: 马5进7-4122, visit count: 11, Q_value: -0.990, Prior: 0.042
+2020-05-10 00:40:50,099@mychess.play_games.play INFO # move: 马5进3-4162, visit count: 11, Q_value: -0.990, Prior: 0.068
+2020-05-10 00:41:09,535@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4p3P/P3cK3/4r4/9/2rMSM3
+2020-05-10 00:41:10,965@mychess.play_games.play INFO # check = True, NN value = -0.997
+2020-05-10 00:41:10,965@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:41:10,965@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 77, Q_value: -1.122, Prior: 0.995
+2020-05-10 00:41:10,965@mychess.play_games.play INFO # move: 马4退5-5341, visit count: 6, Q_value: -1.326, Prior: 0.005
+2020-05-10 00:41:10,965@mychess.play_games.play INFO # move: 马4退3-5361, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:41:10,966@mychess.play_games.play INFO # move: 马4进2-5374, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:41:10,966@mychess.play_games.play INFO # move: 马4进5-5345, visit count: 2, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:43:18,153@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/5p2P/P3cK3/4r4/4M4/2rMS4
+2020-05-10 00:43:19,694@mychess.play_games.play INFO # check = False, NN value = -0.998
+2020-05-10 00:43:19,694@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:43:19,695@mychess.play_games.play INFO # move: 将5平4-4050, visit count: 42, Q_value: -1.114, Prior: 0.740
+2020-05-10 00:43:19,695@mychess.play_games.play INFO # move: 马4进2-5374, visit count: 19, Q_value: -1.149, Prior: 0.244
+2020-05-10 00:43:19,695@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 9, Q_value: -0.989, Prior: 0.001
+2020-05-10 00:43:19,695@mychess.play_games.play INFO # move: 马4退2-5372, visit count: 9, Q_value: -0.990, Prior: 0.002
+2020-05-10 00:43:19,695@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 9, Q_value: -0.990, Prior: 0.003
+2020-05-10 00:43:38,183@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/8P/P3cp3/4r4/4M4/2rM1S3
+2020-05-10 00:43:39,661@mychess.play_games.play INFO # check = False, NN value = -0.997
+2020-05-10 00:43:39,661@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:43:39,661@mychess.play_games.play INFO # move: 将4进1-5051, visit count: 47, Q_value: -1.060, Prior: 0.907
+2020-05-10 00:43:39,661@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 16, Q_value: -0.995, Prior: 0.093
+2020-05-10 00:43:39,661@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 10, Q_value: -0.994, Prior: 0.000
+2020-05-10 00:43:39,662@mychess.play_games.play INFO # move: 仕5进6-4132, visit count: 9, Q_value: -1.108, Prior: 0.000
+2020-05-10 00:43:39,662@mychess.play_games.play INFO # move: 仕5进4-4152, visit count: 9, Q_value: -1.107, Prior: 0.000
+2020-05-10 00:43:50,444@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/2r5P/P3cp3/4r4/4M4/3MS4
+2020-05-10 00:43:52,147@mychess.play_games.play INFO # check = False, NN value = -0.993
+2020-05-10 00:43:52,147@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:43:52,147@mychess.play_games.play INFO # move: 将5平4-4050, visit count: 73, Q_value: -0.997, Prior: 0.992
+2020-05-10 00:43:52,148@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 10, Q_value: -1.096, Prior: 0.000
+2020-05-10 00:43:52,148@mychess.play_games.play INFO # move: 卒1进1-8485, visit count: 8, Q_value: -1.247, Prior: 0.007
+2020-05-10 00:43:52,149@mychess.play_games.play INFO # move: 仕5退4-4150, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:43:52,151@mychess.play_games.play INFO # move: 仕5进4-4152, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:44:39,624@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p1p1p4/8p/2r6/P3cp3/4r4/4M4/3MS4
+2020-05-10 00:44:41,255@mychess.play_games.play INFO # check = False, NN value = -0.996
+2020-05-10 00:44:41,255@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:44:41,255@mychess.play_games.play INFO # move: 将5平4-4050, visit count: 80, Q_value: -1.009, Prior: 1.000
+2020-05-10 00:44:41,255@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 11, Q_value: -1.179, Prior: 0.000
+2020-05-10 00:44:41,255@mychess.play_games.play INFO # move: 仕5进6-4132, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:44:41,256@mychess.play_games.play INFO # move: 仕5进4-4152, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:44:41,257@mychess.play_games.play INFO # move: 仕5退4-4150, visit count: 2, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:45:04,356@mychess.play_games.play INFO # state = 3msme2/9/2k1e4/p3p4/2p5p/2r6/P3cp3/4r4/4M4/3M1S3
+2020-05-10 00:45:05,588@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:45:05,589@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:45:05,589@mychess.play_games.play INFO # move: 将4进1-5051, visit count: 56, Q_value: -1.049, Prior: 0.999
+2020-05-10 00:45:05,589@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 12, Q_value: -0.996, Prior: 0.000
+2020-05-10 00:45:05,589@mychess.play_games.play INFO # move: 仕5进6-4132, visit count: 11, Q_value: -0.998, Prior: 0.000
+2020-05-10 00:45:05,589@mychess.play_games.play INFO # move: 将4平5-5040, visit count: 10, Q_value: -1.097, Prior: 0.000
+2020-05-10 00:45:05,589@mychess.play_games.play INFO # move: 仕5进4-4152, visit count: 10, Q_value: -0.996, Prior: 0.000
+2020-05-10 00:45:13,920@mychess.play_games.play INFO # state = 3msme2/9/4e4/p3p4/1kp5p/2r6/P3cp3/4r4/4MS3/3M5
+2020-05-10 00:45:15,455@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:45:15,455@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:45:15,455@mychess.play_games.play INFO # move: 将4退1-5150, visit count: 56, Q_value: -1.013, Prior: 0.999
+2020-05-10 00:45:15,456@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 13, Q_value: -0.997, Prior: 0.000
+2020-05-10 00:45:15,456@mychess.play_games.play INFO # move: 仕5退4-4150, visit count: 11, Q_value: -0.996, Prior: 0.000
+2020-05-10 00:45:15,456@mychess.play_games.play INFO # move: 仕5进4-4152, visit count: 9, Q_value: -1.108, Prior: 0.000
+2020-05-10 00:45:15,456@mychess.play_games.play INFO # move: 仕5进6-4132, visit count: 8, Q_value: -1.247, Prior: 0.000
+2020-05-10 00:45:31,311@mychess.play_games.play INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/k3cp3/4r4/5S3/3M1M3
+2020-05-10 00:45:32,931@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:45:32,931@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:45:32,931@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 81, Q_value: -1.071, Prior: 1.000
+2020-05-10 00:45:32,932@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 13, Q_value: -1.151, Prior: 0.000
+2020-05-10 00:45:32,932@mychess.play_games.play INFO # move: 将4进1-5152, visit count: 3, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:45:32,932@mychess.play_games.play INFO # move: 将4平5-5141, visit count: 2, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:45:43,201@mychess.play_games.play INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k1r4/4MS3/5M3
+2020-05-10 00:45:44,628@mychess.play_games.play INFO # check = False, NN value = -0.999
+2020-05-10 00:45:44,628@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:45:44,628@mychess.play_games.play INFO # move: 仕5进6-4132, visit count: 43, Q_value: -1.440, Prior: 0.996
+2020-05-10 00:45:44,628@mychess.play_games.play INFO # move: 仕5进4-4152, visit count: 37, Q_value: -1.050, Prior: 0.004
+2020-05-10 00:45:44,628@mychess.play_games.play INFO # move: 仕5退6-4130, visit count: 15, Q_value: -1.265, Prior: 0.000
+2020-05-10 00:45:44,628@mychess.play_games.play INFO # move: 将4进1-5152, visit count: 4, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:45:49,880@mychess.play_games.play INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4c4/2k1rp3/5S3/5M3
+2020-05-10 00:45:50,005@mychess.play_games.play INFO # check = True, NN value = -1.000
+2020-05-10 00:45:50,006@mychess.play_games.play INFO # MCTS results:
+2020-05-10 00:45:50,006@mychess.play_games.play INFO # move: 将4进1-5152, visit count: 49, Q_value: -2.000, Prior: 0.842
+2020-05-10 00:45:50,006@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 32, Q_value: -2.000, Prior: 0.158
+2020-05-10 00:45:50,007@mychess.play_games.play INFO # move: 将4平5-5141, visit count: 18, Q_value: -2.000, Prior: 0.000
+2020-05-10 00:45:50,134@mychess.play_games.play INFO # Winner is Winner.red !!!
+2020-05-10 16:23:38,451@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 16:23:38,456@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 16:23:38,477@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 16:23:38,494@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 16:23:38,580@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 16:23:39,861@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 16:23:40,302@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 16:23:40,302@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 16:23:40,303@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 16:23:40,318@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 16:23:40,319@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 16:23:40,979@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 16:23:46,832@mychess.play_games.play INFO # state = rkemsmekr/9/4c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 16:24:03,866@mychess.play_games.play INFO # check = False, NN value = -0.141
+2020-05-10 16:24:03,866@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:24:03,866@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 465, Q_value: -0.030, Prior: 0.563
+2020-05-10 16:24:03,866@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 79, Q_value: -0.041, Prior: 0.054
+2020-05-10 16:24:03,866@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 78, Q_value: -0.049, Prior: 0.054
+2020-05-10 16:24:03,866@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 46, Q_value: -0.064, Prior: 0.021
+2020-05-10 16:24:03,867@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 30, Q_value: -0.079, Prior: 0.032
+2020-05-10 16:29:14,499@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 16:29:14,503@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 16:29:14,522@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 16:29:14,537@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 16:29:14,651@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 16:29:15,912@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 16:29:16,285@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 16:29:16,286@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 16:29:16,286@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 16:29:16,312@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 16:29:16,313@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 16:29:16,954@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 16:29:23,178@mychess.play_games.play INFO # state = rkemsmekr/9/2c4c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 16:29:40,287@mychess.play_games.play INFO # check = False, NN value = -0.034
+2020-05-10 16:29:40,287@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:29:40,287@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 77, Q_value: 0.026, Prior: 0.054
+2020-05-10 16:29:40,287@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 74, Q_value: 0.009, Prior: 0.031
+2020-05-10 16:29:40,287@mychess.play_games.play INFO # move: 炮2平6-7232, visit count: 73, Q_value: 0.031, Prior: 0.034
+2020-05-10 16:29:40,287@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 61, Q_value: 0.011, Prior: 0.029
+2020-05-10 16:29:40,288@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 56, Q_value: 0.004, Prior: 0.035
+2020-05-10 16:29:53,712@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/P1c1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 16:30:11,612@mychess.play_games.play INFO # check = False, NN value = 0.104
+2020-05-10 16:30:11,613@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:30:11,613@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 330, Q_value: 0.141, Prior: 0.330
+2020-05-10 16:30:11,613@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 133, Q_value: 0.094, Prior: 0.387
+2020-05-10 16:30:11,613@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 80, Q_value: 0.142, Prior: 0.030
+2020-05-10 16:30:11,613@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 80, Q_value: 0.148, Prior: 0.014
+2020-05-10 16:30:11,614@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 76, Q_value: 0.133, Prior: 0.007
+2020-05-10 16:30:21,339@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/P3P1c1P/KC4KC1/9/R1EMSME1R
+2020-05-10 16:30:37,628@mychess.play_games.play INFO # check = False, NN value = 0.068
+2020-05-10 16:30:37,628@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:30:37,628@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 775, Q_value: 0.098, Prior: 0.996
+2020-05-10 16:30:37,628@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 12, Q_value: 0.050, Prior: 0.000
+2020-05-10 16:30:37,629@mychess.play_games.play INFO # move: 炮8平7-1222, visit count: 8, Q_value: 0.034, Prior: 0.000
+2020-05-10 16:30:37,629@mychess.play_games.play INFO # move: 炮8平5-1242, visit count: 3, Q_value: -0.002, Prior: 0.001
+2020-05-10 16:30:37,630@mychess.play_games.play INFO # move: 象3进1-6082, visit count: 1, Q_value: -0.017, Prior: 0.001
+2020-05-10 16:31:00,627@mychess.play_games.play INFO # state = r1emsmekr/9/2k4c1/p1p1p1p1p/9/9/P3P1c1P/KC2E1KC1/9/R1EMSM2R
+2020-05-10 16:31:13,789@mychess.play_games.play INFO # check = False, NN value = 0.094
+2020-05-10 16:31:13,790@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:31:13,791@mychess.play_games.play INFO # move: 炮8平7-1222, visit count: 799, Q_value: 0.122, Prior: 0.999
+2020-05-10 16:31:13,791@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 0, Q_value: 0.000, Prior: 0.000
+2020-05-10 16:31:45,291@mychess.play_games.play INFO # state = 1remsmekr/9/2k4c1/p1p1p1p1p/9/9/P3P1c1P/K1C1E1KC1/9/R1EMSM2R
+2020-05-10 16:32:02,573@mychess.play_games.play INFO # check = False, NN value = 0.162
+2020-05-10 16:32:02,573@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:32:02,573@mychess.play_games.play INFO # move: 炮7进5-2227, visit count: 727, Q_value: 0.354, Prior: 0.987
+2020-05-10 16:32:02,574@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 14, Q_value: 0.076, Prior: 0.000
+2020-05-10 16:32:02,574@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 13, Q_value: 0.055, Prior: 0.000
+2020-05-10 16:32:02,577@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 12, Q_value: 0.041, Prior: 0.011
+2020-05-10 16:32:02,577@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 10, Q_value: 0.032, Prior: 0.000
+2020-05-10 16:32:29,559@mychess.play_games.play INFO # state = 1remsmekr/9/2C4c1/p1p1p1p1p/9/9/c3P3P/K3E1KC1/9/R1EMSM2R
+2020-05-10 16:32:45,583@mychess.play_games.play INFO # check = False, NN value = 0.284
+2020-05-10 16:32:45,584@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:32:45,585@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 426, Q_value: 0.673, Prior: 0.480
+2020-05-10 16:32:45,585@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 293, Q_value: 0.637, Prior: 0.476
+2020-05-10 16:32:45,585@mychess.play_games.play INFO # move: 马9退7-0221, visit count: 41, Q_value: 0.581, Prior: 0.041
+2020-05-10 16:32:45,585@mychess.play_games.play INFO # move: 马9退8-0210, visit count: 16, Q_value: 0.481, Prior: 0.003
+2020-05-10 16:32:45,585@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 1, Q_value: -0.280, Prior: 0.000
+2020-05-10 16:33:35,503@mychess.play_games.play INFO # state = 2emsmekr/9/1rC4c1/p1p1p1p1p/9/9/c3P3P/K3E1KC1/9/1REMSM2R
+2020-05-10 16:33:51,166@mychess.play_games.play INFO # check = False, NN value = 0.750
+2020-05-10 16:33:51,166@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:33:51,167@mychess.play_games.play INFO # move: 车8进7-1017, visit count: 280, Q_value: 0.507, Prior: 0.998
+2020-05-10 16:33:51,167@mychess.play_games.play INFO # move: 炮2退1-7271, visit count: 207, Q_value: 0.676, Prior: 0.000
+2020-05-10 16:33:51,167@mychess.play_games.play INFO # move: 炮2进2-7274, visit count: 204, Q_value: 0.721, Prior: 0.000
+2020-05-10 16:33:51,167@mychess.play_games.play INFO # move: 炮7进1-2728, visit count: 80, Q_value: 0.619, Prior: 0.000
+2020-05-10 16:33:51,168@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 9, Q_value: 0.226, Prior: 0.000
+2020-05-10 16:34:07,502@mychess.play_games.play INFO # state = 2emsmekr/9/1cC6/p1p1p1p1p/9/9/c3P3P/K3E1KC1/9/2EMSM2R
+2020-05-10 16:34:18,553@mychess.play_games.play INFO # check = False, NN value = 0.321
+2020-05-10 16:34:18,553@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:34:18,553@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 683, Q_value: 0.451, Prior: 1.000
+2020-05-10 16:34:18,555@mychess.play_games.play INFO # move: 炮2进4-7276, visit count: 104, Q_value: 0.469, Prior: 0.000
+2020-05-10 16:34:18,557@mychess.play_games.play INFO # move: 车1进1-8081, visit count: 12, Q_value: 0.369, Prior: 0.000
+2020-05-10 16:34:39,535@mychess.play_games.play INFO # state = 2emsmek1/9/1cC5r/p1p1p1p1p/9/5K3/c3P3P/K3E2C1/9/2EMSM2R
+2020-05-10 16:34:44,887@mychess.play_games.play INFO # check = False, NN value = 0.298
+2020-05-10 16:34:44,887@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:34:44,887@mychess.play_games.play INFO # move: 炮7进1-2728, visit count: 793, Q_value: 0.447, Prior: 0.949
+2020-05-10 16:34:44,887@mychess.play_games.play INFO # move: 马4进5-5446, visit count: 6, Q_value: 0.173, Prior: 0.050
+2020-05-10 16:35:47,119@mychess.play_games.play INFO # state = 2emsmek1/2C6/2c5r/p1p1p1p1p/9/5K3/c3P3P/K3E2C1/9/2EMSM2R
+2020-05-10 16:36:03,068@mychess.play_games.play INFO # check = False, NN value = 0.457
+2020-05-10 16:36:03,068@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:36:03,068@mychess.play_games.play INFO # move: 炮7退2-2826, visit count: 531, Q_value: 0.686, Prior: 0.978
+2020-05-10 16:36:03,068@mychess.play_games.play INFO # move: 炮2平3-7262, visit count: 80, Q_value: 0.687, Prior: 0.003
+2020-05-10 16:36:03,069@mychess.play_games.play INFO # move: 车1平3-8060, visit count: 53, Q_value: 0.610, Prior: 0.015
+2020-05-10 16:36:03,069@mychess.play_games.play INFO # move: 马4进3-5466, visit count: 50, Q_value: 0.617, Prior: 0.000
+2020-05-10 16:36:03,069@mychess.play_games.play INFO # move: 马4进5-5446, visit count: 28, Q_value: 0.557, Prior: 0.000
+2020-05-10 16:36:29,754@mychess.play_games.play INFO # state = 2emsmek1/9/4c3r/p1C1p1p1p/9/5K3/c3P3P/K3E2C1/9/2EMSM2R
+2020-05-10 16:36:45,308@mychess.play_games.play INFO # check = False, NN value = 0.561
+2020-05-10 16:36:45,310@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:36:45,310@mychess.play_games.play INFO # move: 马4进6-5435, visit count: 551, Q_value: 0.737, Prior: 1.000
+2020-05-10 16:36:45,311@mychess.play_games.play INFO # move: 炮2平3-7262, visit count: 78, Q_value: 0.732, Prior: 0.000
+2020-05-10 16:36:45,311@mychess.play_games.play INFO # move: 马4进3-5466, visit count: 77, Q_value: 0.712, Prior: 0.000
+2020-05-10 16:36:45,311@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 49, Q_value: 0.688, Prior: 0.000
+2020-05-10 16:36:45,311@mychess.play_games.play INFO # move: 车1平3-8060, visit count: 44, Q_value: 0.672, Prior: 0.000
+2020-05-10 16:37:37,894@mychess.play_games.play INFO # state = 2emsmek1/9/1c6r/p1C1p1p1p/3K5/9/c3P3P/K3E2C1/9/2EMSM2R
+2020-05-10 16:37:53,568@mychess.play_games.play INFO # check = False, NN value = 0.504
+2020-05-10 16:37:53,568@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:37:53,569@mychess.play_games.play INFO # move: 车1平3-8060, visit count: 799, Q_value: 0.699, Prior: 0.989
+2020-05-10 16:38:12,464@mychess.play_games.play INFO # state = 2emsmek1/9/1c1r5/p1C1p1p1p/3K5/9/c3P3P/K3E2C1/9/2EMSMR2
+2020-05-10 16:38:16,311@mychess.play_games.play INFO # check = False, NN value = 0.522
+2020-05-10 16:38:16,311@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:38:16,312@mychess.play_games.play INFO # move: 马6进4-3556, visit count: 790, Q_value: 0.692, Prior: 1.000
+2020-05-10 16:38:16,312@mychess.play_games.play INFO # move: 马6退4-3554, visit count: 9, Q_value: 0.553, Prior: 0.000
+2020-05-10 16:38:48,420@mychess.play_games.play INFO # state = 2emsmek1/9/1c3r3/p1C1pKp1p/9/9/c3P3P/K3E2C1/9/2EMSMR2
+2020-05-10 16:39:04,550@mychess.play_games.play INFO # check = False, NN value = 0.634
+2020-05-10 16:39:04,550@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:39:04,550@mychess.play_games.play INFO # move: 车3进6-6066, visit count: 523, Q_value: 0.793, Prior: 0.973
+2020-05-10 16:39:04,551@mychess.play_games.play INFO # move: 炮2平4-7252, visit count: 116, Q_value: 0.813, Prior: 0.027
+2020-05-10 16:39:04,551@mychess.play_games.play INFO # move: 车3进1-6061, visit count: 78, Q_value: 0.801, Prior: 0.000
+2020-05-10 16:39:04,551@mychess.play_games.play INFO # move: 车3进4-6064, visit count: 36, Q_value: 0.698, Prior: 0.000
+2020-05-10 16:39:04,552@mychess.play_games.play INFO # move: 车3进2-6062, visit count: 18, Q_value: 0.578, Prior: 0.000
+2020-05-10 16:39:16,733@mychess.play_games.play INFO # state = 2emsmek1/9/5r3/p1C1pKR1p/9/9/cc2P3P/K3E2C1/9/2EMSM3
+2020-05-10 16:39:16,970@mychess.lib.model_helper DEBUG # start reload the best model if changed
+2020-05-10 16:39:17,104@mychess.lib.model_helper DEBUG # the best model is not changed
+2020-05-10 16:39:32,160@mychess.play_games.play INFO # check = False, NN value = 0.785
+2020-05-10 16:39:32,160@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:39:32,161@mychess.play_games.play INFO # move: 炮2平4-7252, visit count: 279, Q_value: 0.949, Prior: 0.463
+2020-05-10 16:39:32,161@mychess.play_games.play INFO # move: 马4退3-5664, visit count: 219, Q_value: 0.858, Prior: 0.505
+2020-05-10 16:39:32,161@mychess.play_games.play INFO # move: 车3进3-6669, visit count: 80, Q_value: 0.912, Prior: 0.025
+2020-05-10 16:39:32,161@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 55, Q_value: 0.830, Prior: 0.001
+2020-05-10 16:39:32,161@mychess.play_games.play INFO # move: 马9退7-0221, visit count: 50, Q_value: 0.828, Prior: 0.000
+2020-05-10 16:39:51,301@mychess.play_games.play INFO # state = 2emsmek1/9/5r3/p1C1pKR1p/9/9/1c2c3P/K3EC3/9/2EMSM3
+2020-05-10 16:40:06,528@mychess.play_games.play INFO # check = True, NN value = 0.723
+2020-05-10 16:40:06,528@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:40:06,528@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 799, Q_value: 0.896, Prior: 0.989
+2020-05-10 16:40:13,768@mychess.play_games.play INFO # state = 2emsmek1/9/6r2/p1C1pKR1p/9/9/1c2c3P/K3EC3/4M4/2EMS4
+2020-05-10 16:40:27,850@mychess.play_games.play INFO # check = False, NN value = 0.839
+2020-05-10 16:40:27,851@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:40:27,852@mychess.play_games.play INFO # move: 马4进3-5668, visit count: 651, Q_value: 1.079, Prior: 0.604
+2020-05-10 16:40:27,852@mychess.play_games.play INFO # move: 车3进1-6667, visit count: 138, Q_value: 1.231, Prior: 0.392
+2020-05-10 16:40:27,853@mychess.play_games.play INFO # move: 马4退3-5664, visit count: 5, Q_value: 0.720, Prior: 0.001
+2020-05-10 16:40:27,853@mychess.play_games.play INFO # move: 车3平2-6676, visit count: 4, Q_value: 0.616, Prior: 0.001
+2020-05-10 16:40:27,853@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 1, Q_value: -0.138, Prior: 0.001
+2020-05-10 16:40:40,134@mychess.play_games.play INFO # state = 2em1mek1/4s1K2/6r2/p1C1p1R1p/9/9/1c2c3P/K3EC3/4M4/2EMS4
+2020-05-10 16:40:53,067@mychess.play_games.play INFO # check = False, NN value = 0.663
+2020-05-10 16:40:53,068@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:40:53,068@mychess.play_games.play INFO # move: 车3平5-6646, visit count: 694, Q_value: 1.123, Prior: 0.016
+2020-05-10 16:40:53,068@mychess.play_games.play INFO # move: 车3进1-6667, visit count: 96, Q_value: 0.928, Prior: 0.924
+2020-05-10 16:40:53,069@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 4, Q_value: 0.614, Prior: 0.033
+2020-05-10 16:40:53,069@mychess.play_games.play INFO # move: 车3平4-6656, visit count: 3, Q_value: 0.488, Prior: 0.002
+2020-05-10 16:40:53,069@mychess.play_games.play INFO # move: 马9进8-0214, visit count: 2, Q_value: 0.389, Prior: 0.010
+2020-05-10 16:41:02,069@mychess.play_games.play INFO # state = 2em1m1k1/4s1K2/4e1r2/p1C1R3p/9/9/1c2c3P/K3EC3/4M4/2EMS4
+2020-05-10 16:41:11,159@mychess.play_games.play INFO # check = False, NN value = 0.809
+2020-05-10 16:41:11,159@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:41:11,159@mychess.play_games.play INFO # move: 车5退3-4643, visit count: 788, Q_value: 1.206, Prior: 0.993
+2020-05-10 16:41:11,160@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 11, Q_value: 0.728, Prior: 0.005
+2020-05-10 16:41:34,777@mychess.play_games.play INFO # state = 2em1m1k1/4s1K2/4e1r2/p1C5p/1c7/9/4R3P/K3EC3/4M4/2EMS4
+2020-05-10 16:41:48,853@mychess.play_games.play INFO # check = False, NN value = 0.890
+2020-05-10 16:41:48,854@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:41:48,854@mychess.play_games.play INFO # move: 炮7平5-2646, visit count: 772, Q_value: 1.136, Prior: 0.990
+2020-05-10 16:41:48,854@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 12, Q_value: 0.946, Prior: 0.009
+2020-05-10 16:41:48,854@mychess.play_games.play INFO # move: 马3进1-6889, visit count: 8, Q_value: 0.925, Prior: 0.000
+2020-05-10 16:41:48,854@mychess.play_games.play INFO # move: 马3退5-6847, visit count: 5, Q_value: 0.898, Prior: 0.000
+2020-05-10 16:41:48,854@mychess.play_games.play INFO # move: 炮4进6-5258, visit count: 2, Q_value: 0.548, Prior: 0.000
+2020-05-10 16:42:23,812@mychess.play_games.play INFO # state = 2em1mek1/4s1K2/6r2/p3C3p/1c7/9/4R3P/K3EC3/4M4/2EMS4
+2020-05-10 16:42:35,853@mychess.play_games.play INFO # check = False, NN value = 0.919
+2020-05-10 16:42:35,853@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:42:35,853@mychess.play_games.play INFO # move: 马3退5-6847, visit count: 668, Q_value: 1.280, Prior: 0.017
+2020-05-10 16:42:35,854@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 120, Q_value: 1.032, Prior: 0.942
+2020-05-10 16:42:35,854@mychess.play_games.play INFO # move: 车5平7-4323, visit count: 11, Q_value: 0.941, Prior: 0.028
+2020-05-10 16:42:48,579@mychess.play_games.play INFO # state = 2em1mek1/4s4/4r4/p3C3p/1c7/9/4R3P/K3EC3/4M4/2EMS4
+2020-05-10 16:42:48,872@mychess.play_games.play INFO # Winner is Winner.black !!!
+2020-05-10 16:42:51,880@mychess.agent.api ERROR # EOF error: 
+2020-05-10 16:46:55,098@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 16:46:55,101@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 16:46:55,124@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 16:46:55,161@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 16:46:55,243@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 16:46:56,653@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 16:46:57,025@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 16:46:57,025@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 16:46:57,025@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 16:46:57,040@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 16:46:57,040@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 16:46:57,663@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 16:47:06,734@mychess.play_games.play INFO # state = rkemsmekr/9/2c4c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 16:47:11,045@mychess.play_games.play INFO # check = False, NN value = -0.034
+2020-05-10 16:47:11,045@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:47:11,045@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 17, Q_value: -0.001, Prior: 0.054
+2020-05-10 16:47:11,046@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 14, Q_value: 0.019, Prior: 0.031
+2020-05-10 16:47:11,046@mychess.play_games.play INFO # move: 炮2平6-7232, visit count: 13, Q_value: 0.008, Prior: 0.034
+2020-05-10 16:47:11,046@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 13, Q_value: 0.000, Prior: 0.029
+2020-05-10 16:47:11,046@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 12, Q_value: -0.003, Prior: 0.035
+2020-05-10 16:47:30,705@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/P1c1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 16:47:34,977@mychess.play_games.play INFO # check = False, NN value = 0.104
+2020-05-10 16:47:34,977@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:47:34,977@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 34, Q_value: 0.033, Prior: 0.387
+2020-05-10 16:47:34,977@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 31, Q_value: 0.097, Prior: 0.330
+2020-05-10 16:47:34,977@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 20, Q_value: 0.094, Prior: 0.030
+2020-05-10 16:47:34,977@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 20, Q_value: 0.118, Prior: 0.014
+2020-05-10 16:47:34,978@mychess.play_games.play INFO # move: 炮8平6-1232, visit count: 18, Q_value: 0.072, Prior: 0.008
+2020-05-10 16:47:53,029@mychess.play_games.play INFO # state = rkemsm1kr/9/4e2c1/p1p1p1p1p/9/6P2/P1c1P3P/1C4KC1/9/RKEMSME1R
+2020-05-10 16:47:57,245@mychess.play_games.play INFO # check = False, NN value = 0.095
+2020-05-10 16:47:57,245@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:47:57,245@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 101, Q_value: 0.213, Prior: 0.996
+2020-05-10 16:47:57,245@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 20, Q_value: 0.101, Prior: 0.000
+2020-05-10 16:47:57,246@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 19, Q_value: 0.086, Prior: 0.001
+2020-05-10 16:47:57,247@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 16, Q_value: 0.073, Prior: 0.000
+2020-05-10 16:47:57,247@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 13, Q_value: 0.035, Prior: 0.000
+2020-05-10 16:48:04,638@mychess.play_games.play INFO # state = rkemsm2r/5k3/4e2c1/p1p1p1p1p/9/6P2/P1c1P3P/KC4KC1/9/R1EMSME1R
+2020-05-10 16:48:09,471@mychess.play_games.play INFO # check = False, NN value = 0.203
+2020-05-10 16:48:09,471@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:48:09,471@mychess.play_games.play INFO # move: 炮8平7-1222, visit count: 41, Q_value: 0.149, Prior: 0.363
+2020-05-10 16:48:09,471@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 32, Q_value: 0.102, Prior: 0.309
+2020-05-10 16:48:09,471@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 22, Q_value: 0.224, Prior: 0.013
+2020-05-10 16:48:09,472@mychess.play_games.play INFO # move: 炮8平6-1232, visit count: 20, Q_value: 0.160, Prior: 0.111
+2020-05-10 16:48:09,474@mychess.play_games.play INFO # move: 炮8平4-1252, visit count: 19, Q_value: 0.063, Prior: 0.028
+2020-05-10 16:48:29,807@mychess.play_games.play INFO # state = rkemsm2r/5k3/4e1c2/p1p1p1p1p/9/6P2/P1c1P3P/K1C3KC1/9/R1EMSME1R
+2020-05-10 16:48:33,968@mychess.play_games.play INFO # check = False, NN value = 0.392
+2020-05-10 16:48:33,968@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:48:33,968@mychess.play_games.play INFO # move: 马9进7-0223, visit count: 144, Q_value: 0.574, Prior: 0.997
+2020-05-10 16:48:33,968@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 11, Q_value: 0.161, Prior: 0.000
+2020-05-10 16:48:33,968@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 10, Q_value: 0.121, Prior: 0.000
+2020-05-10 16:48:33,969@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 9, Q_value: 0.127, Prior: 0.000
+2020-05-10 16:48:33,969@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 8, Q_value: 0.124, Prior: 0.001
+2020-05-10 16:48:50,237@mychess.play_games.play INFO # state = rkemsm2r/5k3/4e4/p1p1p1p1p/9/6c2/P1K1P3P/2C3KC1/9/R1EMSME1R
+2020-05-10 16:48:54,210@mychess.play_games.play INFO # check = False, NN value = 0.704
+2020-05-10 16:48:54,210@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:48:54,210@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 59, Q_value: 0.766, Prior: 1.000
+2020-05-10 16:48:54,211@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 20, Q_value: 0.701, Prior: 0.000
+2020-05-10 16:48:54,211@mychess.play_games.play INFO # move: 马3进4-6254, visit count: 20, Q_value: 0.673, Prior: 0.000
+2020-05-10 16:48:54,211@mychess.play_games.play INFO # move: 马7进8-2315, visit count: 20, Q_value: 0.687, Prior: 0.000
+2020-05-10 16:48:54,212@mychess.play_games.play INFO # move: 马7进6-2335, visit count: 20, Q_value: 0.766, Prior: 0.000
+2020-05-10 16:49:13,477@mychess.play_games.play INFO # state = rkemsm1r1/5k3/4e4/p1p1p1p1p/9/6c2/P1K1P3P/2C3KC1/9/1REMSME1R
+2020-05-10 16:49:17,234@mychess.play_games.play INFO # check = False, NN value = 0.748
+2020-05-10 16:49:17,235@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:49:17,235@mychess.play_games.play INFO # move: 车8进8-1018, visit count: 115, Q_value: 0.776, Prior: 0.815
+2020-05-10 16:49:17,235@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 42, Q_value: 0.771, Prior: 0.185
+2020-05-10 16:49:17,236@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 18, Q_value: 0.691, Prior: 0.000
+2020-05-10 16:49:17,236@mychess.play_games.play INFO # move: 象3进1-6082, visit count: 18, Q_value: 0.708, Prior: 0.000
+2020-05-10 16:49:17,236@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 6, Q_value: 0.462, Prior: 0.000
+2020-05-10 16:49:48,555@mychess.play_games.play INFO # state = rkems2r1/1R2mk3/4e4/p1p1p1p1p/9/6c2/P1K1P3P/2C3KC1/9/2EMSME1R
+2020-05-10 16:49:52,497@mychess.play_games.play INFO # check = False, NN value = 0.871
+2020-05-10 16:49:52,497@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:49:52,497@mychess.play_games.play INFO # move: 车1平2-8070, visit count: 64, Q_value: 0.875, Prior: 0.791
+2020-05-10 16:49:52,498@mychess.play_games.play INFO # move: 炮7平8-2212, visit count: 20, Q_value: 0.837, Prior: 0.030
+2020-05-10 16:49:52,498@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 20, Q_value: 0.860, Prior: 0.002
+2020-05-10 16:49:52,498@mychess.play_games.play INFO # move: 马7进8-2315, visit count: 20, Q_value: 0.859, Prior: 0.000
+2020-05-10 16:49:52,498@mychess.play_games.play INFO # move: 马7进6-2335, visit count: 20, Q_value: 0.881, Prior: 0.173
+2020-05-10 16:50:10,813@mychess.play_games.play INFO # state = rkems2r1/1R2mk3/4e4/p1p1p1p1p/9/9/P1K1P1c1P/2C3KC1/9/2EMSMER1
+2020-05-10 16:50:14,286@mychess.play_games.play INFO # check = False, NN value = 0.840
+2020-05-10 16:50:14,289@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:50:14,290@mychess.play_games.play INFO # move: 马7进6-2335, visit count: 181, Q_value: 0.901, Prior: 0.997
+2020-05-10 16:50:14,290@mychess.play_games.play INFO # move: 马7退5-2342, visit count: 18, Q_value: 0.851, Prior: 0.001
+2020-05-10 16:51:22,570@mychess.play_games.play INFO # state = rkems2r1/1R2mk3/4e4/p1p1p3p/3K2p2/9/P3P1c1P/2C3KC1/9/2EMSMER1
+2020-05-10 16:51:26,677@mychess.play_games.play INFO # check = False, NN value = 0.852
+2020-05-10 16:51:26,677@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:51:26,677@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 53, Q_value: 0.877, Prior: 0.964
+2020-05-10 16:51:26,678@mychess.play_games.play INFO # move: 炮7平8-2212, visit count: 20, Q_value: 0.873, Prior: 0.000
+2020-05-10 16:51:26,678@mychess.play_games.play INFO # move: 炮2进3-7275, visit count: 20, Q_value: 0.841, Prior: 0.000
+2020-05-10 16:51:26,679@mychess.play_games.play INFO # move: 炮2进4-7276, visit count: 20, Q_value: 0.823, Prior: 0.000
+2020-05-10 16:51:26,679@mychess.play_games.play INFO # move: 炮2进6-7278, visit count: 20, Q_value: 0.855, Prior: 0.000
+2020-05-10 16:52:52,577@mychess.play_games.play INFO # state = rkems2r1/1R2m4/4e4/p1p1p1k1p/3K2p2/9/P3P1c1P/2C1E1KC1/9/2EMSM1R1
+2020-05-10 16:52:56,330@mychess.play_games.play INFO # check = False, NN value = 0.862
+2020-05-10 16:52:56,330@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:52:56,330@mychess.play_games.play INFO # move: 马6进7-3527, visit count: 44, Q_value: 0.849, Prior: 0.708
+2020-05-10 16:52:56,331@mychess.play_games.play INFO # move: 炮7进7-2229, visit count: 27, Q_value: 1.602, Prior: 0.002
+2020-05-10 16:52:56,331@mychess.play_games.play INFO # move: 炮2进4-7276, visit count: 20, Q_value: 0.871, Prior: 0.177
+2020-05-10 16:52:56,331@mychess.play_games.play INFO # move: 炮2进5-7277, visit count: 20, Q_value: 0.889, Prior: 0.002
+2020-05-10 16:52:56,331@mychess.play_games.play INFO # move: 马6进8-3516, visit count: 20, Q_value: 0.926, Prior: 0.030
+2020-05-10 16:56:35,438@mychess.play_games.play INFO # state = rkems2r1/1R2m4/2K1e4/p1p1p1k1p/9/6p2/P3P1c1P/2C1E1KC1/9/2EMSM1R1
+2020-05-10 16:56:39,468@mychess.play_games.play INFO # check = False, NN value = 0.878
+2020-05-10 16:56:39,468@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:56:39,468@mychess.play_games.play INFO # move: 马7进8-2719, visit count: 88, Q_value: 0.786, Prior: 0.981
+2020-05-10 16:56:39,468@mychess.play_games.play INFO # move: 炮7平8-2212, visit count: 19, Q_value: 0.891, Prior: 0.005
+2020-05-10 16:56:39,468@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 19, Q_value: 0.896, Prior: 0.001
+2020-05-10 16:56:39,469@mychess.play_games.play INFO # move: 炮2进5-7277, visit count: 19, Q_value: 0.894, Prior: 0.001
+2020-05-10 16:56:39,469@mychess.play_games.play INFO # move: 车8进1-1819, visit count: 19, Q_value: 0.823, Prior: 0.004
+2020-05-10 16:56:48,662@mychess.play_games.play INFO # state = rKems2r1/1R2m4/4e4/p1p1p1k1p/9/5p3/P3P1c1P/2C1E1KC1/9/2EMSM1R1
+2020-05-10 16:56:52,797@mychess.play_games.play INFO # check = False, NN value = 0.662
+2020-05-10 16:56:52,797@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:56:52,797@mychess.play_games.play INFO # move: 炮2进4-7276, visit count: 60, Q_value: 0.807, Prior: 0.951
+2020-05-10 16:56:52,798@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 20, Q_value: 0.800, Prior: 0.000
+2020-05-10 16:56:52,798@mychess.play_games.play INFO # move: 炮2进1-7273, visit count: 20, Q_value: 0.726, Prior: 0.000
+2020-05-10 16:56:52,798@mychess.play_games.play INFO # move: 炮2进3-7275, visit count: 20, Q_value: 0.712, Prior: 0.000
+2020-05-10 16:56:52,800@mychess.play_games.play INFO # move: 炮2进5-7277, visit count: 20, Q_value: 0.743, Prior: 0.049
+2020-05-10 16:56:57,668@mychess.lib.model_helper DEBUG # start reload the best model if changed
+2020-05-10 16:56:57,847@mychess.lib.model_helper DEBUG # the best model is not changed
+2020-05-10 16:57:04,104@mychess.play_games.play INFO # state = rKems2r1/1R2m4/4e4/p1p1p1kCp/9/9/P3Ppc1P/2C1E1K2/9/2EMSM1R1
+2020-05-10 16:57:07,228@mychess.play_games.play INFO # check = False, NN value = 0.667
+2020-05-10 16:57:07,229@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:57:07,229@mychess.play_games.play INFO # move: 炮2平5-7646, visit count: 177, Q_value: 1.057, Prior: 0.917
+2020-05-10 16:57:07,229@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 22, Q_value: 0.732, Prior: 0.079
+2020-05-10 16:57:24,360@mychess.play_games.play INFO # state = rKems4/1R2m4/4e4/p1p1C1k1p/9/7r1/P3Ppc1P/2C1E1K2/9/2EMSM1R1
+2020-05-10 16:57:26,659@mychess.play_games.play INFO # check = False, NN value = 0.873
+2020-05-10 16:57:26,659@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:57:26,660@mychess.play_games.play INFO # move: 车2进4-7074, visit count: 118, Q_value: 1.349, Prior: 0.999
+2020-05-10 16:57:26,660@mychess.play_games.play INFO # move: 炮7进7-2229, visit count: 52, Q_value: 1.980, Prior: 0.001
+2020-05-10 16:57:26,660@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 10, Q_value: 0.907, Prior: 0.000
+2020-05-10 16:57:26,660@mychess.play_games.play INFO # move: 炮7进1-2223, visit count: 8, Q_value: 0.879, Prior: 0.000
+2020-05-10 16:57:26,661@mychess.play_games.play INFO # move: 炮5平1-4686, visit count: 6, Q_value: 0.774, Prior: 0.000
+2020-05-10 16:57:36,135@mychess.play_games.play INFO # state = rKems4/1R2m4/4e4/p1p1C3p/9/7k1/P3Ppc1P/2C1E1K2/9/2EMSM3
+2020-05-10 16:57:36,937@mychess.play_games.play INFO # check = False, NN value = 0.897
+2020-05-10 16:57:36,937@mychess.play_games.play INFO # MCTS results:
+2020-05-10 16:57:36,938@mychess.play_games.play INFO # move: 炮7进7-2229, visit count: 163, Q_value: 1.994, Prior: 0.264
+2020-05-10 16:57:36,938@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 36, Q_value: 1.088, Prior: 0.726
+2020-05-10 16:58:04,022@mychess.play_games.play INFO # state = rKems4/1R2m4/9/p1p1C3p/9/7k1/P3Ppc1P/4E1K2/9/2EMSM3
+2020-05-10 16:58:04,217@mychess.play_games.play INFO # Winner is Winner.black !!!
+2020-05-10 16:58:07,223@mychess.agent.api ERROR # EOF error: 
+2020-05-10 17:07:11,553@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 17:07:11,555@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 17:07:11,570@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 17:07:11,582@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 17:07:11,655@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 17:07:12,876@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 17:07:13,246@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 17:07:13,246@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 17:07:13,247@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 17:07:13,269@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 17:07:13,271@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 17:07:13,936@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 17:28:23,146@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:25,682@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:27,030@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:27,764@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:28,697@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:29,197@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:29,697@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:30,197@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:28:30,681@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:31:05,612@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:31:07,504@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:31:09,679@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:32:33,184@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:32:33,936@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:32:38,102@mychess.play_games.pvp INFO # click resign
+2020-05-10 17:32:38,116@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-10 17:35:33,511@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:35:49,945@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:35:51,128@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:35:52,511@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:35:53,695@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:35:55,145@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:35:56,311@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:00,145@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:35,498@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:37,181@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:42,015@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:44,249@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:45,716@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:47,783@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:50,899@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:36:53,884@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:37:56,805@mychess.play_games.pvp INFO # click withdraw
+2020-05-10 17:38:06,423@mychess.play_games.pvp INFO # click resign
+2020-05-10 17:38:06,439@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-10 17:39:09,889@mychess.play_games.pvp INFO # click resign
+2020-05-10 17:39:09,912@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-10 17:40:36,518@mychess.play_games.pvp INFO # click resign
+2020-05-10 17:40:36,535@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-10 17:47:28,891@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 17:47:28,893@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 17:47:28,930@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 17:47:28,960@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 17:47:29,040@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 17:47:30,289@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 17:47:30,664@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 17:47:30,664@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 17:47:30,664@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 17:47:30,679@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 17:47:30,679@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 17:47:31,328@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 17:47:33,347@mychess.play_games.play INFO # state = rkemsmekr/9/2c4c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 17:47:37,758@mychess.play_games.play INFO # check = False, NN value = -0.034
+2020-05-10 17:47:37,758@mychess.play_games.play INFO # MCTS results:
+2020-05-10 17:47:37,758@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 17, Q_value: -0.001, Prior: 0.054
+2020-05-10 17:47:37,758@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 14, Q_value: 0.019, Prior: 0.031
+2020-05-10 17:47:37,758@mychess.play_games.play INFO # move: 炮2平6-7232, visit count: 13, Q_value: 0.008, Prior: 0.034
+2020-05-10 17:47:37,760@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 13, Q_value: 0.000, Prior: 0.029
+2020-05-10 17:47:37,760@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 12, Q_value: -0.003, Prior: 0.035
+2020-05-10 17:47:44,664@mychess.play_games.play INFO # click withdraw
+2020-05-10 17:47:49,636@mychess.play_games.play INFO # click withdraw
+2020-05-10 17:48:04,879@mychess.play_games.play INFO # state = rkemsmekr/9/4c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 17:48:09,077@mychess.play_games.play INFO # check = False, NN value = -0.141
+2020-05-10 17:48:09,077@mychess.play_games.play INFO # MCTS results:
+2020-05-10 17:48:09,078@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 50, Q_value: -0.023, Prior: 0.563
+2020-05-10 17:48:09,078@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 19, Q_value: -0.046, Prior: 0.054
+2020-05-10 17:48:09,078@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 18, Q_value: -0.064, Prior: 0.054
+2020-05-10 17:48:09,078@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 16, Q_value: -0.080, Prior: 0.025
+2020-05-10 17:48:09,078@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 15, Q_value: -0.083, Prior: 0.032
+2020-05-10 17:48:16,828@mychess.play_games.play INFO # state = r1emsmekr/9/2k1c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 17:48:21,277@mychess.play_games.play INFO # check = False, NN value = -0.070
+2020-05-10 17:48:21,277@mychess.play_games.play INFO # MCTS results:
+2020-05-10 17:48:21,277@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 82, Q_value: -0.034, Prior: 0.858
+2020-05-10 17:48:21,277@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 15, Q_value: -0.048, Prior: 0.004
+2020-05-10 17:48:21,278@mychess.play_games.play INFO # move: 炮8平6-1232, visit count: 15, Q_value: -0.055, Prior: 0.007
+2020-05-10 17:48:21,278@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 13, Q_value: -0.047, Prior: 0.007
+2020-05-10 17:48:21,278@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 11, Q_value: -0.068, Prior: 0.006
+2020-05-10 17:48:31,361@mychess.play_games.play INFO # state = 1remsmekr/9/2k1c2c1/p1p1p1p1p/9/9/P1P1P1P1P/KC4KC1/9/R1EMSME1R
+2020-05-10 17:48:35,219@mychess.play_games.play INFO # check = False, NN value = -0.017
+2020-05-10 17:48:35,219@mychess.play_games.play INFO # MCTS results:
+2020-05-10 17:48:35,219@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 113, Q_value: -0.018, Prior: 0.971
+2020-05-10 17:48:35,219@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 12, Q_value: -0.021, Prior: 0.004
+2020-05-10 17:48:35,220@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 11, Q_value: -0.035, Prior: 0.001
+2020-05-10 17:48:35,220@mychess.play_games.play INFO # move: 卒7进1-2324, visit count: 9, Q_value: -0.038, Prior: 0.001
+2020-05-10 17:48:35,220@mychess.play_games.play INFO # move: 卒9进1-0304, visit count: 8, Q_value: -0.041, Prior: 0.001
+2020-05-10 17:48:44,224@mychess.play_games.play INFO # click withdraw
+2020-05-10 17:48:44,716@mychess.play_games.play INFO # state = r1emsmekr/9/2k1c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 17:48:52,757@mychess.play_games.play INFO # check = False, NN value = -0.017
+2020-05-10 17:48:52,757@mychess.play_games.play INFO # MCTS results:
+2020-05-10 17:48:52,757@mychess.environment.chessboard ERROR # No chessman! 7987
+2020-05-10 17:50:48,635@mychess.agent.api ERROR # EOF error: 
+2020-05-10 18:08:03,751@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 18:08:03,753@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 18:08:03,779@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 18:08:03,810@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:08:03,867@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 18:08:05,142@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:08:05,521@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 18:08:05,521@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 18:08:05,522@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 18:08:05,536@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 18:08:05,536@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 18:08:06,151@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 18:08:20,642@mychess.play_games.play INFO # state = rkemsmekr/9/4c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:08:25,106@mychess.play_games.play INFO # check = False, NN value = -0.141
+2020-05-10 18:08:25,106@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:08:25,106@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 50, Q_value: -0.023, Prior: 0.563
+2020-05-10 18:08:25,108@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 19, Q_value: -0.046, Prior: 0.054
+2020-05-10 18:08:25,108@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 18, Q_value: -0.064, Prior: 0.054
+2020-05-10 18:08:25,108@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 16, Q_value: -0.080, Prior: 0.025
+2020-05-10 18:08:25,109@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 15, Q_value: -0.083, Prior: 0.032
+2020-05-10 18:09:02,201@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:09:14,771@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/PcP1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # check = False, NN value = -0.039
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 42, Q_value: 0.089, Prior: 0.512
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 20, Q_value: 0.068, Prior: 0.123
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # move: 卒7进1-2324, visit count: 20, Q_value: 0.035, Prior: 0.040
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 20, Q_value: 0.025, Prior: 0.030
+2020-05-10 18:09:18,949@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 20, Q_value: 0.046, Prior: 0.024
+2020-05-10 18:09:32,961@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/P1P1c1P1P/1CK4C1/9/R1EMSMEKR
+2020-05-10 18:09:37,015@mychess.play_games.play INFO # check = False, NN value = 0.321
+2020-05-10 18:09:37,015@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:09:37,015@mychess.play_games.play INFO # move: 马7进5-2243, visit count: 161, Q_value: 0.666, Prior: 0.994
+2020-05-10 18:09:37,016@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 1, Q_value: -0.651, Prior: 0.000
+2020-05-10 18:09:37,018@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 1, Q_value: -0.708, Prior: 0.000
+2020-05-10 18:09:37,019@mychess.play_games.play INFO # move: 车9进2-0002, visit count: 1, Q_value: -0.754, Prior: 0.000
+2020-05-10 18:09:37,020@mychess.play_games.play INFO # move: 将5进1-4041, visit count: 1, Q_value: -0.650, Prior: 0.000
+2020-05-10 18:09:43,668@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:10:12,007@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:11:24,702@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 18:11:24,705@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 18:11:24,725@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 18:11:24,738@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:11:24,790@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 18:11:26,078@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:11:26,450@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 18:11:26,450@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 18:11:26,450@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 18:11:26,464@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 18:11:26,465@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 18:11:27,112@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 18:11:31,901@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/PcP1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:11:38,009@mychess.play_games.play INFO # check = False, NN value = -0.039
+2020-05-10 18:11:38,009@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:11:38,009@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 135, Q_value: 0.100, Prior: 0.512
+2020-05-10 18:11:38,009@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 39, Q_value: 0.087, Prior: 0.123
+2020-05-10 18:11:38,009@mychess.play_games.play INFO # move: 卒7进1-2324, visit count: 6, Q_value: 0.042, Prior: 0.040
+2020-05-10 18:11:38,009@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 4, Q_value: 0.043, Prior: 0.030
+2020-05-10 18:11:38,010@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 3, Q_value: 0.068, Prior: 0.015
+2020-05-10 18:12:37,871@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/P1P1c1P1P/1CK4C1/9/R1EMSMEKR
+2020-05-10 18:12:43,689@mychess.play_games.play INFO # check = False, NN value = 0.321
+2020-05-10 18:12:43,689@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:12:43,689@mychess.play_games.play INFO # move: 马7进5-2243, visit count: 197, Q_value: 0.768, Prior: 0.994
+2020-05-10 18:12:43,689@mychess.play_games.play INFO # move: 炮2平6-7232, visit count: 1, Q_value: -0.781, Prior: 0.001
+2020-05-10 18:12:43,689@mychess.play_games.play INFO # move: 炮2进2-7274, visit count: 1, Q_value: -0.605, Prior: 0.000
+2020-05-10 18:12:43,690@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 0, Q_value: 0.000, Prior: 0.000
+2020-05-10 18:14:34,778@mychess.play_games.play INFO # state = rkemsmekr/9/9/p1p1p1p1p/9/9/P1P1K1PcP/1C5C1/9/R1EMSMEKR
+2020-05-10 18:14:40,613@mychess.play_games.play INFO # check = False, NN value = 0.803
+2020-05-10 18:14:40,613@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:14:40,613@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 154, Q_value: 0.819, Prior: 0.627
+2020-05-10 18:14:40,614@mychess.play_games.play INFO # move: 马5进6-4335, visit count: 27, Q_value: 0.755, Prior: 0.142
+2020-05-10 18:14:40,614@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 18, Q_value: 0.741, Prior: 0.124
+2020-05-10 18:14:40,614@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 0, Q_value: 0.000, Prior: 0.000
+2020-05-10 18:15:06,947@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:15:07,456@mychess.play_games.play INFO # state = rkemsmekr/9/7c1/p1p1p1p1p/9/9/PcP1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:15:13,425@mychess.play_games.play INFO # check = False, NN value = 0.824
+2020-05-10 18:15:13,425@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:15:13,425@mychess.environment.chessboard ERROR # No chessman! 7967
+2020-05-10 18:15:22,128@mychess.agent.api ERROR # EOF error: 
+2020-05-10 18:34:43,665@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 18:34:43,667@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 18:34:43,697@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 18:34:43,714@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:34:43,782@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 18:34:44,977@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:34:45,345@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 18:34:45,346@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 18:34:45,346@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 18:34:45,359@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 18:34:45,360@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 18:34:45,988@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 18:34:55,146@mychess.play_games.play INFO # state = rkemsmekr/9/4c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:35:00,894@mychess.play_games.play INFO # check = False, NN value = -0.141
+2020-05-10 18:35:00,894@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:35:00,895@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 125, Q_value: -0.016, Prior: 0.563
+2020-05-10 18:35:00,895@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 11, Q_value: -0.049, Prior: 0.054
+2020-05-10 18:35:00,896@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 8, Q_value: -0.065, Prior: 0.054
+2020-05-10 18:35:00,896@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.075, Prior: 0.032
+2020-05-10 18:35:00,896@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 4, Q_value: -0.049, Prior: 0.025
+2020-05-10 18:35:13,877@mychess.play_games.play INFO # state = r1emsmekr/9/2k1c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 18:35:21,727@mychess.play_games.play INFO # check = False, NN value = -0.070
+2020-05-10 18:35:21,728@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:35:21,728@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 181, Q_value: 0.003, Prior: 0.858
+2020-05-10 18:35:21,728@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 1, Q_value: -0.148, Prior: 0.004
+2020-05-10 18:35:21,728@mychess.play_games.play INFO # move: 车9进2-0002, visit count: 1, Q_value: -0.139, Prior: 0.005
+2020-05-10 18:35:21,729@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 1, Q_value: -0.051, Prior: 0.004
+2020-05-10 18:35:21,729@mychess.play_games.play INFO # move: 车1进1-8081, visit count: 1, Q_value: -0.116, Prior: 0.003
+2020-05-10 18:35:28,446@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:36:45,739@mychess.play_games.play INFO # state = r1emsmekr/9/2k1c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 18:36:54,489@mychess.play_games.play INFO # check = False, NN value = -0.070
+2020-05-10 18:36:54,490@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:36:54,490@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 368, Q_value: 0.003, Prior: 0.858
+2020-05-10 18:36:54,490@mychess.play_games.play INFO # move: 车9进1-0001, visit count: 1, Q_value: -0.148, Prior: 0.004
+2020-05-10 18:36:54,490@mychess.play_games.play INFO # move: 车9进2-0002, visit count: 1, Q_value: -0.139, Prior: 0.005
+2020-05-10 18:36:54,491@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 1, Q_value: -0.051, Prior: 0.004
+2020-05-10 18:36:54,491@mychess.play_games.play INFO # move: 车1进1-8081, visit count: 1, Q_value: -0.116, Prior: 0.003
+2020-05-10 18:37:24,889@mychess.play_games.play INFO # state = r1emsmekr/9/2k1c2c1/p3p1p1p/2p6/9/P1P1P1P1P/KC4KC1/9/R1EMSME1R
+2020-05-10 18:37:31,863@mychess.play_games.play INFO # check = False, NN value = -0.038
+2020-05-10 18:37:31,864@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:37:31,864@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 197, Q_value: 0.078, Prior: 0.988
+2020-05-10 18:37:31,864@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 1, Q_value: -0.046, Prior: 0.001
+2020-05-10 18:37:31,864@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 1, Q_value: -0.050, Prior: 0.007
+2020-05-10 18:37:31,864@mychess.play_games.play INFO # move: 车9平8-0010, visit count: 0, Q_value: 0.000, Prior: 0.000
+2020-05-10 18:37:48,364@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:44:45,994@mychess.lib.model_helper DEBUG # start reload the best model if changed
+2020-05-10 18:44:46,156@mychess.lib.model_helper DEBUG # the best model is not changed
+2020-05-10 18:49:48,100@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 18:49:48,101@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 18:49:48,118@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 18:49:48,142@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:49:48,214@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 18:49:49,522@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:49:49,885@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 18:49:49,885@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 18:49:49,886@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 18:49:49,899@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 18:49:49,900@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 18:49:50,530@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 18:49:59,110@mychess.play_games.play INFO # state = rkemsmekr/9/4c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:50:05,216@mychess.play_games.play INFO # check = False, NN value = -0.141
+2020-05-10 18:50:05,217@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:50:05,217@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 125, Q_value: -0.016, Prior: 0.563
+2020-05-10 18:50:05,217@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 11, Q_value: -0.049, Prior: 0.054
+2020-05-10 18:50:05,217@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 8, Q_value: -0.065, Prior: 0.054
+2020-05-10 18:50:05,217@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.075, Prior: 0.032
+2020-05-10 18:50:05,217@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 4, Q_value: -0.049, Prior: 0.025
+2020-05-10 18:50:48,641@mychess.play_games.play INFO # state = rkemsmekr/9/4cc3/p1p1p1p1p/9/9/P1P1P1P1P/1C4KC1/9/RKEMSME1R
+2020-05-10 18:50:54,910@mychess.play_games.play INFO # check = False, NN value = -0.042
+2020-05-10 18:50:54,910@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:50:54,911@mychess.play_games.play INFO # move: 卒3进1-6364, visit count: 63, Q_value: -0.016, Prior: 0.234
+2020-05-10 18:50:54,911@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 53, Q_value: 0.045, Prior: 0.045
+2020-05-10 18:50:54,911@mychess.play_games.play INFO # move: 马8进9-1002, visit count: 8, Q_value: -0.064, Prior: 0.064
+2020-05-10 18:50:54,911@mychess.play_games.play INFO # move: 炮2平1-7282, visit count: 7, Q_value: -0.022, Prior: 0.033
+2020-05-10 18:50:54,912@mychess.play_games.play INFO # move: 卒7进1-2324, visit count: 6, Q_value: -0.019, Prior: 0.023
+2020-05-10 18:51:50,660@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 18:51:50,667@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 18:51:50,709@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 18:51:50,720@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:51:50,785@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 18:51:52,275@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 18:51:52,687@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 18:51:52,688@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 18:51:52,688@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 18:51:52,701@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 18:51:52,702@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 18:51:53,301@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 18:52:00,880@mychess.play_games.play INFO # 
+state = rkemsmekr/9/7c1/p1p1p1p1p/1c7/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-10 18:52:06,565@mychess.play_games.play INFO # check = False, NN value = -0.019
+2020-05-10 18:52:06,568@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:52:06,569@mychess.play_games.play INFO # move: 马8进7-1022, visit count: 43, Q_value: 0.059, Prior: 0.053
+2020-05-10 18:52:06,569@mychess.play_games.play INFO # move: 马2进3-7062, visit count: 14, Q_value: 0.020, Prior: 0.042
+2020-05-10 18:52:06,569@mychess.play_games.play INFO # move: 卒7进1-2324, visit count: 9, Q_value: 0.008, Prior: 0.036
+2020-05-10 18:52:06,569@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 9, Q_value: 0.002, Prior: 0.042
+2020-05-10 18:52:06,570@mychess.play_games.play INFO # move: 炮8平9-1202, visit count: 8, Q_value: 0.010, Prior: 0.030
+2020-05-10 18:52:17,525@mychess.play_games.play INFO # 
+state = rkemsmekr/9/7c1/p1p1p1p1p/4c4/9/P1P1P1P1P/1CK4C1/9/R1EMSMEKR
+2020-05-10 18:52:23,886@mychess.play_games.play INFO # check = True, NN value = 0.056
+2020-05-10 18:52:23,887@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:52:23,887@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 82, Q_value: 0.090, Prior: 0.301
+2020-05-10 18:52:23,888@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 54, Q_value: 0.051, Prior: 0.231
+2020-05-10 18:52:23,888@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 49, Q_value: 0.024, Prior: 0.312
+2020-05-10 18:52:23,888@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 5, Q_value: 0.028, Prior: 0.035
+2020-05-10 18:52:23,889@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 5, Q_value: 0.025, Prior: 0.034
+2020-05-10 18:53:10,556@mychess.play_games.play INFO # click withdraw
+2020-05-10 18:53:29,644@mychess.play_games.play INFO # 
+state = rkemsmekr/9/7c1/p1p1p1p1p/4c4/9/P1P1P1P1P/1CK4C1/9/R1EMSMEKR
+2020-05-10 18:53:36,892@mychess.play_games.play INFO # check = True, NN value = 0.056
+2020-05-10 18:53:36,892@mychess.play_games.play INFO # MCTS results:
+2020-05-10 18:53:36,893@mychess.play_games.play INFO # move: 炮2平5-7242, visit count: 233, Q_value: 0.091, Prior: 0.301
+2020-05-10 18:53:36,893@mychess.play_games.play INFO # move: 象7进5-2042, visit count: 81, Q_value: 0.045, Prior: 0.231
+2020-05-10 18:53:36,893@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 62, Q_value: -0.003, Prior: 0.312
+2020-05-10 18:53:36,894@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 9, Q_value: 0.029, Prior: 0.035
+2020-05-10 18:53:36,894@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 8, Q_value: 0.024, Prior: 0.034

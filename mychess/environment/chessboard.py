@@ -174,10 +174,10 @@ class Chessboard(object):       # 棋盘类
         return self.move(x0, y0, x1, y1)  # 先调用self.move 再chessman.move 再chessboard.move_chessman
 
     def getMoveList(self, record: str, sep):
-        tem = record[::-1].split(sep, 1)
+        tem = record[::-1].split(sep, 1)  # 翻转 + 只切一刀
         if len(tem) < 2:
             return []
-        record = tem[1][::-1]
+        record = tem[1][::-1]  # 丢掉前一半 + 翻转回来
         # print(self.record)
         return record.split()
 
@@ -227,7 +227,7 @@ class Chessboard(object):       # 棋盘类
                     if self.chessmans[old_x][y].is_red == red_to_move and \
                             self.chessmans[old_x][y].name_cn[1] == chessman_type:
                         chess = self.chessmans[old_x][y]
-        print('first selected chessman: ', chess.col_num, chess.row_num)
+        # print('first selected chessman: ', chess.col_num, chess.row_num)
 
         if red_to_move:  # 红棋
             old_x = chess.col_num
