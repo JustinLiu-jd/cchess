@@ -182,8 +182,7 @@ class Chessman(object):
     def add_from_probable_points(self, probable_moving_points, current_color):
         for point in probable_moving_points:
             if self.border_check(point.x, point.y):
-                chessman = self.chessboard.get_chessman(
-                    point.x, point.y)
+                chessman = self.chessboard.get_chessman(point.x, point.y)
                 if chessman is None or chessman.is_red != current_color:
                     self.moving_list.append(point)
 
@@ -440,6 +439,23 @@ class King(Chessman):
         hs2 = (current_h_c + 1, current_h_c - 1)
         creat_points(probable_moving_points, vs1, hs1)
         creat_points(probable_moving_points, vs2, hs2)
+        # 飞将
+        red_king = self.chessboard.get_chessman_by_name('red_king')
+        black_king = self.chessboard.get_chessman_by_name('black_king')
+        if red_king.position.x == black_king.position.x:
+            checking = True
+            for i in range(red_king.position.y + 1, black_king.position.y):
+                if self.chessboard.chessmans[red_king.position.x][i] != None:
+                    checking = False
+                    break
+            if checking:  # 当前走棋的一方赢
+                color = super(King, self).is_red
+                if color:
+                    self.moving_list.append(black_king.position)
+                    # print('red\t', black_king.position.x, black_king.position.y)
+                else:
+                    self.moving_list.append(red_king.position)
+                    # print('black\t', red_king.position.x, red_king.position.y)
         current_color = super(King, self).is_red
         super(King, self).add_from_probable_points(
             probable_moving_points, current_color)

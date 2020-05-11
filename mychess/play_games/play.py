@@ -138,13 +138,18 @@ class PlayWithHuman:
                                                    self.chessman_h)  # 棋盘放置棋子
                                 self.history = [self.env.get_state()]
 
-                                moveList = self.env.board.getMoveList(record, sep)
+                                temList = self.env.board.getMoveList(record, sep)
+                                moveList = []
+                                for t in temList:
+                                    if t[-1] != '.':
+                                        moveList.append(t)
+
                                 if len(moveList) == 0:
                                     break
                                 cnt = 0
                                 for move in moveList:
-                                    if move[-1] == '.':
-                                        continue
+                                    # if move[-1] == '.':
+                                    #     continue
                                     cnt += 1  # cnt % 2 == 1: 红方行; 否则黑方行动
                                     # print(move)
                                     old_x, old_y, x, y = self.env.board.record_to_move(move, cnt % 2)
@@ -220,6 +225,36 @@ class PlayWithHuman:
 
         if self.has_resign == 1:
             self.env.board.winner = Winner.black
+            self.env.board.record += u'\n红方降'
+
+        # final move 是 kill king的一步
+        success, finalMove = self.env.board.is_end_final_move()
+        if success:
+            old_x, old_y, x, y = self.env.board.str_to_move(finalMove)
+            current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
+            chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
+            moveString = str(old_x) + str(old_y) + str(x) + str(y)
+            success = current_chessman.move(x, y)
+            # 如果是黑方杀红king 要flip_move
+            if current_chessman.chessman.is_red == 0:
+                moveString = flip_move(moveString)
+            self.history.append(moveString)
+            # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
+            if success:
+                if chessman_sprite != None:
+                    self.chessmans.remove(chessman_sprite)
+                    chessman_sprite.kill()
+                self.history.append(self.env.get_state())
+
+                self.draw_widget(screen, widget_background, buttonList)
+                framerate.tick(60)  # 20
+                # clear/erase the last drawn sprites
+                self.chessmans.clear(screen, board_background)  # draw a background over the Sprites
+
+                # update all the sprites
+                self.chessmans.update()
+                self.chessmans.draw(screen)
+                pygame.display.update()
 
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
@@ -239,7 +274,7 @@ class PlayWithHuman:
     def init_screen(self):
         bestdepth = pygame.display.mode_ok([self.screen_width, self.height], self.winstyle, 32)
         screen = pygame.display.set_mode([self.screen_width, self.height], self.winstyle, bestdepth)
-        pygame.display.set_caption("中国象棋")
+        pygame.display.set_caption("中国象棋-人机模式")
 
         # create the background, tile the background image
         bgdtile = load_image(f'{self.config.opts.bg_style}.GIF')
@@ -261,6 +296,7 @@ class PlayWithHuman:
         t_rect.y = 40  # 10
         widget_background.blit(t, t_rect)
 
+        # 悔棋 认输 按钮
         button_withdraw = myButton(Rect(0, 0, 70, 20), '悔棋', bkgColor=button_color)
         button_resign = myButton(Rect(0, 0, 70, 20), '认输', bkgColor=red)
         tem = self.screen_width - self.width
@@ -315,6 +351,7 @@ class PlayWithHuman:
 
                 if action is None:
                     logger.info("AI has resigned!")
+                    self.env.board.record += u'\nAI降'
                     return
                 self.history.append(action)
                 for i in self.history:

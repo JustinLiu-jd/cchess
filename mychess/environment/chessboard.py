@@ -338,7 +338,6 @@ class Chessboard(object):       # 棋盘类
     def is_end(self):
         red_king = self.get_chessman_by_name('red_king')
         black_king = self.get_chessman_by_name('black_king')
-        checking = False
         if not red_king:
             self.winner = Winner.black
         elif not black_king:
@@ -349,7 +348,7 @@ class Chessboard(object):       # 棋盘类
                 if self.chessmans[red_king.position.x][i] != None:
                     checking = False
                     break
-        if checking:                                                    # 当前走棋的一方赢
+            if checking:  # 当前走棋的一方赢
                 if self.is_red_turn:
                     self.winner = Winner.red
                 else:
@@ -653,6 +652,7 @@ class Chessboard(object):       # 棋盘类
         return record
 
     def is_end_final_move(self):
+        self.winner = None
         final_move = None
         red_king = self.get_chessman_by_name('red_king')
         black_king = self.get_chessman_by_name('black_king')
@@ -660,24 +660,26 @@ class Chessboard(object):       # 棋盘类
             self.winner = Winner.black
         elif not black_king:
             self.winner = Winner.red
-        elif red_king.position.x == black_king.position.x:
-            checking = True
-            for i in range(red_king.position.y + 1, black_king.position.y):
-                if self.chessmans[red_king.position.x][i] != None:
-                    checking = False
-                    break
-            if checking:
-                if self.is_red_turn:
-                    self.winner = Winner.red
-                else:
-                    self.winner = Winner.black
-        if self.winner is None:
+        # elif red_king.position.x == black_king.position.x:
+        #     checking = True
+        #     for i in range(red_king.position.y + 1, black_king.position.y):
+        #         if self.chessmans[red_king.position.x][i] != None:
+        #             checking = False
+        #             break
+        #     if checking:
+        #         if self.is_red_turn:
+        #             self.winner = Winner.red
+        #         else:
+        #             self.winner = Winner.black
+        # if self.winner is None:
+        else:
             legal_moves = self.legal_moves()
             if self.is_red_turn:
                 target = black_king.position
             else:
                 target = red_king.position
             for move in legal_moves:
+                # print(move)
                 if int(move[2]) == target.x and int(move[3]) == target.y:
                     if self.is_red_turn:
                         self.winner = Winner.red
@@ -685,7 +687,7 @@ class Chessboard(object):       # 棋盘类
                         self.winner = Winner.black
                     final_move = move
                     break
-        return (self.winner != None, final_move)
+        return self.winner != None, final_move
 
 RECORD_NOTES = [
     ['0', '0'], ['1', u'一'], ['2', u'二'],

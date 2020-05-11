@@ -87,13 +87,18 @@ class pvp:
                                                self.chessman_w,
                                                self.chessman_h)  # 棋盘放置棋子
 
-                            moveList = self.env.board.getMoveList(record, sep)
+                            temList = self.env.board.getMoveList(record, sep)
+                            moveList = []
+                            for t in temList:
+                                if t[-1] != '.':
+                                    moveList.append(t)
+
                             if len(moveList) == 0:
                                 break
                             cnt = 0
                             for move in moveList:
-                                if move[-1] == '.':
-                                    continue
+                                # if move[-1] == '.':
+                                #     continue
                                 cnt += 1
                                 # print(move)
                                 old_x, old_y, x, y = self.env.board.record_to_move(move, cnt % 2)
@@ -164,8 +169,36 @@ class pvp:
         if self.has_resign:
             if self.has_resign == 1:  # 红认输，则黑赢
                 self.env.board.winner = Winner.black
+                self.env.board.record += u'\n红方降'
             else:
                 self.env.board.winner = Winner.red
+                self.env.board.record += u'\n黑方降'
+
+        # final move 是 kill king的一步
+        success, finalMove = self.env.board.is_end_final_move()
+        print(success, finalMove)
+        if success:
+            old_x, old_y, x, y = self.env.board.str_to_move(finalMove)
+            current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
+            chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
+            # moveString = str(old_x) + str(old_y) + str(x) + str(y)
+            success = current_chessman.move(x, y)
+            # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
+            if success:
+                print('final move success')
+                if chessman_sprite != None:
+                    self.chessmans.remove(chessman_sprite)
+                    chessman_sprite.kill()
+
+                self.draw_widget(screen, widget_background, buttonList)
+                framerate.tick(60)  # 20
+                # clear/erase the last drawn sprites
+                self.chessmans.clear(screen, board_background)  # draw a background over the Sprites
+
+                # update all the sprites
+                self.chessmans.update()
+                self.chessmans.draw(screen)
+                pygame.display.update()
 
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
@@ -185,7 +218,7 @@ class pvp:
     def init_screen(self):
         bestdepth = pygame.display.mode_ok([self.screen_width, self.height], self.winstyle, 32)
         screen = pygame.display.set_mode([self.screen_width, self.height], self.winstyle, bestdepth)
-        pygame.display.set_caption("中国象棋")
+        pygame.display.set_caption("中国象棋-玩家对弈模式")
 
         # create the background, tile the background image
         bgdtile = load_image(f'{self.config.opts.bg_style}.GIF')

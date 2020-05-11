@@ -1991,3 +1991,39 @@ state = rkemsmekr/9/7c1/p1p1p1p1p/4c4/9/P1P1P1P1P/1CK4C1/9/R1EMSMEKR
 2020-05-10 18:53:36,893@mychess.play_games.play INFO # move: 象3进5-6042, visit count: 62, Q_value: -0.003, Prior: 0.312
 2020-05-10 18:53:36,894@mychess.play_games.play INFO # move: 仕6进5-3041, visit count: 9, Q_value: 0.029, Prior: 0.035
 2020-05-10 18:53:36,894@mychess.play_games.play INFO # move: 仕4进5-5041, visit count: 8, Q_value: 0.024, Prior: 0.034
+2020-05-10 20:08:53,607@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-10 20:08:53,609@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-10 20:08:53,629@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-10 20:08:53,656@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 20:08:53,735@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-10 20:08:54,925@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-10 20:08:55,269@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-10 20:08:55,269@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-10 20:08:55,269@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-10 20:08:55,286@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-10 20:08:55,287@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-10 20:08:55,893@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-10 20:09:08,643@mychess.play_games.play INFO # click resign
+2020-05-10 20:09:08,929@mychess.play_games.play INFO # Winner is Winner.black !!!
+2020-05-11 03:02:48,695@mychess.play_games.pvp INFO # click withdraw
+2020-05-11 03:02:55,396@mychess.play_games.pvp INFO # click withdraw
+2020-05-11 03:31:48,402@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-11 03:54:25,679@mychess.play_games.pvp INFO # Winner is None !!!
+2020-05-11 03:55:56,487@mychess.play_games.pvp INFO # Winner is None !!!
+2020-05-11 03:57:13,692@mychess.play_games.pvp INFO # Winner is None !!!
+2020-05-11 03:59:53,752@mychess.play_games.pvp INFO # Winner is None !!!
+2020-05-11 04:01:56,233@mychess.play_games.pvp INFO # Winner is None !!!
+2020-05-11 04:07:41,793@mychess.play_games.pvp INFO # Winner is Winner.black !!!
+2020-05-11 04:08:46,065@mychess.play_games.pvp INFO # Winner is Winner.red !!!
