@@ -384,10 +384,8 @@ class PlayWithHuman:
         white_rect = Rect(0, 0, self.screen_width - self.width, self.height)
         widget_background.fill((255, 255, 255), white_rect)
         pygame.draw.line(widget_background, (255, 0, 0), (10, 285), (self.screen_width - self.width - 10, 285))
-        screen.blit(widget_background, (self.width, 0))
 
         if buttonList == None:
-            print('error, buttonList is not defined!')
             logger.error('buttonList is not defined! line in play_games/play.py: draw widget')
             sys.exit()
         widget_background.blit(buttonList[0].get_Surface(), buttonList[0].get_rect())
@@ -407,7 +405,6 @@ class PlayWithHuman:
         for record in records[-self.disp_record_num:]:
             self.rec_labels[i] = font.render(record, True, (0, 0, 0), (255, 255, 255))
             t_rect = self.rec_labels[i].get_rect()
-            # t_rect.centerx = (self.screen_width - self.width) / 2
             t_rect.y = 65 + i * 15  # 35 + i * 35
             t_rect.x = 10
             t_rect.width = self.screen_width - self.width

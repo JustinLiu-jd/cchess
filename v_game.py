@@ -1,7 +1,8 @@
-import pygame, sys, time, random
-from pygame.locals import *
-from tkinter.messagebox import *
+import pygame
 
+tem = '123456'[0:0]
+print(tem, len(tem))
+exit()
 
 white = (255, 255, 255)
 black = (0, 0, 0)

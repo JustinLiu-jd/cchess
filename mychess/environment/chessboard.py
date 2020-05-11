@@ -186,6 +186,8 @@ class Chessboard(object):       # 棋盘类
             chessman_type = move[1]
             find_chess = 0
             for x in range(9):
+                find_chess = 0
+                chessman_1 = chessman_2 = None
                 for y in range(10):
                     if self.chessmans[x][y]:
                         if self.chessmans[x][y].is_red == red_to_move and \
@@ -196,6 +198,8 @@ class Chessboard(object):       # 棋盘类
                             elif find_chess == 1:
                                 chessman_2 = self.chessmans[x][y]
                                 find_chess = 2
+                if find_chess == 2:
+                    break
             if find_chess != 2:
                 logger.error('error in record to move')
                 return False
@@ -215,6 +219,8 @@ class Chessboard(object):       # 棋盘类
                     chess = chessman_2
                 else:
                     chess = chessman_1
+            # print('\n\n前 or 后， chess：', chess.position.x, chess.position.y)
+            # print(red_to_move, chessman_1.row_num, chessman_2.row_num, move[0] == u'前')
 
         else:  # 不是一列上有两枚相同类型棋子的情况
             chessman_type = move[0]

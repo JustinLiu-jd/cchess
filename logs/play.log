@@ -2027,3 +2027,11 @@ keep_dims is deprecated, use keepdims instead
 2020-05-11 04:01:56,233@mychess.play_games.pvp INFO # Winner is None !!!
 2020-05-11 04:07:41,793@mychess.play_games.pvp INFO # Winner is Winner.black !!!
 2020-05-11 04:08:46,065@mychess.play_games.pvp INFO # Winner is Winner.red !!!
+2020-05-11 16:26:09,895@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 16:26:10,083@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 16:50:36,559@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 16:50:36,927@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 16:53:08,839@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 17:01:11,153@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 17:02:07,175@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 17:06:01,795@mychess.play_games.repeat ERROR # record to move did not success
