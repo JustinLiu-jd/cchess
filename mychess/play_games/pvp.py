@@ -166,18 +166,11 @@ class pvp:
             self.chessmans.draw(screen)
             pygame.display.update()
 
-        if self.has_resign:
-            if self.has_resign == 1:  # 红认输，则黑赢
-                self.env.board.winner = Winner.black
-                self.env.board.record += u'\n红方降'
-            else:
-                self.env.board.winner = Winner.red
-                self.env.board.record += u'\n黑方降'
-
         # final move 是 kill king的一步
         success, finalMove = self.env.board.is_end_final_move()
         print(success, finalMove)
-        if success:
+        if success and finalMove != None:
+            sleep(2)
             old_x, old_y, x, y = self.env.board.str_to_move(finalMove)
             current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
             chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
@@ -199,6 +192,14 @@ class pvp:
                 self.chessmans.update()
                 self.chessmans.draw(screen)
                 pygame.display.update()
+
+        if self.has_resign:
+            if self.has_resign == 1:  # 红认输，则黑赢
+                self.env.board.winner = Winner.black
+                self.env.board.record += u'\n红方降'
+            else:
+                self.env.board.winner = Winner.red
+                self.env.board.record += u'\n黑方降'
 
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()

@@ -22,6 +22,8 @@ class repeatGame:
         self.config = config
         self.savedRecord = savedRecord
         self.env = CChessEnv()
+        self.model = None
+        self.pipe = None
         self.ai = None
         self.winstyle = 0
         self.chessmans = None
@@ -35,9 +37,12 @@ class repeatGame:
         self.disp_cnt_num = 8  # the num of records to display in Green
         self.rec_labels = [None] * self.disp_record_num
         self.has_resign = 0
+        self.nn_value = 0
+        self.mcts_moves = {}
         self.history = []
         self.cnt = 0
         self.chooseToStart = 0
+        self.path = None
 
     def load_model(self):
         self.model = CChessModel(self.config)  # in cchess_ahphazero/agent/model.py
@@ -132,13 +137,45 @@ class repeatGame:
                     pressed_array = pygame.mouse.get_pressed()
                     if pressed_array[0]:
                         mouse_x, mouse_y = pygame.mouse.get_pos()
-                        # buttonList[2:5] 分别是前一步 后一步 和 选择 按钮
+                        # buttonList[2:5] 分别是上一步 后一步 和 选择 按钮
                         if buttonList[2].isInRect(mouse_x, mouse_y, self.width):  # 由于固定在widget上,x坐标上有偏移
-                            self.cnt = max(0, self.cnt - 1)
+                            # logger.debug('click at buttonList[2]')
+                            if self.cnt == 0:
+                                break
+                            self.env.reset()
+                            self.chessmans.empty()
+                            creat_sprite_group(self.chessmans,
+                                               self.env.board.chessmans_hash,
+                                               self.chessman_w,
+                                               self.chessman_h)  # 棋盘放置棋子
+                            self.history = [self.env.get_state()]
+                            # 结束在倒数第二步的move
+                            temMoveList = moveList[0: self.cnt - 1]
+                            self.cnt = 0
+                            for move in temMoveList:
+                                self.cnt += 1
+                                old_x, old_y, x, y = self.env.board.record_to_move(move, self.cnt % 2)
+                                current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
+                                chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
+                                moveString = str(old_x) + str(old_y) + str(x) + str(y)
+                                success = current_chessman.move(x, y)
+                                if self.cnt % 2 == 0:
+                                    moveString = flip_move(moveString)
+                                self.history.append(moveString)
+                                if success:
+                                    if chessman_sprite != None:
+                                        self.chessmans.remove(chessman_sprite)
+                                        chessman_sprite.kill()
+                                    self.history.append(self.env.get_state())
+                                else:
+                                    logger.error('record to move did not success')
+
                         elif buttonList[3].isInRect(mouse_x, mouse_y, self.width):  # 由于固定在widget上,x坐标上有偏移
+                            # logger.debug('click at buttonList[3]')
                             if self.cnt + 1 > len(moveList):
                                 break
                             self.cnt = min(len(moveList), self.cnt + 1)
+
                             move = moveList[self.cnt - 1]
                             if move[-1] == u"降":
                                 break
@@ -160,7 +197,8 @@ class repeatGame:
                                 logger.error('record to move did not success')
 
                         elif buttonList[4].isInRect(mouse_x, mouse_y, self.width):  # 由于固定在widget上,x坐标上有偏移
-                            chooseToStart = 1
+                            logger.debug('click at buttonList[4]')
+                            self.chooseToStart = 1
 
             self.draw_widget(screen, widget_background, buttonList)
             # clear/erase the last drawn sprites
@@ -170,43 +208,28 @@ class repeatGame:
             self.chessmans.draw(screen)
             pygame.display.update()
 
-        # for move in moveList:
-        #     self.cnt += 1  # self.cnt % 2 == 1: 红方行; 否则黑方行动
-        #     old_x, old_y, x, y = self.env.board.record_to_move(move, self.cnt % 2)
-        #     current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
-        #     chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
-        #     moveString = str(old_x) + str(old_y) + str(x) + str(y)
-        #     success = current_chessman.move(x, y)
-        #     if self.cnt % 2 == 0:
-        #         moveString = flip_move(moveString)
-        #     self.history.append(moveString)
-        #
-        #     # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
-        #     if success:
-        #         if chessman_sprite != None:
-        #             self.chessmans.remove(chessman_sprite)
-        #             chessman_sprite.kill()
-        #         self.history.append(self.env.get_state())
-        #     else:
-        #         logger.error('record to move did not success')
-        # for i in self.history:
-        #     print('print history after repeat mode init:', i)
-        #
-        # # self.draw_widget(screen, widget_background)
-        # framerate.tick(60)  # 20
-        # # clear/erase the last drawn sprites
-        # self.chessmans.clear(screen, board_background)  # draw a background over the Sprites
-        # # update all the sprites
-        # self.chessmans.update()
-        # self.chessmans.draw(screen)
-        # pygame.display.update()
+        # 开始人机对弈模式
+        self.load_model()
+        self.pipe = self.model.get_pipes()  # agent/model.get_pipes()
+        self.ai = CChessPlayer(self.config,
+                               search_tree=defaultdict(VisitState),
+                               pipes=self.pipe,
+                               enable_resign=True,
+                               debugging=True)  # ai的config 是 self.config.play
+        self.human_move_first = human_first
+        if human_first:
+            self.env.board.calc_chessmans_moving_list()
+        ai_worker = Thread(target=self.ai_move, name="ai_worker")
+        ai_worker.daemon = True
+        ai_worker.start()
+        # 用于记录当前选中的棋子
+        current_chessman = None
 
-        while not self.env.board.is_end():
-            break
+        while not self.env.board.is_end() and not self.has_resign:
             for event in pygame.event.get():  # 处理事件
                 if event.type == pygame.QUIT:  # 退出
                     self.env.board.print_record()  # 打印记录
-                    # self.ai.close(wait=False)
+                    self.ai.close(wait=False)
                     game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
                     self.path = os.path.join(self.config.resource.play_record_dir,
                                              self.config.resource.play_record_filename_tmpl % game_id)
@@ -214,13 +237,165 @@ class repeatGame:
                     sys.exit()
                 elif event.type == VIDEORESIZE:
                     pass
+                elif event.type == MOUSEBUTTONDOWN:  # 处理鼠标事件
+                    if human_first == self.env.red_to_move:  # 判断是不是该自己走棋/操作
+                        pressed_array = pygame.mouse.get_pressed()
+                        # for index in range(len(pressed_array)):
+                        if pressed_array[0]:
+                            mouse_x, mouse_y = pygame.mouse.get_pos()
+
+                            # 处理认输和悔棋
+                            if buttonList[0].isInRect(mouse_x, mouse_y, self.width):
+                                logger.info('click withdraw')
+                                record = self.env.board.record
+                                sep = '\n'
+                                # reset
+                                self.env.reset()
+                                self.chessmans.empty()
+                                creat_sprite_group(self.chessmans,
+                                                   self.env.board.chessmans_hash,
+                                                   self.chessman_w,
+                                                   self.chessman_h)  # 棋盘放置棋子
+                                self.history = [self.env.get_state()]
+
+                                temList = self.env.board.getMoveList(record, sep)
+                                moveList = []
+                                for t in temList:
+                                    if t[-1] != '.':
+                                        moveList.append(t)
+
+                                if len(moveList) == 0:
+                                    break
+                                cnt = 0
+                                for move in moveList:
+                                    # if move[-1] == '.':
+                                    #     continue
+                                    cnt += 1  # cnt % 2 == 1: 红方行; 否则黑方行动
+                                    # print(move)
+                                    old_x, old_y, x, y = self.env.board.record_to_move(move, cnt % 2)
+                                    current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
+                                    chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
+                                    moveString = str(old_x) + str(old_y) + str(x) + str(y)
+                                    success = current_chessman.move(x, y)
+                                    if cnt % 2 == 0:
+                                        moveString = flip_move(moveString)
+                                    self.history.append(moveString)
+
+                                    # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
+                                    if success:
+                                        if chessman_sprite != None:
+                                            self.chessmans.remove(chessman_sprite)
+                                            chessman_sprite.kill()
+                                        self.history.append(self.env.get_state())
+                                    else:
+                                        logger.error('record to move did not success')
+                                for i in self.history:
+                                    print('print history after withdraw:', i)
+                                break
+
+                            if buttonList[1].isInRect(mouse_x, mouse_y, self.width):
+                                logger.info('click resign')
+                                self.has_resign = 1
+                                break
+
+                            col_num, row_num = translate_hit_area(mouse_x, mouse_y, self.chessman_w, self.chessman_h)
+                            chessman_sprite = select_sprite_from_group(self.chessmans, col_num, row_num)
+
+                            if current_chessman is None and chessman_sprite != None:  # 从未选中棋子->选中棋子
+                                if chessman_sprite.chessman.is_red == self.env.red_to_move:  # 点击的是己方棋子
+                                    current_chessman = chessman_sprite
+                                    chessman_sprite.is_selected = True  # 设置当前棋子为选中
+                            elif current_chessman != None and chessman_sprite != None:  # 选中第二枚棋子
+                                if chessman_sprite.chessman.is_red == self.env.red_to_move:  # 第二枚是己方的棋子， 更新已选中的棋子
+                                    current_chessman.is_selected = False
+                                    current_chessman = chessman_sprite
+                                    chessman_sprite.is_selected = True
+                                else:  # 其它情况： 第二个点是空白处 or 对方棋子
+                                    move = str(current_chessman.chessman.col_num) + str(
+                                        current_chessman.chessman.row_num) + \
+                                           str(col_num) + str(row_num)  # a string
+                                    success = current_chessman.move(col_num, row_num)  # 调用 move, return true or false
+                                    self.history.append(move)  # 更新记录
+                                    if success:
+                                        self.chessmans.remove(chessman_sprite)
+                                        chessman_sprite.kill()
+                                        current_chessman.is_selected = False
+                                        current_chessman = None
+                                        self.history.append(self.env.get_state())
+                            elif current_chessman != None and chessman_sprite is None:
+                                move = str(current_chessman.chessman.col_num) + str(
+                                    current_chessman.chessman.row_num) + str(col_num) + str(row_num)
+                                success = current_chessman.move(col_num, row_num)  # chessman sprite的move
+                                self.history.append(move)
+                                if success:
+                                    current_chessman.is_selected = False
+                                    current_chessman = None
+                                    self.history.append(self.env.get_state())
+
+            self.draw_widget(screen, widget_background, buttonList)
+            framerate.tick(60)  # 20
+            # clear/erase the last drawn sprites
+            self.chessmans.clear(screen, board_background)  # draw a background over the Sprites
+
+            # update all the sprites
+            self.chessmans.update()
+            self.chessmans.draw(screen)
+            pygame.display.update()
+
+        self.ai.close(wait=False)
+
+        # final move 是 kill king的一步
+        success, finalMove = self.env.board.is_end_final_move()
+        if success and finalMove != None:
+            sleep(2)
+            old_x, old_y, x, y = self.env.board.str_to_move(finalMove)
+            current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
+            chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
+            moveString = str(old_x) + str(old_y) + str(x) + str(y)
+            success = current_chessman.move(x, y)
+            # 如果是黑方杀红king 要flip_move
+            if current_chessman.chessman.is_red == 0:
+                moveString = flip_move(moveString)
+            self.history.append(moveString)
+            # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
+            if success:
+                if chessman_sprite != None:
+                    self.chessmans.remove(chessman_sprite)
+                    chessman_sprite.kill()
+                self.history.append(self.env.get_state())
+
+                self.draw_widget(screen, widget_background, buttonList)
+                framerate.tick(60)  # 20
+                # clear/erase the last drawn sprites
+                self.chessmans.clear(screen, board_background)  # draw a background over the Sprites
+
+                # update all the sprites
+                self.chessmans.update()
+                self.chessmans.draw(screen)
+                pygame.display.update()
+
+        if self.has_resign == 1:
+            self.env.board.winner = Winner.black
+            self.env.board.record += u'\n红方降'
+
+        logger.info(f"Winner is {self.env.board.winner} !!!")
+        self.env.board.print_record()
+        game_id = datetime.now().strftime("%Y%m%d-%H%M%S")
+        self.path = os.path.join(self.config.resource.play_record_dir,
+                                 self.config.resource.play_record_filename_tmpl % game_id)
+        self.env.board.save_record(self.path)
+        conn = set_conn()
+        success = insert_a_record(conn, self.env.board.winner, self.path)
+        if success:
+            print('insert to database success')
+        else:
+            print('insert to database fail')
+        conn.close()
+        sleep(3)
 
     def draw_widget(self, screen, widget_background, buttonList: list):
         white_rect = Rect(0, 0, self.screen_width - self.width, self.height)
         widget_background.fill((255, 255, 255), white_rect)
-
-        if self.chooseToStart:
-            pygame.draw.line(widget_background, (255, 0, 0), (10, 285), (self.screen_width - self.width - 10, 285))
 
         if buttonList == None:
             logger.error('buttonList is not defined! line in play_games/repeat.py: draw widget')
@@ -230,14 +405,32 @@ class repeatGame:
             # 上一步 下一步 选择 三个按钮
             for button in buttonList[2:5]:
                 widget_background.blit(button.get_Surface(), button.get_rect())
+            self.draw_records(screen, widget_background)
         else:
             # 撤回 认输 两个按钮
+            pygame.draw.line(widget_background, (255, 0, 0), (10, 315), (self.screen_width - self.width - 10, 315))
             for button in buttonList[0:2]:
                 widget_background.blit(button.get_Surface(), button.get_rect())
-
-        self.draw_records(screen, widget_background)
-        if self.chooseToStart:
+            self.draw_records_2(screen, widget_background)
             self.draw_evaluation(screen, widget_background)
+
+    def draw_records_2(self, screen, widget_background):
+        text = '着法记录'
+        self.draw_label(screen, widget_background, text, 40, 16, 10)  # 10, 16, 10
+        records = self.env.board.record.split('\n')
+        font_file = self.config.resource.font_path
+        font = pygame.font.Font(font_file, 12)
+
+        i = 0
+        for record in records[-self.disp_record_num:]:
+            self.rec_labels[i] = font.render(record, True, (0, 0, 0), (255, 255, 255))
+            t_rect = self.rec_labels[i].get_rect()
+            t_rect.y = 65 + i * 15  # 35 + i * 35
+            t_rect.x = 10
+            t_rect.width = self.screen_width - self.width
+            widget_background.blit(self.rec_labels[i], t_rect)
+            i += 1
+        screen.blit(widget_background, (self.width, 0))
 
     def draw_records(self, screen, widget_background):
         text = '着法记录'
@@ -246,19 +439,6 @@ class repeatGame:
         if len(repeatedRecords) == 1 and len(repeatedRecords[0]) == 0:
             repeatedRecords = []
         records = self.savedRecord.split('\n')
-        # print('records:')
-        # for i in records:
-        #     print(i)
-        # tem = []
-        # for t in repeatedRecords:
-        #     if t[-1] != '.':
-        #         tem.append(t)
-        # repeatedRecords = tem
-        # tem = []
-        # for t in records:
-        #     if t[-1] != '.':
-        #         tem.append(t)
-        # records = tem
         font_file = self.config.resource.font_path
         font = pygame.font.Font(font_file, 12)
 
@@ -277,13 +457,6 @@ class repeatGame:
             recordList = repeatedRecords[-self.disp_cnt_num: len1]
             toRepeatRecordList = records[len1: len1 + (self.disp_record_num - self.disp_cnt_num)]
 
-        # for i in recordList:
-        #     print('recordList:', i)
-        # print('len1:', len1, 'records[len1]:', records[len1])
-        # for i in repeatedRecords:
-        #     print('repeatedRecords:', i, 'len(i):', len(i))
-        # for i in toRepeatRecordList:
-        #     print('toRepeatRecordList:', i)
         i = 0
         for record in recordList:
             self.rec_labels[i] = font.render(record, True, green, (255, 255, 255))
@@ -294,7 +467,7 @@ class repeatGame:
             widget_background.blit(self.rec_labels[i], t_rect)
             i += 1
 
-        if i and self.cnt % 2:
+        if i and self.cnt % 2 and len1 != len2:
             record = records[len1 - 1]
             record = ' ' * (len(record) + 7) + record[-4:]
             tem = font.render(record, True, gray)
@@ -316,6 +489,27 @@ class repeatGame:
 
     def draw_evaluation(self, screen, widget_background):
         title_label = 'CC-Zero信息'
+        self.draw_label(screen, widget_background, title_label, 300, 16, 10)
+        info_label = f'MCTS搜索次数：{self.config.play.simulation_num_per_move}'
+        self.draw_label(screen, widget_background, info_label, 335, 14, 10)
+        eval_label = f"当前局势评估: {self.nn_value:.3f}"
+        self.draw_label(screen, widget_background, eval_label, 360, 14, 10)
+        label = f"MCTS搜索结果:"
+        self.draw_label(screen, widget_background, label, 395, 14, 10)
+        label = f"着法 访问计数 动作价值 先验概率"
+        self.draw_label(screen, widget_background, label, 415, 12, 10)
+        i = 0
+        tmp = copy.deepcopy(self.mcts_moves)
+        for mov, action_state in tmp.items():
+            label = f"{mov}"
+            self.draw_label(screen, widget_background, label, 435 + i * 20, 12, 10)
+            label = f"{action_state[0]}"
+            self.draw_label(screen, widget_background, label, 435 + i * 20, 12, 70)
+            label = f"{action_state[1]:.2f}"
+            self.draw_label(screen, widget_background, label, 435 + i * 20, 12, 100)
+            label = f"{action_state[2]:.3f}"
+            self.draw_label(screen, widget_background, label, 435 + i * 20, 12, 150)
+            i += 1
 
     def draw_label(self, screen, widget_background, text, y, font_size, x=None):
         font_file = self.config.resource.font_path
@@ -329,3 +523,75 @@ class repeatGame:
             t_rect.centerx = (self.screen_width - self.width) / 2
         widget_background.blit(label, t_rect)
         screen.blit(widget_background, (self.width, 0))
+
+    def ai_move(self):
+        ai_move_first = not self.human_move_first
+        if self.history == []:
+            self.history = [self.env.get_state()]  # 当前棋盘的fen表示    # 其实是棋盘初始化后 对自己的初始化
+        no_act = None
+        while not self.env.done:  # 棋局没结束
+            if ai_move_first == self.env.red_to_move:  # 判断是不是ai走棋
+                labels = ActionLabelsRed
+                labels_n = len(ActionLabelsRed)
+
+                self.ai.search_results = {}
+                state = self.env.get_state()
+                logger.info(f"state = {state}")  # logger 当前搜索的局面
+                _, _, _, check = senv.done(state, need_check=True)  # if check == false: game not end
+                # 对历史中对每一个局面计算 no_act表
+                if not check and state in self.history[:-1]:  # self.history[:-1] 是历史中出现过的局面
+                    no_act = []  # 禁止走步表 列表
+                    free_move = defaultdict(int)  # 一个字典
+
+                    for i in range(len(self.history) - 1):
+                        if self.history[i] == state:
+                            # 如果走了下一步是将军或捉：禁止走那步
+                            if senv.will_check_or_catch(state, self.history[i + 1]):
+                                no_act.append(self.history[i + 1])
+
+                            # 否则当作闲着处理
+                            else:
+                                free_move[state] += 1
+                                if free_move[state] >= 2:
+                                    # 作和棋处理
+                                    self.env.winner = Winner.draw
+                                    self.env.board.winner = Winner.draw
+                                    break
+                    if no_act:
+                        logger.debug(f"no_act = {no_act}")
+                print('computer starts thinking!!!')
+                action, policy = self.ai.action(state, self.env.num_halfmoves, no_act)
+                print('computer finishs thinking!!!')
+
+                if action is None:
+                    logger.info("AI has resigned!")
+                    self.env.board.record += u'\nAI降'
+                    return
+                self.history.append(action)
+                if not self.env.red_to_move:
+                    action = flip_move(action)
+
+                key = self.env.get_state()
+                p, v = self.ai.debug[key]
+                logger.info(f"check = {check}, NN value = {v:.3f}")
+                self.nn_value = v
+
+                logger.info("MCTS results:")
+                self.mcts_moves = {}
+                for move, action_state in self.ai.search_results.items():
+                    move_cn = self.env.board.make_single_record(int(move[0]), int(move[1]), int(move[2]), int(move[3]))
+                    logger.info(
+                        f"move: {move_cn}-{move}, visit count: {action_state[0]}, Q_value: {action_state[1]:.3f}, Prior: {action_state[2]:.3f}")
+                    self.mcts_moves[move_cn] = action_state
+
+                x0, y0, x1, y1 = int(action[0]), int(action[1]), int(action[2]), int(action[3])
+                chessman_sprite = select_sprite_from_group(self.chessmans, x0, y0)
+                sprite_dest = select_sprite_from_group(self.chessmans, x1, y1)
+                if sprite_dest:
+                    self.chessmans.remove(sprite_dest)
+                    sprite_dest.kill()
+                chessman_sprite.move(x1, y1, self.chessman_w, self.chessman_h)
+                self.history.append(self.env.get_state())
+                for i in self.history:
+                    print('print history:', i)
+                print('轮到玩家操作')

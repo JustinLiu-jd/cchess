@@ -622,6 +622,7 @@ class Chessboard(object):       # 棋盘类
         if chess is None:
             logger.error(f"No chessman! {old_x}{old_y}{x}{y}")
             self.print_to_cl()
+            return False
         has_two, mark = self.check_two_chesses_in_one_row(chess, old_x, old_y)
         if has_two:
             record += mark

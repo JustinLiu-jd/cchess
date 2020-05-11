@@ -2035,3 +2035,1247 @@ keep_dims is deprecated, use keepdims instead
 2020-05-11 17:01:11,153@mychess.play_games.repeat ERROR # record to move did not success
 2020-05-11 17:02:07,175@mychess.play_games.repeat ERROR # record to move did not success
 2020-05-11 17:06:01,795@mychess.play_games.repeat ERROR # record to move did not success
+2020-05-11 20:18:34,965@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:18:36,715@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:19:36,237@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:38,287@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:38,903@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:19:39,520@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:19:40,137@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:40,571@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:40,738@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:40,903@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:41,053@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:41,904@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:42,120@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:42,319@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:42,470@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:42,754@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:43,570@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:43,754@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:19:44,238@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:19:44,437@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:11,583@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:11,782@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:12,717@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:14,151@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:14,467@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:14,650@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:14,834@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:15,134@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:15,483@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:15,649@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:15,834@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:15,966@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:16,133@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:16,334@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:16,501@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:16,651@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:16,817@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:16,983@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:17,317@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:17,484@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:17,617@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:18,300@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:18,501@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:18,650@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:18,783@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:19,084@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:25:19,901@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:20,068@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:20,200@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:20,368@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:20,535@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:20,683@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:20,850@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:21,018@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:21,168@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:21,334@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:22,033@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:22,267@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:22,435@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:22,584@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:22,751@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:22,900@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:23,034@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:23,201@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:23,383@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:23,550@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:23,701@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:23,868@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:24,001@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:24,952@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:25,134@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:25,301@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:26,418@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:26,601@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:26,735@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:27,385@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:27,568@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:28,402@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:28,568@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:29,402@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:29,585@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:30,435@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:30,635@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:31,653@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:31,852@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,018@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,168@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,335@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,486@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,635@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,785@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:32,968@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:33,152@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:33,317@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:33,485@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:33,652@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:33,801@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:33,968@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:34,485@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:34,685@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:34,852@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:35,218@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:35,386@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:36,035@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:36,119@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:36,369@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:36,534@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:36,686@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:37,719@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:37,903@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:38,635@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:38,820@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:38,952@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:39,086@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:39,201@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:39,886@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:40,051@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:40,202@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:40,653@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:40,786@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:40,920@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:41,019@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:41,169@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:42,170@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:42,318@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:42,486@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:42,669@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:42,820@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:43,453@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:43,620@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:43,735@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:44,770@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:44,935@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:25:45,085@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:31,878@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:27:32,063@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:27:32,212@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:27:32,362@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:27:33,046@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:33,228@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:33,379@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:33,546@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:33,695@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:33,878@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:27:34,380@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:02,232@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:03,198@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:03,931@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:04,597@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:05,215@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:05,798@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:06,433@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:06,814@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:06,982@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:07,149@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:07,299@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:07,498@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:07,666@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:08,233@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:08,399@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:08,548@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:08,699@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:08,849@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,016@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,165@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,316@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,465@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,631@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,782@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:09,915@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:10,082@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:10,233@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:10,381@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:10,549@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:10,682@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:10,865@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:11,033@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:11,182@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:11,331@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:11,516@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:11,683@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:11,866@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:12,033@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:12,181@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:12,348@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:12,499@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:12,665@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:13,217@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:13,383@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:13,532@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:13,682@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:13,832@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,000@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,149@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,316@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,465@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,633@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,783@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:14,948@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:15,116@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:15,282@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:15,449@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:15,599@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:15,782@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:15,950@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:16,115@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:16,284@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:16,433@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:16,584@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:16,732@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:16,899@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,049@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,183@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,366@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,499@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,666@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,816@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:17,999@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:18,915@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:19,065@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:19,232@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:19,383@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:19,717@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:19,917@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:20,066@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:20,233@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:20,400@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:20,549@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:20,716@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:20,883@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:21,066@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:21,200@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:21,366@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:21,516@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:21,832@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:22,001@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:22,215@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:22,383@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:22,550@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:22,734@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:22,934@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:23,082@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:23,284@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:23,433@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:23,583@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:23,733@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:23,916@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:24,100@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:24,250@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:24,416@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:24,601@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:24,766@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:24,934@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:25,117@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:25,283@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:25,566@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:25,717@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:25,882@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:26,083@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:26,283@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:26,450@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:26,633@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:26,800@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:26,950@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:27,150@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:27,334@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:27,499@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:27,701@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:27,868@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:28,033@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:28,200@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:28,384@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:28,566@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:28,750@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:28,900@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:29,067@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:29,233@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:29,400@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:29,566@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:29,717@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:29,884@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:30,034@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:31,034@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:31,450@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:33,351@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:34,184@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:34,367@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:34,534@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:34,701@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:35,768@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:35,951@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:36,084@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:36,252@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:36,401@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:36,567@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:36,734@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:36,900@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:37,033@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:37,202@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:37,351@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:38,135@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:38,300@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:38,468@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:38,618@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:39,051@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:39,219@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:39,367@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:39,552@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:39,684@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:39,834@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:40,018@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:40,201@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:40,350@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:40,484@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:40,651@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:40,818@mychess.play_games.repeat DEBUG # click at buttonList[3]
+2020-05-11 20:28:41,451@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:41,618@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:41,768@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:41,936@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:42,102@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:42,269@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:42,452@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:42,651@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:42,818@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:42,967@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:43,134@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:43,285@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:43,551@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:43,735@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:43,902@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:44,068@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:44,235@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:44,418@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:44,602@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:44,768@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:44,968@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:45,152@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:45,317@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:45,502@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:45,668@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:45,834@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:46,003@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:46,185@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:46,369@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:46,535@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:46,702@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:46,869@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:47,052@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:47,218@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:47,402@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:47,568@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:47,752@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:47,885@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:48,103@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:48,269@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:48,435@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:48,619@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:48,786@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:48,968@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:49,152@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:49,336@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:49,519@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:49,686@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:49,834@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:50,019@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:50,203@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:50,351@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:50,518@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:50,701@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:50,869@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:51,070@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:51,251@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:51,420@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:51,803@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:51,970@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:52,152@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:52,319@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:52,520@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:52,669@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:52,837@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:53,002@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:53,187@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:53,335@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:53,502@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:28:53,669@mychess.play_games.repeat DEBUG # click at buttonList[2]
+2020-05-11 20:29:01,004@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:39:09,276@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:39:09,290@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 20:39:09,294@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 20:39:09,316@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 20:39:09,352@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:39:09,409@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 20:39:10,654@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:39:10,984@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 20:39:10,985@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 20:39:10,985@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 20:39:11,002@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 20:39:11,003@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 20:39:11,601@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 20:39:24,272@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k2r3/5S3/5M3
+2020-05-11 20:39:25,286@mychess.play_games.repeat INFO # check = True, NN value = -1.000
+2020-05-11 20:39:25,286@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:39:25,287@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 191, Q_value: -2.000, Prior: 0.957
+2020-05-11 20:39:25,287@mychess.play_games.repeat INFO # move: 仕4进5-5041, visit count: 7, Q_value: -2.000, Prior: 0.040
+2020-05-11 20:39:25,287@mychess.play_games.repeat INFO # move: 将4平5-5141, visit count: 1, Q_value: -2.000, Prior: 0.003
+2020-05-11 20:39:25,384@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4c4/2k2p3/9/5M3
+2020-05-11 20:45:44,544@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:45:44,558@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 20:45:44,563@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 20:45:44,593@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 20:45:44,626@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:45:44,719@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 20:45:45,940@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:45:46,287@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 20:45:46,288@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 20:45:46,288@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 20:45:46,304@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 20:45:46,306@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 20:45:46,898@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 20:45:46,900@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k1r4/4MS3/5M3
+2020-05-11 20:45:53,163@mychess.play_games.repeat INFO # check = False, NN value = -0.999
+2020-05-11 20:45:53,169@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:45:53,170@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 182, Q_value: -1.156, Prior: 0.996
+2020-05-11 20:45:53,170@mychess.play_games.repeat INFO # move: 仕5退6-4130, visit count: 8, Q_value: -1.124, Prior: 0.000
+2020-05-11 20:45:53,170@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 8, Q_value: -1.124, Prior: 0.004
+2020-05-11 20:45:53,170@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 20:46:02,239@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2kr5/5S3/5M3
+2020-05-11 20:46:08,693@mychess.play_games.repeat INFO # check = False, NN value = -0.999
+2020-05-11 20:46:08,694@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:46:08,695@mychess.play_games.repeat INFO # move: 仕4进5-5041, visit count: 161, Q_value: -1.093, Prior: 0.648
+2020-05-11 20:46:08,697@mychess.play_games.repeat INFO # move: 将4平5-5141, visit count: 37, Q_value: -1.158, Prior: 0.352
+2020-05-11 20:46:08,697@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 20:46:14,224@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k1r4/4MS3/9
+2020-05-11 20:46:20,235@mychess.play_games.repeat INFO # check = False, NN value = -0.999
+2020-05-11 20:46:20,240@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:46:20,241@mychess.play_games.repeat INFO # move: 将4退1-5150, visit count: 177, Q_value: -1.144, Prior: 0.984
+2020-05-11 20:46:20,241@mychess.play_games.repeat INFO # move: 仕5退6-4130, visit count: 7, Q_value: -1.142, Prior: 0.000
+2020-05-11 20:46:20,241@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 5, Q_value: -1.198, Prior: 0.016
+2020-05-11 20:46:20,241@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 5, Q_value: -1.199, Prior: 0.000
+2020-05-11 20:46:20,241@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 4, Q_value: -1.249, Prior: 0.000
+2020-05-11 20:46:22,655@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k6/4r4/5S3
+2020-05-11 20:46:22,932@mychess.play_games.repeat INFO # check = False, NN value = -1.000
+2020-05-11 20:46:22,933@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:46:22,933@mychess.play_games.repeat INFO # move: 将4进1-5051, visit count: 197, Q_value: -2.000, Prior: 1.000
+2020-05-11 20:46:22,933@mychess.play_games.repeat INFO # move: 将4平5-5040, visit count: 2, Q_value: -2.000, Prior: 0.000
+2020-05-11 20:46:23,052@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k6/5r3/9
+2020-05-11 20:46:23,060@mychess.play_games.repeat INFO # Winner is Winner.red !!!
+2020-05-11 20:46:26,070@mychess.agent.api ERROR # EOF error: 
+2020-05-11 20:47:16,951@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:47:16,966@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 20:47:19,188@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 20:47:19,189@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k6/5r3/9
+2020-05-11 20:50:04,466@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:50:04,483@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 20:50:04,489@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 20:50:04,515@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 20:50:04,543@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:50:04,607@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 20:50:05,795@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:50:06,154@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 20:50:06,154@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 20:50:06,155@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 20:50:06,170@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 20:50:06,171@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 20:50:06,756@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 20:50:06,757@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k6/5r3/9
+2020-05-11 20:50:06,837@mychess.play_games.repeat INFO # Winner is Winner.red !!!
+2020-05-11 20:50:09,843@mychess.agent.api ERROR # EOF error: 
+2020-05-11 20:57:22,670@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:57:22,684@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 20:57:22,688@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 20:57:22,721@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 20:57:22,749@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:57:22,821@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 20:57:24,014@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:57:24,365@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 20:57:24,365@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 20:57:24,366@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 20:57:24,384@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 20:57:24,387@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 20:57:25,014@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 20:57:25,015@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p4/2p5p/2r6/4cp3/2k6/5r3/9
+2020-05-11 20:57:25,094@mychess.play_games.repeat INFO # Winner is Winner.red !!!
+2020-05-11 20:57:28,102@mychess.agent.api ERROR # EOF error: 
+2020-05-11 20:58:53,094@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 20:58:53,111@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 20:58:53,120@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 20:58:53,145@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 20:58:53,184@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:58:53,237@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 20:58:54,418@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 20:58:54,768@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 20:58:54,768@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 20:58:54,769@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 20:58:54,782@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 20:58:54,782@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 20:58:55,375@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 20:58:55,377@mychess.play_games.repeat INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P2cP1c2/1r2E3E/4K4/1KRMSM2R
+2020-05-11 20:59:01,975@mychess.play_games.repeat INFO # check = False, NN value = -0.743
+2020-05-11 20:59:01,975@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:59:01,975@mychess.play_games.repeat INFO # move: 象1退3-8260, visit count: 116, Q_value: -0.847, Prior: 0.494
+2020-05-11 20:59:01,975@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 47, Q_value: -0.912, Prior: 0.406
+2020-05-11 20:59:01,975@mychess.play_games.repeat INFO # move: 马5进7-4122, visit count: 15, Q_value: -0.866, Prior: 0.082
+2020-05-11 20:59:01,975@mychess.play_games.repeat INFO # move: 车1平3-8060, visit count: 4, Q_value: -0.800, Prior: 0.002
+2020-05-11 20:59:01,976@mychess.play_games.repeat INFO # move: 车7进2-2022, visit count: 2, Q_value: -0.868, Prior: 0.008
+2020-05-11 20:59:10,024@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 20:59:10,503@mychess.play_games.repeat INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1r1cE1K1E/9/1KRMSM2R
+2020-05-11 20:59:16,816@mychess.play_games.repeat INFO # check = False, NN value = 0.817
+2020-05-11 20:59:16,816@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 20:59:16,816@mychess.play_games.repeat INFO # move: 马三退五-6241, visit count: 161, Q_value: -0.880, Prior: 0.978
+2020-05-11 20:59:16,816@mychess.environment.chessboard ERROR # No chessman! 8070
+2020-05-11 20:59:32,548@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:03:51,592@mychess.agent.api ERROR # EOF error: 
+2020-05-11 21:04:19,206@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:04:19,222@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:04:19,228@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:04:19,277@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:04:19,312@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:04:19,414@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:04:20,631@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:04:20,981@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:04:20,981@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:04:20,981@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:04:20,993@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:04:20,994@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:04:21,591@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:04:59,202@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:04:59,703@mychess.play_games.repeat INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1r1cE1K1E/9/1KRMSM2R
+2020-05-11 21:05:07,054@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:28,146@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:31,963@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:33,262@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:34,096@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:34,316@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:34,480@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:34,664@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:34,846@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:35,013@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:35,346@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:35,528@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:35,713@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:35,929@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:37,279@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:37,662@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:38,263@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:38,497@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:38,680@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:38,846@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:39,013@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:40,213@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:05:44,048@mychess.play_games.repeat INFO # click resign
+2020-05-11 21:05:44,164@mychess.play_games.repeat INFO # Winner is None !!!
+2020-05-11 21:05:47,184@mychess.agent.api ERROR # EOF error: 
+2020-05-11 21:16:22,602@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:16:22,619@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:16:22,626@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:16:22,659@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:16:22,673@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:16:22,739@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:16:24,007@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:16:24,372@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:16:24,372@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:16:24,373@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:16:24,403@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:16:24,406@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:16:25,039@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:16:25,040@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4Pp2P/P1c1K4/7r1/9/2rMSM3
+2020-05-11 21:16:30,722@mychess.play_games.repeat INFO # check = False, NN value = -0.999
+2020-05-11 21:16:30,723@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:16:30,723@mychess.play_games.repeat INFO # move: 马5退6-4331, visit count: 55, Q_value: -1.099, Prior: 0.050
+2020-05-11 21:16:30,723@mychess.play_games.repeat INFO # move: 马5退4-4351, visit count: 26, Q_value: -1.456, Prior: 0.723
+2020-05-11 21:16:30,723@mychess.play_games.repeat INFO # move: 将5进1-4041, visit count: 25, Q_value: -1.073, Prior: 0.003
+2020-05-11 21:16:30,723@mychess.play_games.repeat INFO # move: 马5退3-4362, visit count: 21, Q_value: -1.041, Prior: 0.001
+2020-05-11 21:16:30,724@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 18, Q_value: -1.098, Prior: 0.009
+2020-05-11 21:16:40,539@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:16:56,894@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:17:15,456@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:17:15,897@mychess.play_games.repeat INFO # state = 1r1msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1C1cE1K2/9/1KRMSME1R
+2020-05-11 21:18:17,330@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:21:23,645@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:21:23,674@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:21:23,678@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:21:23,707@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:21:23,737@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:21:23,811@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:21:25,046@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:21:25,419@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:21:25,420@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:21:25,420@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:21:25,443@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:21:25,443@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:21:26,051@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:21:26,053@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/4p3P/P3cK3/4r4/9/2rMSM3
+2020-05-11 21:21:31,525@mychess.play_games.repeat INFO # check = True, NN value = -0.997
+2020-05-11 21:21:31,526@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:21:31,526@mychess.play_games.repeat INFO # move: 仕4进5-5041, visit count: 183, Q_value: -1.255, Prior: 0.995
+2020-05-11 21:21:31,526@mychess.play_games.repeat INFO # move: 马4退5-5341, visit count: 7, Q_value: -1.279, Prior: 0.005
+2020-05-11 21:21:31,526@mychess.play_games.repeat INFO # move: 将5进1-4041, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:21:31,526@mychess.play_games.repeat INFO # move: 卒9进1-0304, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:21:31,526@mychess.play_games.repeat INFO # move: 马4退3-5361, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:21:51,501@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/5p2P/P3cK3/4r4/4M4/2rMS4
+2020-05-11 21:21:57,887@mychess.play_games.repeat INFO # check = False, NN value = -0.998
+2020-05-11 21:21:57,887@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:21:57,893@mychess.play_games.repeat INFO # move: 将5平4-4050, visit count: 128, Q_value: -1.066, Prior: 0.740
+2020-05-11 21:21:57,893@mychess.play_games.repeat INFO # move: 马4进2-5374, visit count: 33, Q_value: -1.082, Prior: 0.244
+2020-05-11 21:21:57,894@mychess.play_games.repeat INFO # move: 马4退3-5361, visit count: 22, Q_value: -1.036, Prior: 0.011
+2020-05-11 21:21:57,894@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 7, Q_value: -0.989, Prior: 0.003
+2020-05-11 21:21:57,894@mychess.play_games.repeat INFO # move: 马4退2-5372, visit count: 5, Q_value: -0.991, Prior: 0.002
+2020-05-11 21:22:41,605@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p1p1p3p/9/8P/P3cp3/4r4/4M4/2rM1S3
+2020-05-11 21:22:43,873@mychess.play_games.repeat INFO # check = False, NN value = -0.997
+2020-05-11 21:22:43,873@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:22:43,873@mychess.play_games.repeat INFO # move: 将4进1-5051, visit count: 164, Q_value: -1.069, Prior: 0.907
+2020-05-11 21:22:43,874@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 31, Q_value: -1.060, Prior: 0.093
+2020-05-11 21:22:43,874@mychess.play_games.repeat INFO # move: 将4平5-5040, visit count: 1, Q_value: -0.988, Prior: 0.000
+2020-05-11 21:22:43,875@mychess.play_games.repeat INFO # move: 卒9进1-0304, visit count: 1, Q_value: -0.993, Prior: 0.000
+2020-05-11 21:22:43,875@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 1, Q_value: -0.995, Prior: 0.000
+2020-05-11 21:22:49,020@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p3p3p/2p6/8P/P3cp3/4r4/4MS3/2rM5
+2020-05-11 21:22:53,091@mychess.play_games.repeat INFO # check = False, NN value = -0.997
+2020-05-11 21:22:53,091@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:22:53,091@mychess.play_games.repeat INFO # move: 将4退1-5150, visit count: 153, Q_value: -1.068, Prior: 0.779
+2020-05-11 21:22:53,091@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 39, Q_value: -1.098, Prior: 0.219
+2020-05-11 21:22:53,091@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 2, Q_value: -0.997, Prior: 0.001
+2020-05-11 21:22:53,092@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 2, Q_value: -0.997, Prior: 0.001
+2020-05-11 21:22:53,092@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:22:55,714@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p3p3p/2p6/8P/P3cp3/4r4/4M4/r2M1S3
+2020-05-11 21:23:02,054@mychess.play_games.repeat INFO # check = False, NN value = -0.998
+2020-05-11 21:23:02,055@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:23:02,055@mychess.play_games.repeat INFO # move: 将4进1-5051, visit count: 169, Q_value: -1.060, Prior: 0.975
+2020-05-11 21:23:02,055@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 26, Q_value: -0.994, Prior: 0.024
+2020-05-11 21:23:02,055@mychess.play_games.repeat INFO # move: 将4平5-5040, visit count: 1, Q_value: -0.988, Prior: 0.000
+2020-05-11 21:23:02,055@mychess.play_games.repeat INFO # move: 卒9进1-0304, visit count: 1, Q_value: -0.989, Prior: 0.000
+2020-05-11 21:23:02,055@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 1, Q_value: -0.994, Prior: 0.000
+2020-05-11 21:23:23,942@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p3p3p/2p6/8P/r3cp3/4r4/4MS3/3M5
+2020-05-11 21:23:29,915@mychess.play_games.repeat INFO # check = False, NN value = -0.997
+2020-05-11 21:23:29,915@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:23:29,915@mychess.play_games.repeat INFO # move: 将4退1-5150, visit count: 175, Q_value: -1.075, Prior: 0.952
+2020-05-11 21:23:29,915@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 9, Q_value: -1.108, Prior: 0.046
+2020-05-11 21:23:29,915@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 7, Q_value: -1.139, Prior: 0.001
+2020-05-11 21:23:29,915@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 5, Q_value: -0.996, Prior: 0.001
+2020-05-11 21:23:29,916@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 2, Q_value: -0.997, Prior: 0.000
+2020-05-11 21:23:31,260@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p3p3p/2p6/8P/r3cp3/8r/4M4/3M1S3
+2020-05-11 21:23:37,114@mychess.play_games.repeat INFO # check = False, NN value = -0.998
+2020-05-11 21:23:37,119@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:23:37,120@mychess.play_games.repeat INFO # move: 将4进1-5051, visit count: 106, Q_value: -1.147, Prior: 0.714
+2020-05-11 21:23:37,120@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 49, Q_value: -1.140, Prior: 0.285
+2020-05-11 21:23:37,120@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 28, Q_value: -1.068, Prior: 0.001
+2020-05-11 21:23:37,120@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 15, Q_value: -1.064, Prior: 0.000
+2020-05-11 21:23:37,120@mychess.play_games.repeat INFO # move: 将4平5-5040, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:23:38,894@mychess.play_games.repeat INFO # state = 3msme2/9/2k1e4/p3p3p/2p6/8r/r3cp3/9/4MS3/3M5
+2020-05-11 21:23:46,709@mychess.play_games.repeat INFO # check = False, NN value = -0.996
+2020-05-11 21:23:46,713@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:23:46,717@mychess.play_games.repeat INFO # move: 将4退1-5150, visit count: 147, Q_value: -1.126, Prior: 0.835
+2020-05-11 21:23:46,719@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 32, Q_value: -1.122, Prior: 0.152
+2020-05-11 21:23:46,720@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 16, Q_value: -1.059, Prior: 0.005
+2020-05-11 21:23:46,721@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 3, Q_value: -1.331, Prior: 0.007
+2020-05-11 21:23:46,722@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:24:42,474@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2pk5/8r/r3cp3/9/4M4/3M1S3
+2020-05-11 21:24:48,183@mychess.play_games.repeat INFO # check = False, NN value = -0.997
+2020-05-11 21:24:48,183@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:24:48,184@mychess.play_games.repeat INFO # move: 将4进1-5051, visit count: 114, Q_value: -1.190, Prior: 0.997
+2020-05-11 21:24:48,185@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 48, Q_value: -1.059, Prior: 0.000
+2020-05-11 21:24:48,185@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 36, Q_value: -1.080, Prior: 0.002
+2020-05-11 21:24:48,185@mychess.play_games.repeat INFO # move: 将4平5-5040, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:24:49,918@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2pk5/8r/r3c1p2/9/4MS3/3M5
+2020-05-11 21:24:55,520@mychess.play_games.repeat INFO # check = False, NN value = -0.993
+2020-05-11 21:24:55,520@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:24:55,520@mychess.play_games.repeat INFO # move: 将4退1-5150, visit count: 99, Q_value: -1.148, Prior: 0.592
+2020-05-11 21:24:55,520@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 48, Q_value: -1.143, Prior: 0.267
+2020-05-11 21:24:55,520@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 39, Q_value: -1.099, Prior: 0.094
+2020-05-11 21:24:55,521@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 9, Q_value: -1.108, Prior: 0.035
+2020-05-11 21:24:55,521@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 4, Q_value: -1.246, Prior: 0.012
+2020-05-11 21:24:58,110@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/5k2r/r3c1p2/9/4M4/3M1S3
+2020-05-11 21:25:03,603@mychess.play_games.repeat INFO # check = False, NN value = -0.995
+2020-05-11 21:25:03,609@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:25:03,609@mychess.play_games.repeat INFO # move: 将4进1-5051, visit count: 170, Q_value: -1.114, Prior: 0.999
+2020-05-11 21:25:03,609@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 19, Q_value: -1.048, Prior: 0.000
+2020-05-11 21:25:03,609@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 9, Q_value: -1.107, Prior: 0.001
+2020-05-11 21:25:03,609@mychess.play_games.repeat INFO # move: 将4平5-5040, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:25:05,272@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/8r/r3c1p2/6k2/4MS3/3M5
+2020-05-11 21:25:10,819@mychess.play_games.repeat INFO # check = False, NN value = -0.993
+2020-05-11 21:25:10,820@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:25:10,820@mychess.play_games.repeat INFO # move: 将4进1-5152, visit count: 181, Q_value: -1.113, Prior: 0.895
+2020-05-11 21:25:10,820@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 7, Q_value: -1.141, Prior: 0.031
+2020-05-11 21:25:10,820@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 6, Q_value: -1.164, Prior: 0.049
+2020-05-11 21:25:10,820@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 4, Q_value: -1.248, Prior: 0.025
+2020-05-11 21:25:10,821@mychess.play_games.repeat INFO # move: 将4退1-5150, visit count: 1, Q_value: -2.000, Prior: 0.001
+2020-05-11 21:25:15,897@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/8r/r3cp3/5Sk2/4M4/3M5
+2020-05-11 21:25:21,628@mychess.play_games.repeat INFO # check = True, NN value = -0.997
+2020-05-11 21:25:21,628@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:25:21,629@mychess.play_games.repeat INFO # move: 将4平5-5242, visit count: 189, Q_value: -1.053, Prior: 0.893
+2020-05-11 21:25:21,629@mychess.play_games.repeat INFO # move: 将4退1-5251, visit count: 8, Q_value: -1.249, Prior: 0.107
+2020-05-11 21:25:21,629@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:25:21,629@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:25:24,924@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/r3cp3/4S1k2/4M3r/3M5
+2020-05-11 21:25:29,969@mychess.play_games.repeat INFO # check = False, NN value = -0.997
+2020-05-11 21:25:29,969@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:25:29,970@mychess.play_games.repeat INFO # move: 将5平6-4232, visit count: 167, Q_value: -1.248, Prior: 0.991
+2020-05-11 21:25:29,970@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 23, Q_value: -1.214, Prior: 0.002
+2020-05-11 21:25:29,971@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 5, Q_value: -1.197, Prior: 0.003
+2020-05-11 21:25:29,971@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 3, Q_value: -1.331, Prior: 0.003
+2020-05-11 21:25:29,971@mychess.play_games.repeat INFO # move: 将5平4-4252, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:25:44,028@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/r2c1p3/3S2k2/4M3r/3M5
+2020-05-11 21:25:50,181@mychess.play_games.repeat INFO # check = False, NN value = -0.993
+2020-05-11 21:25:50,182@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:25:50,182@mychess.play_games.repeat INFO # move: 将6平5-3242, visit count: 172, Q_value: -1.211, Prior: 0.958
+2020-05-11 21:25:50,182@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 13, Q_value: -1.228, Prior: 0.015
+2020-05-11 21:25:50,182@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 10, Q_value: -1.197, Prior: 0.005
+2020-05-11 21:25:50,182@mychess.play_games.repeat INFO # move: 将6退1-3231, visit count: 4, Q_value: -1.247, Prior: 0.022
+2020-05-11 21:26:03,266@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/r2c1p3/4S1k2/4M4/3M4r
+2020-05-11 21:26:08,563@mychess.play_games.repeat INFO # check = False, NN value = -0.997
+2020-05-11 21:26:08,564@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:26:08,564@mychess.play_games.repeat INFO # move: 将5平6-4232, visit count: 166, Q_value: -1.178, Prior: 0.997
+2020-05-11 21:26:08,571@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 20, Q_value: -1.147, Prior: 0.001
+2020-05-11 21:26:08,571@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 7, Q_value: -1.140, Prior: 0.002
+2020-05-11 21:26:08,571@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 5, Q_value: -1.197, Prior: 0.000
+2020-05-11 21:26:08,571@mychess.play_games.repeat INFO # move: 将5平4-4252, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:26:12,860@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/r2c1p3/3S2k2/4M4/3Mr4
+2020-05-11 21:26:18,147@mychess.play_games.repeat INFO # check = False, NN value = -0.994
+2020-05-11 21:26:18,152@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:26:18,152@mychess.play_games.repeat INFO # move: 将6退1-3231, visit count: 184, Q_value: -1.203, Prior: 0.999
+2020-05-11 21:26:18,153@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 6, Q_value: -1.161, Prior: 0.000
+2020-05-11 21:26:18,153@mychess.play_games.repeat INFO # move: 将6平5-3242, visit count: 5, Q_value: -1.196, Prior: 0.000
+2020-05-11 21:26:18,154@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 4, Q_value: -1.246, Prior: 0.000
+2020-05-11 21:26:25,929@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/3c1p3/6k2/r2SM4/3Mr4
+2020-05-11 21:26:30,504@mychess.play_games.repeat INFO # check = True, NN value = -0.998
+2020-05-11 21:26:30,505@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:26:30,505@mychess.play_games.repeat INFO # move: 将6进1-3132, visit count: 196, Q_value: -1.303, Prior: 1.000
+2020-05-11 21:26:30,505@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:26:30,506@mychess.play_games.repeat INFO # move: 仕5进6-4132, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:26:30,506@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:26:40,061@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/3cp4/3S2k2/r3M4/3Mr4
+2020-05-11 21:26:41,060@mychess.play_games.repeat INFO # check = False, NN value = -0.998
+2020-05-11 21:26:41,066@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:26:41,066@mychess.play_games.repeat INFO # move: 仕5进4-4152, visit count: 118, Q_value: -1.966, Prior: 0.995
+2020-05-11 21:26:41,067@mychess.play_games.repeat INFO # move: 仕5退4-4150, visit count: 79, Q_value: -1.848, Prior: 0.005
+2020-05-11 21:26:41,067@mychess.play_games.repeat INFO # move: 将6平5-3242, visit count: 1, Q_value: -2.000, Prior: 0.000
+2020-05-11 21:26:41,067@mychess.play_games.repeat INFO # move: 将6退1-3231, visit count: 1, Q_value: -2.000, Prior: 0.001
+2020-05-11 21:26:46,775@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/3cp4/3S1Mk2/r8/3r5
+2020-05-11 21:26:47,076@mychess.play_games.repeat INFO # check = True, NN value = -1.000
+2020-05-11 21:26:47,076@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:26:47,076@mychess.play_games.repeat INFO # move: 将6平5-3242, visit count: 153, Q_value: -2.000, Prior: 0.771
+2020-05-11 21:26:47,076@mychess.play_games.repeat INFO # move: 仕4退5-5241, visit count: 33, Q_value: -2.000, Prior: 0.166
+2020-05-11 21:26:47,085@mychess.play_games.repeat INFO # move: 将6退1-3231, visit count: 13, Q_value: -2.000, Prior: 0.063
+2020-05-11 21:26:49,239@mychess.play_games.repeat INFO # state = 3msme2/9/4e4/p3p3p/2p6/9/3c5/4pMk2/r8/3r5
+2020-05-11 21:26:49,247@mychess.play_games.repeat INFO # Winner is Winner.red !!!
+2020-05-11 21:26:52,259@mychess.agent.api ERROR # EOF error: 
+2020-05-11 21:31:17,362@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:31:17,378@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:31:17,383@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:31:17,418@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:31:17,435@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:31:17,496@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:31:18,694@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:31:19,048@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:31:19,048@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:31:19,048@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:31:19,062@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:31:19,062@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:31:19,661@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:31:29,257@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:31:29,706@mychess.play_games.repeat INFO # state = 3msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1r1cE1K1E/9/1KRMSM2R
+2020-05-11 21:32:28,902@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:32:33,786@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:32:34,934@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:33:12,703@mychess.agent.api ERROR # EOF error: 
+2020-05-11 21:33:39,959@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:33:39,973@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:33:39,977@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:33:40,004@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:33:40,037@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:33:40,124@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:33:41,354@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:33:41,714@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:33:41,715@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:33:41,715@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:33:41,728@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:33:41,728@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:33:42,335@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:33:56,637@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:33:57,151@mychess.play_games.repeat INFO # state = r2msmer1/9/2k1e4/p1p1p1p1p/9/6P1P/P3P1c2/1C1cE1K2/3K5/2RMSME1R
+2020-05-11 21:34:42,888@mychess.play_games.repeat INFO # click resign
+2020-05-11 21:34:42,993@mychess.play_games.repeat INFO # Winner is Winner.black !!!
+2020-05-11 21:34:45,998@mychess.agent.api ERROR # EOF error: 
+2020-05-11 21:45:04,015@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:46:54,390@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:46:54,412@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:46:54,415@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:46:54,448@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:46:54,474@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:46:54,548@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:46:55,820@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:46:56,176@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:46:56,176@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:46:56,177@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:46:56,193@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:46:56,194@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:46:56,791@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:46:56,793@mychess.play_games.repeat INFO # state = rk1msmer1/9/2c1e2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C7/9/RKEMSMEKR
+2020-05-11 21:47:04,351@mychess.play_games.repeat INFO # check = False, NN value = -0.325
+2020-05-11 21:47:04,351@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:47:04,351@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 129, Q_value: -0.313, Prior: 0.913
+2020-05-11 21:47:04,353@mychess.play_games.repeat INFO # move: 象3进5-6042, visit count: 26, Q_value: -0.236, Prior: 0.002
+2020-05-11 21:47:04,353@mychess.play_games.repeat INFO # move: 马8进9-1002, visit count: 8, Q_value: -0.325, Prior: 0.052
+2020-05-11 21:47:04,353@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 2, Q_value: -0.281, Prior: 0.001
+2020-05-11 21:47:04,354@mychess.play_games.repeat INFO # move: 仕6进5-3041, visit count: 2, Q_value: -0.272, Prior: 0.001
+2020-05-11 21:51:38,567@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:51:54,864@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:52:10,856@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:52:19,341@mychess.play_games.repeat INFO # click resign
+2020-05-11 21:52:20,066@mychess.play_games.repeat INFO # Winner is Winner.black !!!
+2020-05-11 21:52:52,570@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:52:52,770@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:53:32,702@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:56:25,323@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 21:56:25,357@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 21:56:25,362@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 21:56:25,382@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 21:56:25,409@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:56:25,489@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 21:56:26,721@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 21:56:27,084@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 21:56:27,084@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 21:56:27,084@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 21:56:27,097@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 21:56:27,098@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 21:56:27,698@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 21:56:53,201@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 21:57:19,729@mychess.play_games.repeat INFO # state = rk1msmekr/9/2c1e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/1C7/9/RKEMSMEKR
+2020-05-11 21:57:27,760@mychess.play_games.repeat INFO # check = False, NN value = -0.062
+2020-05-11 21:57:27,760@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:57:27,761@mychess.play_games.repeat INFO # move: 马8进9-1002, visit count: 88, Q_value: -0.024, Prior: 0.358
+2020-05-11 21:57:27,763@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 33, Q_value: -0.033, Prior: 0.153
+2020-05-11 21:57:27,763@mychess.play_games.repeat INFO # move: 象3进5-6042, visit count: 19, Q_value: 0.072, Prior: 0.022
+2020-05-11 21:57:27,764@mychess.play_games.repeat INFO # move: 炮2平9-7404, visit count: 7, Q_value: -0.055, Prior: 0.045
+2020-05-11 21:57:27,764@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.043, Prior: 0.024
+2020-05-11 21:57:58,074@mychess.play_games.repeat INFO # state = r2msmekr/3k5/2c1e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/KC7/9/R1EMSMEKR
+2020-05-11 21:58:02,507@mychess.play_games.repeat INFO # check = False, NN value = -0.003
+2020-05-11 21:58:02,507@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:58:02,507@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 188, Q_value: -0.054, Prior: 0.979
+2020-05-11 21:58:02,508@mychess.play_games.repeat INFO # move: 车9平8-0010, visit count: 1, Q_value: -0.030, Prior: 0.001
+2020-05-11 21:58:02,508@mychess.play_games.repeat INFO # move: 马2进1-7082, visit count: 1, Q_value: -0.051, Prior: 0.001
+2020-05-11 21:58:02,508@mychess.play_games.repeat INFO # move: 车1进1-8081, visit count: 1, Q_value: -0.365, Prior: 0.001
+2020-05-11 21:58:02,509@mychess.play_games.repeat INFO # move: 炮8平3-1262, visit count: 1, Q_value: -0.105, Prior: 0.001
+2020-05-11 21:58:15,480@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/2c1e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/KC4K2/9/R1EMSME1R
+2020-05-11 21:58:15,927@mychess.play_games.repeat INFO # check = False, NN value = 0.001
+2020-05-11 21:58:15,928@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:58:15,928@mychess.play_games.repeat INFO # move: 车9平8-0010, visit count: 198, Q_value: -0.053, Prior: 1.000
+2020-05-11 21:58:15,928@mychess.play_games.repeat INFO # move: 炮8平6-1232, visit count: 1, Q_value: -0.068, Prior: 0.000
+2020-05-11 21:58:25,843@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/4e2c1/p1p1p1p1p/9/7C1/P1c1P1P1P/KC4K2/9/1REMSME1R
+2020-05-11 21:58:32,570@mychess.play_games.repeat INFO # check = False, NN value = 0.063
+2020-05-11 21:58:32,571@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:58:32,571@mychess.play_games.repeat INFO # move: 炮8进4-1216, visit count: 160, Q_value: -0.029, Prior: 0.965
+2020-05-11 21:58:32,573@mychess.play_games.repeat INFO # move: 卒3进1-6364, visit count: 21, Q_value: 0.018, Prior: 0.022
+2020-05-11 21:58:32,573@mychess.play_games.repeat INFO # move: 炮2平1-7484, visit count: 18, Q_value: 0.040, Prior: 0.003
+2020-05-11 21:58:40,183@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/4e2c1/pCp1p1p1p/9/7C1/P3P1c1P/K5K2/9/1REMSME1R
+2020-05-11 21:58:42,016@mychess.play_games.repeat INFO # check = False, NN value = 0.004
+2020-05-11 21:58:42,017@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:58:42,018@mychess.play_games.repeat INFO # move: 象3进5-6042, visit count: 198, Q_value: -0.038, Prior: 0.998
+2020-05-11 21:58:42,018@mychess.play_games.repeat INFO # move: 炮2平1-7484, visit count: 1, Q_value: -0.001, Prior: 0.001
+2020-05-11 21:59:22,496@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/4e2c1/pCp1p3p/6p2/7C1/P3P1c1P/K3E1K2/9/1REMSM2R
+2020-05-11 21:59:28,198@mychess.play_games.repeat INFO # check = False, NN value = -0.020
+2020-05-11 21:59:28,199@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:59:28,200@mychess.play_games.repeat INFO # move: 炮2平1-7484, visit count: 183, Q_value: 0.040, Prior: 0.798
+2020-05-11 21:59:28,201@mychess.play_games.repeat INFO # move: 炮2平7-7424, visit count: 7, Q_value: -0.059, Prior: 0.073
+2020-05-11 21:59:28,201@mychess.play_games.repeat INFO # move: 炮2平6-7434, visit count: 6, Q_value: -0.088, Prior: 0.068
+2020-05-11 21:59:28,201@mychess.play_games.repeat INFO # move: 卒9进1-0304, visit count: 2, Q_value: -0.080, Prior: 0.025
+2020-05-11 21:59:28,201@mychess.play_games.repeat INFO # move: 仕4进5-5041, visit count: 1, Q_value: -0.021, Prior: 0.011
+2020-05-11 21:59:47,435@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/4e3c/pCp1p3p/6p2/8C/P3P1c1P/K3E1K2/9/1REMSM2R
+2020-05-11 21:59:48,557@mychess.play_games.repeat INFO # check = False, NN value = -0.035
+2020-05-11 21:59:48,558@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 21:59:48,558@mychess.play_games.repeat INFO # move: 车1平2-8070, visit count: 136, Q_value: 0.024, Prior: 0.892
+2020-05-11 21:59:48,558@mychess.play_games.repeat INFO # move: 炮8平5-1646, visit count: 63, Q_value: 0.072, Prior: 0.106
+2020-05-11 22:00:15,123@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/4e4/pCp1p3p/6p2/8c/P3P1c1P/K3E1K2/9/1REMSM1R1
+2020-05-11 22:00:18,161@mychess.play_games.repeat INFO # check = False, NN value = 0.128
+2020-05-11 22:00:18,161@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:00:18,162@mychess.play_games.repeat INFO # move: 卒1进1-8384, visit count: 199, Q_value: 0.119, Prior: 0.989
+2020-05-11 22:00:25,103@mychess.play_games.repeat INFO # state = 1r1msme1r/3k5/4e1k2/pCp1p3p/6p2/8P/P3P1c2/K3E1K2/9/1REMSM1R1
+2020-05-11 22:00:25,912@mychess.play_games.repeat INFO # check = False, NN value = 0.006
+2020-05-11 22:00:25,913@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:00:25,913@mychess.play_games.repeat INFO # move: 车2进3-7073, visit count: 171, Q_value: 0.176, Prior: 0.387
+2020-05-11 22:00:25,913@mychess.play_games.repeat INFO # move: 卒9进1-0304, visit count: 18, Q_value: -0.143, Prior: 0.407
+2020-05-11 22:00:25,913@mychess.play_games.repeat INFO # move: 车2进4-7074, visit count: 10, Q_value: -0.124, Prior: 0.200
+2020-05-11 22:00:51,663@mychess.play_games.repeat INFO # state = 1r1msme1r/3k5/4e1k2/pCp1p3p/6p2/8P/c3P2R1/K3E1K2/9/1REMSM3
+2020-05-11 22:00:57,279@mychess.play_games.repeat INFO # check = False, NN value = 0.003
+2020-05-11 22:00:57,280@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:00:57,280@mychess.play_games.repeat INFO # move: 卒5进1-4344, visit count: 197, Q_value: 0.074, Prior: 0.993
+2020-05-11 22:00:57,280@mychess.play_games.repeat INFO # move: 车2进1-7374, visit count: 1, Q_value: -0.026, Prior: 0.004
+2020-05-11 22:00:57,281@mychess.play_games.repeat INFO # move: 车2进5-7378, visit count: 1, Q_value: -0.109, Prior: 0.002
+2020-05-11 22:01:28,531@mychess.play_games.repeat INFO # state = 1r1msme1r/3k5/4e1k2/pCp1p3p/6p2/c3P3P/7R1/K3E1K2/9/1REMSM3
+2020-05-11 22:01:34,540@mychess.play_games.repeat INFO # check = False, NN value = 0.121
+2020-05-11 22:01:34,540@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:01:34,540@mychess.play_games.repeat INFO # move: 车2平6-7333, visit count: 146, Q_value: -0.096, Prior: 0.997
+2020-05-11 22:01:34,541@mychess.play_games.repeat INFO # move: 车2平3-7363, visit count: 10, Q_value: -0.017, Prior: 0.000
+2020-05-11 22:01:34,541@mychess.play_games.repeat INFO # move: 马9进7-0223, visit count: 6, Q_value: -0.055, Prior: 0.001
+2020-05-11 22:01:34,542@mychess.play_games.repeat INFO # move: 仕6进5-3041, visit count: 6, Q_value: -0.009, Prior: 0.000
+2020-05-11 22:01:34,542@mychess.play_games.repeat INFO # move: 仕4进5-5041, visit count: 6, Q_value: 0.011, Prior: 0.000
+2020-05-11 22:02:18,714@mychess.play_games.repeat INFO # state = 1r1msme2/3k4r/4e1k2/pCp1p3p/6p2/c3P3P/3R5/K3E1K2/9/1REMSM3
+2020-05-11 22:02:20,425@mychess.play_games.repeat INFO # check = False, NN value = 0.059
+2020-05-11 22:02:20,426@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:02:20,426@mychess.play_games.repeat INFO # move: 马9进7-0223, visit count: 113, Q_value: -0.122, Prior: 0.850
+2020-05-11 22:02:20,426@mychess.play_games.repeat INFO # move: 仕6进5-3041, visit count: 11, Q_value: -0.177, Prior: 0.127
+2020-05-11 22:02:20,426@mychess.play_games.repeat INFO # move: 车6进2-3335, visit count: 7, Q_value: -0.041, Prior: 0.002
+2020-05-11 22:02:20,427@mychess.play_games.repeat INFO # move: 卒1进1-8485, visit count: 7, Q_value: -0.026, Prior: 0.000
+2020-05-11 22:02:20,427@mychess.play_games.repeat INFO # move: 车6进4-3337, visit count: 5, Q_value: -0.050, Prior: 0.000
+2020-05-11 22:02:30,281@mychess.play_games.repeat INFO # state = 1r1msme2/3k4r/4e1k2/pC2p3p/2p3p2/c3P3P/2KR5/4E1K2/9/1REMSM3
+2020-05-11 22:02:36,158@mychess.play_games.repeat INFO # check = False, NN value = 0.081
+2020-05-11 22:02:36,160@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:02:36,160@mychess.play_games.repeat INFO # move: 马7进9-2304, visit count: 197, Q_value: 0.315, Prior: 0.983
+2020-05-11 22:02:36,161@mychess.play_games.repeat INFO # move: 车8进4-1014, visit count: 1, Q_value: -0.078, Prior: 0.002
+2020-05-11 22:02:36,161@mychess.play_games.repeat INFO # move: 马7进6-2335, visit count: 1, Q_value: -0.019, Prior: 0.010
+2020-05-11 22:02:45,973@mychess.play_games.repeat INFO # state = 1r1msme2/3k4r/4e1k2/pC2p3p/6p2/K1p1P3P/3R5/4E1K2/9/1REMSM3
+2020-05-11 22:02:49,874@mychess.play_games.repeat INFO # check = False, NN value = 0.208
+2020-05-11 22:02:49,874@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:02:49,875@mychess.play_games.repeat INFO # move: 车8进5-1015, visit count: 171, Q_value: 0.456, Prior: 0.164
+2020-05-11 22:02:49,875@mychess.play_games.repeat INFO # move: 车8进2-1012, visit count: 9, Q_value: 0.005, Prior: 0.295
+2020-05-11 22:02:49,876@mychess.play_games.repeat INFO # move: 车6进4-3337, visit count: 9, Q_value: 0.156, Prior: 0.140
+2020-05-11 22:02:49,876@mychess.play_games.repeat INFO # move: 马9进7-0425, visit count: 6, Q_value: -0.042, Prior: 0.238
+2020-05-11 22:02:49,876@mychess.play_games.repeat INFO # move: 车8进1-1011, visit count: 3, Q_value: 0.107, Prior: 0.068
+2020-05-11 22:03:39,507@mychess.play_games.repeat INFO # state = 1r1msme2/3k1r3/4e1k2/pC2p3p/1R4p2/K1p1P3P/3R5/4E1K2/9/2EMSM3
+2020-05-11 22:03:45,125@mychess.play_games.repeat INFO # check = False, NN value = 0.298
+2020-05-11 22:03:45,125@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:03:45,126@mychess.play_games.repeat INFO # move: 车6进4-3337, visit count: 199, Q_value: 0.484, Prior: 0.985
+2020-05-11 22:04:24,693@mychess.play_games.repeat INFO # state = 1r1msme2/3k5/3Re1k2/pC2p3p/1R4p2/K1p1Pr2P/9/4E1K2/9/2EMSM3
+2020-05-11 22:04:30,488@mychess.play_games.repeat INFO # check = False, NN value = 0.891
+2020-05-11 22:04:30,491@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:04:30,491@mychess.play_games.repeat INFO # move: 马3进4-6254, visit count: 192, Q_value: 0.994, Prior: 0.900
+2020-05-11 22:04:30,491@mychess.play_games.repeat INFO # move: 车6进1-3738, visit count: 7, Q_value: 0.627, Prior: 0.097
+2020-05-11 22:04:36,678@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:04:37,124@mychess.play_games.repeat INFO # state = 1r1msmekr/3k5/4e4/pCp1p3p/6p2/8c/P3P1c1P/K3E1K2/9/1REMSM1R1
+2020-05-11 22:04:43,431@mychess.play_games.repeat INFO # check = False, NN value = -0.301
+2020-05-11 22:04:43,432@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:04:43,432@mychess.play_games.repeat INFO # move: 兵一进一-8384, visit count: 391, Q_value: 0.136, Prior: 0.989
+2020-05-11 22:04:43,433@mychess.environment.chessboard ERROR # No chessman! 1646
+2020-05-11 22:04:47,171@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:06:27,700@mychess.lib.model_helper DEBUG # start reload the best model if changed
+2020-05-11 22:06:27,820@mychess.lib.model_helper DEBUG # the best model is not changed
+2020-05-11 22:08:47,814@mychess.agent.api ERROR # EOF error: 
+2020-05-11 22:21:54,994@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 22:21:55,009@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 22:21:55,012@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 22:21:55,030@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 22:21:55,041@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 22:21:55,117@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 22:21:56,376@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 22:21:56,743@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 22:21:56,743@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 22:21:56,743@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 22:21:56,756@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 22:21:56,757@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 22:21:57,370@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 22:22:23,727@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:22:42,028@mychess.play_games.repeat INFO # state = rk1msmekr/9/2c1e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/1C7/9/RKEMSMEKR
+2020-05-11 22:22:50,118@mychess.play_games.repeat INFO # check = False, NN value = -0.062
+2020-05-11 22:22:50,118@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:22:50,119@mychess.play_games.repeat INFO # move: 马8进9-1002, visit count: 88, Q_value: -0.024, Prior: 0.358
+2020-05-11 22:22:50,119@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 33, Q_value: -0.033, Prior: 0.153
+2020-05-11 22:22:50,119@mychess.play_games.repeat INFO # move: 象3进5-6042, visit count: 19, Q_value: 0.072, Prior: 0.022
+2020-05-11 22:22:50,119@mychess.play_games.repeat INFO # move: 炮2平9-7404, visit count: 7, Q_value: -0.055, Prior: 0.045
+2020-05-11 22:22:50,121@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.043, Prior: 0.024
+2020-05-11 22:23:18,349@mychess.play_games.repeat INFO # state = r2msmekr/9/k1c1e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/KC7/9/R1EMSMEKR
+2020-05-11 22:23:24,939@mychess.play_games.repeat INFO # check = False, NN value = -0.012
+2020-05-11 22:23:24,941@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:23:24,942@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 194, Q_value: 0.081, Prior: 0.959
+2020-05-11 22:23:24,942@mychess.play_games.repeat INFO # move: 马2进1-7082, visit count: 1, Q_value: -0.060, Prior: 0.002
+2020-05-11 22:23:24,942@mychess.play_games.repeat INFO # move: 卒9进1-0304, visit count: 1, Q_value: -0.045, Prior: 0.005
+2020-05-11 22:23:24,942@mychess.play_games.repeat INFO # move: 卒3进1-6364, visit count: 1, Q_value: -0.068, Prior: 0.002
+2020-05-11 22:23:24,942@mychess.play_games.repeat INFO # move: 炮2平4-7454, visit count: 1, Q_value: -0.064, Prior: 0.001
+2020-05-11 22:25:27,961@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:25:50,725@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:26:04,399@mychess.play_games.repeat INFO # state = r2msmekr/9/kc2e2c1/p1p1p1p1p/9/7C1/P1P1P1P1P/1C7/9/RKEMSMEKR
+2020-05-11 22:26:11,031@mychess.play_games.repeat INFO # check = False, NN value = -0.049
+2020-05-11 22:26:11,031@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:26:11,032@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 29, Q_value: -0.112, Prior: 0.231
+2020-05-11 22:26:11,034@mychess.play_games.repeat INFO # move: 仕6进5-3041, visit count: 14, Q_value: -0.026, Prior: 0.025
+2020-05-11 22:26:11,035@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 13, Q_value: -0.052, Prior: 0.042
+2020-05-11 22:26:11,035@mychess.play_games.repeat INFO # move: 炮8平9-1202, visit count: 13, Q_value: -0.032, Prior: 0.028
+2020-05-11 22:26:11,035@mychess.play_games.repeat INFO # move: 马8进9-1002, visit count: 12, Q_value: -0.055, Prior: 0.045
+2020-05-11 22:31:57,377@mychess.lib.model_helper DEBUG # start reload the best model if changed
+2020-05-11 22:31:57,540@mychess.lib.model_helper DEBUG # the best model is not changed
+2020-05-11 22:35:15,994@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 22:35:16,009@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 22:35:16,012@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 22:35:16,028@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 22:35:16,066@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 22:35:16,170@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 22:35:17,454@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 22:35:17,824@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 22:35:17,824@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 22:35:17,824@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 22:35:17,840@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 22:35:17,841@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 22:35:18,485@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 22:35:20,603@mychess.play_games.repeat INFO # state = rkemsmekr/9/1c7/p1p1p1p1p/7C1/9/P1P1P1P1P/1C7/9/RKEMcMEKR
+2020-05-11 22:35:20,636@mychess.play_games.repeat INFO # Winner is Winner.red !!!
+2020-05-11 22:35:23,645@mychess.agent.api ERROR # EOF error: 
+2020-05-11 22:36:35,284@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 22:36:35,303@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 22:36:35,304@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:442: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-11 22:36:35,322@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:3543: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+2020-05-11 22:36:35,353@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 22:36:35,438@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:112: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2020-05-11 22:36:36,679@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:1205: calling reduce_prod_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2020-05-11 22:36:37,045@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:153: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-05-11 22:36:37,045@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:158: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-11 22:36:37,045@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:163: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-11 22:36:37,058@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:333: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-05-11 22:36:37,059@tensorflow WARNING # From /Users/illusion/Library/Python/3.7/lib/python/site-packages/keras/backend/tensorflow_backend.py:341: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.
+
+2020-05-11 22:36:37,669@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 22:36:45,932@mychess.play_games.repeat INFO # state = rkemsmekr/9/2c4c1/p5p1p/2p1P4/9/P1P3P1P/1C5C1/9/RKEMSMEKR
+2020-05-11 22:36:52,432@mychess.play_games.repeat INFO # check = False, NN value = 0.421
+2020-05-11 22:36:52,432@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:36:52,433@mychess.play_games.repeat INFO # move: 炮2平5-7242, visit count: 166, Q_value: 0.603, Prior: 0.680
+2020-05-11 22:36:52,435@mychess.play_games.repeat INFO # move: 炮8平5-1242, visit count: 33, Q_value: 0.131, Prior: 0.261
+2020-05-11 22:38:24,847@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:38:53,385@mychess.play_games.repeat INFO # state = rkemsmekr/9/4c2c1/p1p3p1p/4P4/9/P1P3P1P/1C5C1/9/RKEMSMEKR
+2020-05-11 22:38:59,418@mychess.play_games.repeat INFO # check = True, NN value = -0.179
+2020-05-11 22:38:59,418@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:38:59,418@mychess.play_games.repeat INFO # move: 炮8平5-1242, visit count: 160, Q_value: 0.227, Prior: 0.758
+2020-05-11 22:38:59,418@mychess.play_games.repeat INFO # move: 炮2平5-7242, visit count: 39, Q_value: 0.212, Prior: 0.212
+2020-05-11 22:39:26,361@mychess.play_games.repeat INFO # state = rkemsmekr/9/7c1/p1p3p1p/4P4/9/P1P3P1P/4c2C1/9/RKEMSMEKR
+2020-05-11 22:39:31,179@mychess.play_games.repeat INFO # check = False, NN value = 0.187
+2020-05-11 22:39:31,180@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:39:31,180@mychess.play_games.repeat INFO # move: 象7进5-2042, visit count: 175, Q_value: 0.126, Prior: 0.879
+2020-05-11 22:39:31,180@mychess.play_games.repeat INFO # move: 象3进5-6042, visit count: 24, Q_value: 0.076, Prior: 0.103
+2020-05-11 22:39:41,374@mychess.play_games.repeat INFO # state = r1emsmekr/9/2k4c1/p1p3p1p/4P4/9/P1P3P1P/4E2C1/9/RK1MSMEKR
+2020-05-11 22:39:47,083@mychess.play_games.repeat INFO # check = False, NN value = 0.144
+2020-05-11 22:39:47,085@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:39:47,086@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 172, Q_value: 0.321, Prior: 0.757
+2020-05-11 22:39:47,086@mychess.play_games.repeat INFO # move: 仕6进5-3041, visit count: 17, Q_value: 0.271, Prior: 0.077
+2020-05-11 22:39:47,086@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 10, Q_value: 0.143, Prior: 0.162
+2020-05-11 22:39:51,144@mychess.play_games.repeat INFO # state = r2msmekr/9/2k1e2c1/p1p3p1p/4P4/9/P1P3P1P/4E1KC1/9/RK1MSME1R
+2020-05-11 22:39:56,949@mychess.play_games.repeat INFO # check = False, NN value = 0.278
+2020-05-11 22:39:56,951@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:39:56,952@mychess.play_games.repeat INFO # move: 马3进5-6243, visit count: 191, Q_value: 0.398, Prior: 1.000
+2020-05-11 22:39:56,952@mychess.play_games.repeat INFO # move: 炮2平1-7282, visit count: 8, Q_value: 0.288, Prior: 0.000
+2020-05-11 22:39:59,974@mychess.play_games.repeat INFO # state = 1r1msmekr/9/2k1e2c1/p1p3p1p/4P4/9/P1P1K1P1P/4E2C1/9/RK1MSME1R
+2020-05-11 22:40:05,569@mychess.play_games.repeat INFO # check = False, NN value = 0.325
+2020-05-11 22:40:05,571@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:40:05,571@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 199, Q_value: 0.403, Prior: 1.000
+2020-05-11 22:40:07,993@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:09,793@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:12,910@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:14,629@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:16,359@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:17,446@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:18,611@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:20,921@mychess.play_games.repeat INFO # click withdraw
+2020-05-11 22:40:29,130@mychess.play_games.repeat INFO # state = rkemsmekr/9/4c2c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RKEMSMEKR
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # check = False, NN value = -0.141
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # MCTS results:
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # move: 马2进3-7062, visit count: 125, Q_value: -0.016, Prior: 0.563
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # move: 象3进5-6042, visit count: 11, Q_value: -0.049, Prior: 0.054
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # move: 象7进5-2042, visit count: 8, Q_value: -0.065, Prior: 0.054
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # move: 马8进7-1022, visit count: 4, Q_value: -0.075, Prior: 0.032
+2020-05-11 22:40:34,912@mychess.play_games.repeat INFO # move: 炮2平5-7242, visit count: 4, Q_value: -0.049, Prior: 0.025
+2020-05-11 22:40:38,546@mychess.play_games.repeat INFO # click resign
+2020-05-11 22:40:39,358@mychess.play_games.repeat INFO # Winner is Winner.black !!!
+2020-05-11 22:40:57,191@mychess.play_games.repeat DEBUG # click at buttonList[4]
+2020-05-11 22:40:57,381@mychess.agent.model DEBUG # loading model from /Users/illusion/PycharmProjects/cchess/data/model/model_best_config.json
+2020-05-11 22:41:36,726@mychess.agent.model DEBUG # loaded model digest = b14704b8970f4b178deb5cac44d7ca16c75f2dbb267d88b856a8d22d7c9fc96b
+2020-05-11 22:41:38,879@mychess.play_games.repeat INFO # state = rkemsmekr/9/1c7/p1p1p1p1p/7C1/9/P1P1P1P1P/1C7/9/RKEMcMEKR
+2020-05-11 22:41:39,078@mychess.play_games.repeat INFO # Winner is Winner.red !!!
+2020-05-11 22:41:42,225@mychess.agent.api ERROR # EOF error: 

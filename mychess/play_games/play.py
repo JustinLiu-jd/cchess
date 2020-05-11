@@ -190,11 +190,12 @@ class PlayWithHuman:
                                     current_chessman.is_selected = False
                                     current_chessman = chessman_sprite
                                     chessman_sprite.is_selected = True
-                                else:                                                           # 其它情况： 第二个点是空白处 or 对方棋子
-                                    move = str(current_chessman.chessman.col_num) + str(current_chessman.chessman.row_num) +\
-                                           str(col_num) + str(row_num)                          # a string
-                                    success = current_chessman.move(col_num, row_num)         # 调用 move, return true or false
-                                    self.history.append(move)               # 更新记录
+                                else:  # 其它情况： 第二个点是空白处 or 对方棋子
+                                    move = str(current_chessman.chessman.col_num) + str(
+                                        current_chessman.chessman.row_num) + \
+                                           str(col_num) + str(row_num)  # a string
+                                    success = current_chessman.move(col_num, row_num)  # 调用 move, return true or false
+                                    self.history.append(move)  # 更新记录
                                     if success:
                                         self.chessmans.remove(chessman_sprite)
                                         chessman_sprite.kill()
@@ -223,13 +224,10 @@ class PlayWithHuman:
 
         self.ai.close(wait=False)
 
-        if self.has_resign == 1:
-            self.env.board.winner = Winner.black
-            self.env.board.record += u'\n红方降'
-
         # final move 是 kill king的一步
         success, finalMove = self.env.board.is_end_final_move()
-        if success:
+        if success and finalMove != None:
+            sleep(2)
             old_x, old_y, x, y = self.env.board.str_to_move(finalMove)
             current_chessman = select_sprite_from_group(self.chessmans, old_x, old_y)
             chessman_sprite = select_sprite_from_group(self.chessmans, x, y)
@@ -255,6 +253,10 @@ class PlayWithHuman:
                 self.chessmans.update()
                 self.chessmans.draw(screen)
                 pygame.display.update()
+
+        if self.has_resign == 1:
+            self.env.board.winner = Winner.black
+            self.env.board.record += u'\n红方降'
 
         logger.info(f"Winner is {self.env.board.winner} !!!")
         self.env.board.print_record()
@@ -313,7 +315,8 @@ class PlayWithHuman:
 
     def ai_move(self):
         ai_move_first = not self.human_move_first
-        self.history = [self.env.get_state()]  # 当前棋盘的fen表示    # 其实是棋盘初始化后 对自己的初始化
+        if self.history == []:
+            self.history = [self.env.get_state()]  # 当前棋盘的fen表示    # 其实是棋盘初始化后 对自己的初始化
         no_act = None
         while not self.env.done:  # 棋局没结束
             if ai_move_first == self.env.red_to_move:  # 判断是不是ai走棋
@@ -354,8 +357,6 @@ class PlayWithHuman:
                     self.env.board.record += u'\nAI降'
                     return
                 self.history.append(action)
-                for i in self.history:
-                    print('print history:', i)
                 if not self.env.red_to_move:
                     action = flip_move(action)
 
@@ -379,11 +380,14 @@ class PlayWithHuman:
                     sprite_dest.kill()
                 chessman_sprite.move(x1, y1, self.chessman_w, self.chessman_h)
                 self.history.append(self.env.get_state())
+                for i in self.history:
+                    print('print history:', i)
+                print('轮到玩家操作')
 
     def draw_widget(self, screen, widget_background, buttonList: list):
         white_rect = Rect(0, 0, self.screen_width - self.width, self.height)
         widget_background.fill((255, 255, 255), white_rect)
-        pygame.draw.line(widget_background, (255, 0, 0), (10, 285), (self.screen_width - self.width - 10, 285))
+        pygame.draw.line(widget_background, (255, 0, 0), (10, 315), (self.screen_width - self.width - 10, 315))
 
         if buttonList == None:
             logger.error('buttonList is not defined! line in play_games/play.py: draw widget')
