@@ -9,7 +9,7 @@ class EvaluateConfig:
         self.noise_eps = 0.2
         self.max_game_length = 100
         self.max_processes = 2 
-        self.search_threads = 10
+        self.search_threads = 4     # 10
 
     def update_play_config(self, pc):
         pc.simulation_num_per_move = self.simulation_num_per_move

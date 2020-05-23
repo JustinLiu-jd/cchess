@@ -4,7 +4,8 @@ from collections import defaultdict
 from datetime import datetime
 from logging import getLogger
 from threading import Thread
-from time import sleep
+from time import sleep, time
+import random
 
 import mychess.environment.static_env as senv
 from mychess.agent.model import CChessModel
@@ -26,7 +27,7 @@ logger = getLogger(__name__)
 main_dir = os.path.split(os.path.abspath(__file__))[0]  # play_games/
 
 
-def start(config: Config, human_move_first=True):
+def start(config: Config, human_move_first=True):       # 搜索深度在mychess/config line 46 修改
     # global PIECE_STYLE
     # PIECE_STYLE = config.opts.piece_style
     sys.setrecursionlimit(10000)
@@ -56,6 +57,8 @@ class PlayWithHuman:
         self.history = []
         self.has_resign = 0
         self.path = None
+        self.search_num = config.play.simulation_num_per_move
+        self.search_node_num = None
 
     def load_model(self):
         self.model = CChessModel(self.config)       # in cchess_ahphazero/agent/model.py
@@ -320,8 +323,10 @@ class PlayWithHuman:
         no_act = None
         while not self.env.done:  # 棋局没结束
             if ai_move_first == self.env.red_to_move:  # 判断是不是ai走棋
-                labels = ActionLabelsRed
-                labels_n = len(ActionLabelsRed)
+                # labels = ActionLabelsRed
+                # labels_n = len(ActionLabelsRed)
+
+                time_start = time()
 
                 self.ai.search_results = {}
                 state = self.env.get_state()
@@ -380,6 +385,11 @@ class PlayWithHuman:
                     sprite_dest.kill()
                 chessman_sprite.move(x1, y1, self.chessman_w, self.chessman_h)
                 self.history.append(self.env.get_state())
+
+                time_end = time()
+                print(self.search_num, 'time cost', time_end - time_start, 's')
+                self.search_node_num = int((time_end - time_start) * 12000)
+
                 for i in self.history:
                     print('print history:', i)
                 print('轮到玩家操作')
@@ -396,7 +406,7 @@ class PlayWithHuman:
         widget_background.blit(buttonList[1].get_Surface(), buttonList[1].get_rect())
 
         self.draw_records(screen, widget_background)
-        self.draw_evaluation(screen, widget_background)
+        self.draw_evaluation(screen, widget_background, self.search_node_num)
 
     def draw_records(self, screen, widget_background):
         text = '着法记录'
@@ -416,10 +426,16 @@ class PlayWithHuman:
             i += 1
         screen.blit(widget_background, (self.width, 0))
 
-    def draw_evaluation(self, screen, widget_background):
-        title_label = 'CC-Zero信息'
-        self.draw_label(screen, widget_background, title_label, 300, 16, 10)
-        info_label = f'MCTS搜索次数：{self.config.play.simulation_num_per_move}'
+    def draw_evaluation(self, screen, widget_background, tem = None):
+        if self.search_num < 300:
+            if tem:
+                info_label = f'minimax搜索层数：4'
+                self.draw_label(screen, widget_background, info_label, 335, 14, 10)
+                info_label = f'搜索节点数：{tem}'
+                self.draw_label(screen, widget_background, info_label, 375, 14, 10)
+            return
+
+        info_label = f'MCTS搜索次数：{self.search_num}'
         self.draw_label(screen, widget_background, info_label, 335, 14, 10)
         eval_label = f"当前局势评估: {self.nn_value:.3f}"
         self.draw_label(screen, widget_background, eval_label, 360, 14, 10)

@@ -148,12 +148,18 @@ def start():
                                     # logger.info(f'选中 {button0.get_text()}')
                                     level = 3
             if level == 1:
+                config = Config(config_type='mini', search_num=200)  # config = mini-config
+                logger.info(f"AI move first : false")
+                play.start(config)
                 pass
             elif level == 2:
+                config = Config(config_type='mini', search_num=400)  # config = mini-config
+                logger.info(f"AI move first : false")
+                play.start(config)
                 pass
 
             elif level == 3:
-                config = Config(config_type='mini')  # config = mini-config
+                config = Config(config_type='mini', search_num=800)  # config = mini-config
                 # setup(config)  # set logger total_step
                 # pwhc = PlayWithHumanConfig()
                 # pwhc.update_play_config(config.play)  # update the config from configs/mini.py line 33: PlayConfig

@@ -16,17 +16,17 @@ def _data_dir():
 # exit()
 
 class Config:
-    def __init__(self, config_type="mini"):
+    def __init__(self, config_type="mini", search_num=200):
         self.opts = Options()
         self.resource = ResourceConfig()
         self.internet = InternetConfig()
 
         if config_type == "mini":
             import configs.mini as c
-        elif config_type == "normal":
-            import configs.normal as c
-        elif config_type == 'distribute':
-            import cchess_alphazero.configs.distribute as c
+        # elif config_type == "normal":
+        #     import configs.normal as c
+        # elif config_type == 'distribute':
+        #     import cchess_alphazero.configs.distribute as c
         else:
             raise RuntimeError('unknown config_type: %s' % (config_type))
 
@@ -43,7 +43,7 @@ class Config:
         self.internet.distributed = False
         self.opts.light = False
 
-        self.play.simulation_num_per_move = 200  # MCTS number per move.
+        self.play.simulation_num_per_move = search_num  # MCTS number per move.
         self.play.c_puct = 1  # balance parameter of value network and policy network in MCTS.
         self.play.search_threads = 2  # balance parameter of speed and accuracy in MCTS.
         self.play.noise_eps = 0
