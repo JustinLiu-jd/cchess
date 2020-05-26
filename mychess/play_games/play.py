@@ -390,8 +390,8 @@ class PlayWithHuman:
                 print(self.search_num, 'time cost', time_end - time_start, 's')
                 self.search_node_num = int((time_end - time_start) * 12000)
 
-                for i in self.history:
-                    print('print history:', i)
+                # for i in self.history:
+                #     print('print history:', i)
                 print('轮到玩家操作')
 
     def draw_widget(self, screen, widget_background, buttonList: list):
