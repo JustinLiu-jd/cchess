@@ -168,6 +168,7 @@ class PlayWithHuman:
                                     if success:
                                         if chessman_sprite != None:
                                             self.chessmans.remove(chessman_sprite)
+                                            chessman_sprite.chessman.set_alive(False)
                                             chessman_sprite.kill()
                                         self.history.append(self.env.get_state())
                                     else:
@@ -201,6 +202,7 @@ class PlayWithHuman:
                                     self.history.append(move)  # 更新记录
                                     if success:
                                         self.chessmans.remove(chessman_sprite)
+                                        chessman_sprite.chessman.set_alive(False)  # 置为死亡
                                         chessman_sprite.kill()
                                         current_chessman.is_selected = False
                                         current_chessman = None

@@ -47,6 +47,9 @@ class Chessman(object):
     def is_alive(self, is_alive):
         self.__is_alive = is_alive
 
+    def set_alive(self, val):
+        self.__is_alive = val
+
     @property
     def chessboard(self):
         return self.__chessboard
@@ -89,14 +92,18 @@ class Chessman(object):
         else:
             print("the worng postion")
 
-    def move(self, col_num, row_num):
+    def minimax_move(self, col, row):
+        self.__position.x = col
+        self.__position.y = row
+
+    def move(self, col_num, row_num, record = True):
         if self.in_moving_list(col_num, row_num):               # 判断是否是合法步骤
             self.__chessboard.remove_chessman_source(self.__position.x, self.__position.y)              # 更新二维数组里的信息: 设置为None
             old_x = self.__position.x                                   # 更新当前棋子在model里的坐标
             old_y = self.__position.y
             self.__position.x = col_num
             self.__position.y = row_num
-            if not self.__chessboard.move_chessman(self, col_num, row_num, True, old_x,
+            if not self.__chessboard.move_chessman(self, col_num, row_num, record, old_x,
                                                    old_y):  # chessboard.py: line 146
                 self.__position.x = old_x
                 self.__position.y = old_y
@@ -109,6 +116,7 @@ class Chessman(object):
         else:
             self.clear_moving_list()  # double check， 重新计算moving list
             self.calc_moving_list()
+            print('chessman move wrong: ', self.col_num, self.row_num, col_num, row_num)
             if self.in_moving_list(col_num, row_num):
                 return self.move(col_num, row_num)
             print("the worng target_position:", self.name_cn, col_num, row_num)

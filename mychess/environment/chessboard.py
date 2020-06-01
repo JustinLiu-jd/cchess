@@ -23,6 +23,9 @@ class Chessboard(object):       # 棋盘类
     def is_red_turn(self):
         return self.__is_red_turn
 
+    def set_whos_turn(self, val):
+        self.__is_red_turn = val
+
     @property
     def name(self):
         return self.__name
@@ -146,7 +149,7 @@ class Chessboard(object):       # 棋盘类
     # col_num, row_num 是目标处的坐标
     def move_chessman(self, chessman, col_num, row_num, is_record = False, old_x = 0, old_y = 0):       # move and 设置走棋方为对方
         if chessman.is_red == self.__is_red_turn:       # 动的是这一轮改动的棋子
-            # 一下两行完成move动作的信息更新
+            # 以下两行完成move动作的信息更新
             chessman_old = self.remove_chessman_target(col_num, row_num)        # already updated in hash table and @is_alive
             self.add_chessman(chessman, col_num, row_num)                       # 更新二维数组的信息
             # if self.is_check():
@@ -163,11 +166,11 @@ class Chessboard(object):       # 棋盘类
         else:
             return False
 
-    def move(self, x0, y0, x1, y1):
+    def move(self, x0, y0, x1, y1, record=True):
         chessman = self.chessmans[x0][y0]
         if chessman == None:
             return False
-        return chessman.move(x1, y1)
+        return chessman.move(x1, y1, record)
 
     def move_action_str(self, action):
         x0, y0, x1, y1 = self.str_to_move(action)

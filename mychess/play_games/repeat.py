@@ -165,6 +165,7 @@ class repeatGame:
                                 if success:
                                     if chessman_sprite != None:
                                         self.chessmans.remove(chessman_sprite)
+                                        chessman_sprite.chessman.set_alive(False)
                                         chessman_sprite.kill()
                                     self.history.append(self.env.get_state())
                                 else:
@@ -191,6 +192,7 @@ class repeatGame:
                             if success:
                                 if chessman_sprite != None:
                                     self.chessmans.remove(chessman_sprite)
+                                    chessman_sprite.chessman.set_alive(False)  # 置为死亡
                                     chessman_sprite.kill()
                                 self.history.append(self.env.get_state())
                             else:

@@ -4,7 +4,6 @@ from logging import getLogger
 import numpy as np
 
 from mychess.environment.chessboard import Chessboard
-from mychess.environment.light_env.chessboard import L_Chessboard
 from mychess.environment.lookup_tables import Fen_2_Idx, Winner
 
 logger = getLogger(__name__)
@@ -23,9 +22,6 @@ class CChessEnv:
             # logger.info("Initialize heavy environment!")
             self.board = Chessboard()
             self.board.init_board()  # 摆放棋子, 放入二维数组和hash table中
-        else:
-            logger.info("Initialize light environment!")
-            self.board = L_Chessboard(init)
 
         self.winner = None
         self.num_halfmoves = 0

@@ -4,9 +4,7 @@ from logging import getLogger
 
 from mychess.config import Config
 from mychess.lib.logger import setup_logger
-from mychess.play_games import play
-from mychess.play_games import pvp
-from mychess.play_games import repeat
+from mychess.play_games import play, pvp, repeat, minimax
 from mychess.play_games.MySQLTool import *
 from mychess.play_games.colorAndUIModule import *
 
@@ -150,7 +148,8 @@ def start():
             if level == 1:
                 config = Config(config_type='mini', search_num=200)  # config = mini-config
                 logger.info(f"AI move first : false")
-                play.start(config)
+                # play.start(config)
+                minimax.start(config)
                 pass
             elif level == 2:
                 config = Config(config_type='mini', search_num=400)  # config = mini-config
@@ -160,9 +159,6 @@ def start():
 
             elif level == 3:
                 config = Config(config_type='mini', search_num=800)  # config = mini-config
-                # setup(config)  # set logger total_step
-                # pwhc = PlayWithHumanConfig()
-                # pwhc.update_play_config(config.play)  # update the config from configs/mini.py line 33: PlayConfig
                 logger.info(f"AI move first : false")
                 play.start(config)
 
