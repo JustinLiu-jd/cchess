@@ -68,14 +68,14 @@ class minimax():
                 board = copy.deepcopy(self.env.board)
                 base_val, _ = caculate_base_val(board)
 
-                val, move = minimax_AB(board, -(1 << 30), 3, base_val, True)
-                print('final value', val)
-
+                val, move = minimax_AB(board, -(1 << 30), (1 << 30), 4, base_val, True)
                 x0, y0, x1, y1 = move[0].x, move[0].y, move[1].x, move[1].y
+                print('final value', val, f'({x0}, {y0}), ({x1}, {y1})')
+
                 current_chessman = select_sprite_from_group(self.chessmans, x0, y0)
                 chessman_sprite = select_sprite_from_group(self.chessmans, x1, y1)
                 print('minimax result', x0, y0, x1, y1, end='\t')
-                print(current_chessman.chessman.name_cn, current_chessman.chessman.col_num, current_chessman.chessman.row_num, val)
+                print(current_chessman.chessman.name_cn, current_chessman.chessman.col_num, current_chessman.chessman.row_num, 'value:', val)
                 success = current_chessman.move(x1, y1)
                 # print(f'old_x:{old_x}, old_y:{old_y}, x:{x}, y:{y}\t success:{success}')
                 if success:
@@ -83,6 +83,7 @@ class minimax():
                         self.chessmans.remove(chessman_sprite)
                         chessman_sprite.chessman.set_alive(False)
                         chessman_sprite.kill()
+                    print('player to move')
                 else:
                     logger.error('###########################minimax move did not success')
                     # exit()
