@@ -490,8 +490,7 @@ class repeatGame:
         screen.blit(widget_background, (self.width, 0))
 
     def draw_evaluation(self, screen, widget_background):
-        title_label = 'CC-Zero信息'
-        self.draw_label(screen, widget_background, title_label, 300, 16, 10)
+
         info_label = f'MCTS搜索次数：{self.config.play.simulation_num_per_move}'
         self.draw_label(screen, widget_background, info_label, 335, 14, 10)
         eval_label = f"当前局势评估: {self.nn_value:.3f}"

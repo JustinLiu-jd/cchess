@@ -35,8 +35,8 @@ class CChessModelAPI:
         return you
 
     def predict_batch_worker(self):
-        if self.config.internet.distributed and self.need_reload:
-            self.try_reload_model_from_internet()
+        # if self.config.internet.distributed and self.need_reload:
+        #     self.try_reload_model_from_internet()
         last_model_check_time = time()
         while not self.done:
             if last_model_check_time + 600 < time() and self.need_reload:

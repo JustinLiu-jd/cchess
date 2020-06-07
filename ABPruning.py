@@ -1,9 +1,6 @@
 from mychess.environment.chessboard import Chessboard
 
-# print(-(1 << 30))
-
-# 红方大写 黑方小写
-# 棋子子力价值
+# 棋子子力价值 红方大写 黑方小写
 pieceValues = {
     's': 6000, 'm': 120, 'e': 120, 'r': 600, 'k': 270, 'c': 285, 'p': 30,
     'S': 6000, 'M': 120, 'E': 120, 'R': 600, 'K': 270, 'C': 285, 'P': 30
